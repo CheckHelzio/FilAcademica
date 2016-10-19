@@ -5,10 +5,10 @@ package ccv.checkhelzio.filacademica;
  */
 
 public class Sedes {
-    String nombre;
-    String direccion;
-    float longitud;
-    float latitud;
+    private String nombre;
+    private String direccion;
+    private float longitud;
+    private float latitud;
 
     public Sedes(String nombre, String direccion, float longitud, float latitud) {
         this.nombre = nombre;

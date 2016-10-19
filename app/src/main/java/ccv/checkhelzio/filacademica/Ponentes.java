@@ -5,12 +5,12 @@ package ccv.checkhelzio.filacademica;
  */
 
 public class Ponentes {
-    int id;
-    String nombre;
-    String apellidos;
-    String universidad;
-    String profesion;
-    String descripcion;
+    private int id;
+    private String nombre;
+    private String apellidos;
+    private String universidad;
+    private String profesion;
+    private String descripcion;
 
     public Ponentes(int id, String nombre, String apellidos, String universidad, String profesion, String descripcion) {
         this.id = id;
