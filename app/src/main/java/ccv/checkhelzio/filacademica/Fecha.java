@@ -24,4 +24,20 @@ public class Fecha {
         this.fecha.add(Calendar.MINUTE,Integer.parseInt(hora_s[1]));
 
     }
+
+    public String getSede() {
+        return sede;
+    }
+
+    public void setSede(String sede) {
+        this.sede = sede;
+    }
+
+    public Calendar getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Calendar fecha) {
+        this.fecha = fecha;
+    }
 }
