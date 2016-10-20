@@ -1,5 +1,7 @@
 package ccv.checkhelzio.filacademica;
 
+import java.util.ArrayList;
+
 /**
  * Created by FICG on 19/10/2016.
  */
@@ -68,4 +70,5 @@ public class Ponentes {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
 }

@@ -22,7 +22,6 @@ public class Fecha {
         this.fecha.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
         this.fecha.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_s[0]));
         this.fecha.add(Calendar.MINUTE,Integer.parseInt(hora_s[1]));
-
     }
 
     public String getSede() {

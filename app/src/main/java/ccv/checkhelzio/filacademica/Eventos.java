@@ -50,4 +50,6 @@ public class Eventos {
     public void setFechas(ArrayList<Fecha> fechas) {
         this.fechas = fechas;
     }
+
+
 }
