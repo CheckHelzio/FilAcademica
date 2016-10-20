@@ -13,6 +13,7 @@ public class Ponentes {
     private String universidad;
     private String profesion;
     private String descripcion;
+    private int eventos[];
 
     public Ponentes(int id, String nombre, String apellidos, String universidad, String profesion, String descripcion) {
         this.id = id;
