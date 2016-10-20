@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by FICG on 19/10/2016.
  */
 
-public class listaEventos {
+public class ListaEventos {
     private ArrayList<Eventos> listaEventos;
     protected ArrayList<Fecha> listaF;
 
@@ -23,7 +23,10 @@ public class listaEventos {
                 // LISTA DE COORDINADORES
                 // ...
                 // LISTA DE FECHAS
-                crearFechas("Salón 6, planta baja, Expo Guadalajara"," 27/11/16 "," 17:30 – 18:50 hrs."),
+                crearFechas(
+                        new String[]{"Salón 6, planta baja, Expo Guadalajara", "27/11/16" , "17:30 – 18:50 hrs."},
+                        new String[]{"Salón 6, planta baja, Expo Guadalajara"," 27/11/16 "," 19:30 – 18:50 hrs."}
+                ),
                 // DESCRIPCION DEL EVENTO
 
 
@@ -33,7 +36,7 @@ public class listaEventos {
         return listaEventos;
     }
 
-    private void crearFechas(Fecha... datos){
+    private void crearFechas(String[]... datos){
         listaF.add(new Fecha());
 
     }

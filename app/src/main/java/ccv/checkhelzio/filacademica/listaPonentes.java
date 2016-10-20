@@ -3,7 +3,7 @@ package ccv.checkhelzio.filacademica;
 import java.util.ArrayList;
 
 
-public class listaPonentes {
+public class ListaPonentes {
     private ArrayList<Ponentes> listaPonentes;
 
     //FUNCION PARA REGRESAR TODOS LOS PONENTES

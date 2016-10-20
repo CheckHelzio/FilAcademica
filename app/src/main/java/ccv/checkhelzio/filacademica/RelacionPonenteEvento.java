@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class RelacionPonenteEvento {
 
     public void getListaPonentes(int idDelEvento){
-        listaPonentes lista = new listaPonentes();
+        ListaPonentes lista = new ListaPonentes();
         ArrayList<Ponentes> lp = lista.getPonentes();
 
         int x = 0;
