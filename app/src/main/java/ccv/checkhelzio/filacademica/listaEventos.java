@@ -23,10 +23,7 @@ public class listaEventos {
                 // LISTA DE COORDINADORES
                 // ...
                 // LISTA DE FECHAS
-                crearFechas(
-                        {"Salón 6, planta baja, Expo Guadalajara", "27/11/16", "17:30 – 18:50 hrs."},
-                        {"Salón 6, planta baja, Expo Guadalajara", "27/11/16", "17:30 – 18:50 hrs."}
-                ),
+                crearFechas("Salón 6, planta baja, Expo Guadalajara"," 27/11/16 "," 17:30 – 18:50 hrs."),
                 // DESCRIPCION DEL EVENTO
 
 
@@ -36,7 +33,7 @@ public class listaEventos {
         return listaEventos;
     }
 
-    private void crearFechas(String sede, String fecha, String hora){
+    private void crearFechas(Fecha... datos){
         listaF.add(new Fecha());
 
     }
