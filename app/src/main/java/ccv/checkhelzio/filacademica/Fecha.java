@@ -8,13 +8,13 @@ import java.util.Calendar;
 
 public class Fecha {
     private String sede;
-    private Calendar fecha;
+    private Calendar fecha_inicial, fecha_final;
 
-    public Fecha(String sede, String fecha, String hora) {
+    public Fecha(String sede, String fecha, String hora_inicial, String hora_final) {
         //FORMATO FECHA 19/10/2016
         String fecha_s [] = fecha.split("/");
         //FORMATO HORA(24 HORAS) 21:00
-        String hora_s [] = hora.split(":");
+        String hora_s [] = hora_inicial.split(":");
 
         this.sede = sede;
         this.fecha.add(Calendar.YEAR,Integer.parseInt(fecha_s[2]));

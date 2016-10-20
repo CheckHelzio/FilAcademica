@@ -24,8 +24,8 @@ public class ListaEventos {
                 // ...
                 // LISTA DE FECHAS
                 crearFechas(
-                        new String[]{"Salón 6, planta baja, Expo Guadalajara", "27/11/16" , "17:30 – 18:50 hrs."},
-                        new String[]{"Salón 6, planta baja, Expo Guadalajara"," 27/11/16 "," 19:30 – 18:50 hrs."}
+                        new Fecha("Salón 6, planta baja, Expo Guadalajara", "27/11/16" , "17:30 – 18:50 hrs."),
+                        new Fecha("Salón 6, planta baja, Expo Guadalajara", "27/11/16" , "17:30 – 18:50 hrs.")
                 ),
                 // DESCRIPCION DEL EVENTO
 
@@ -36,8 +36,8 @@ public class ListaEventos {
         return listaEventos;
     }
 
-    private void crearFechas(String[]... datos){
-        listaF.add(new Fecha());
+    private void crearFechas(Fecha... datos){
+
 
     }
 
