@@ -9,12 +9,16 @@ import java.util.ArrayList;
 public class Eventos {
     private int id_cartel;
     private String titulo;
+    private String subtitulo;
+    private ArrayList<Ponentes> listaCoordinadores;
+    private ArrayList<Fecha> listaFecha;
     private String descripcion;
-    private ArrayList<Fecha> fechas;
 
-    public Eventos(int id_cartel, String titulo, String descripcion, ArrayList<Fecha> fechas) {
+    public Eventos(int id_cartel, String titulo, ArrayList<Ponentes> listaCoordinadores, String subtitulo, String descripcion, ArrayList<Fecha> fechas) {
         this.id_cartel = id_cartel;
         this.titulo = titulo;
+        this.listaCoordinadores = listaCoordinadores;
+        this.subtitulo = subtitulo;
         this.descripcion = descripcion;
         this.fechas = fechas;
     }
