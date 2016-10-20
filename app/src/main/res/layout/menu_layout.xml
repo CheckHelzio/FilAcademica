@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_weight="16"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/textura_header_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:scaleType="fitStart"
+            android:padding="16dp"
+            app:srcCompat="@drawable/fil_academica_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:scaleType="fitStart"
+            android:padding="16dp"
+            app:srcCompat="@drawable/fil_academica_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:scaleType="fitEnd"
+            android:padding="16dp"
+            app:srcCompat="@drawable/america_latina_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:scaleType="fitStart"
+            android:padding="16dp"
+            app:srcCompat="@drawable/fil_academica_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>
