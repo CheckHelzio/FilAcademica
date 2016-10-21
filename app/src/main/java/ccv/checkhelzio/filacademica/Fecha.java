@@ -15,14 +15,21 @@ public class Fecha {
         //FORMATO FECHA 19/10/2016.
         String fecha_s [] = fecha.split("/");
         //FORMATO HORA(24 HORAS) 21:00
-        String hora_s [] = hora_inicial.split(":");
+        String hora_inicial_a [] = hora_inicial.split(":");
+        String hora_final_a [] = hora_final.split(":");
 
-        this.sede = sede;
-        this.fecha.add(Calendar.YEAR,Integer.parseInt(fecha_s[2]));
-        this.fecha.add(Calendar.MONTH,Integer.parseInt(fecha_s[1]));
-        this.fecha.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
-        this.fecha.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_s[0]));
-        this.fecha.add(Calendar.MINUTE,Integer.parseInt(hora_s[1]));
+        this.fecha_inicial.add(Calendar.YEAR,Integer.parseInt(fecha_s[2]));
+        this.fecha_final.add(Calendar.YEAR,Integer.parseInt(fecha_s[2]));
+        this.fecha_inicial.add(Calendar.MONTH,Integer.parseInt(fecha_s[1]));
+        this.fecha_final.add(Calendar.MONTH,Integer.parseInt(fecha_s[1]));
+        this.fecha_inicial.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
+        this.fecha_inicial.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
+
+        this.fecha_inicial.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_inicial_a[0]));
+        this.fecha_inicial.add(Calendar.MINUTE,Integer.parseInt(hora_inicial_a[1]));
+
+        this.fecha_final.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_final_a[0]));
+        this.fecha_final.add(Calendar.MINUTE,Integer.parseInt(hora_inicial_a[1]));
 
         setSede(sede);
     }

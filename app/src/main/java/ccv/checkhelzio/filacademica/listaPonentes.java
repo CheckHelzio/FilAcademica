@@ -10,12 +10,12 @@ public class ListaPonentes {
     public ArrayList<Ponentes> getPonentes() {
         listaPonentes = new ArrayList<Ponentes>();
         listaPonentes.add(new Ponentes(
-        //ID
-            1,
-        //Nombre
-            "Ricardo",
-        //Apellidos
-            "Lagos",
+                //ID
+                1,
+                //Nombre
+                "Ricardo",
+                //Apellidos
+                "Lagos",
                 "","","", new ArrayList<Integer>(new int[]{1}));
 
         return listaPonentes;
