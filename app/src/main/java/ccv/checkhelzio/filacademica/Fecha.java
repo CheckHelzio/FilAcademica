@@ -31,7 +31,7 @@ public class Fecha {
         Sedes mSede;
         switch (stSede){
             case "Salón 6, planta baja, Expo Guadalajara":
-                mSede = new Sedes(stSede, )
+                mSede = new Sedes(stSede, "Av. Mariano Otero #1499" )
                 break;
         }
         return sede;
