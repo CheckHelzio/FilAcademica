@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 
 public class Eventos {
+    private int id_evento;
     private int id_cartel;
     private String titulo;
     private String subtitulo;
@@ -39,6 +40,10 @@ public class Eventos {
         this.titulo = titulo;
     }
 
+    public String getSubtitulo() {return subtitulo;}
+
+    public void setSubtitulo(String subtitulo) {this.subtitulo = subtitulo;}
+
     public String getDescripcion() {
         return descripcion;
     }
@@ -55,5 +60,13 @@ public class Eventos {
         this.fechas = fechas;
     }
 
+    public int getId_evento() {return id_evento;}
 
+    public void setId_evento(int id_evento) {
+        this.id_evento = id_evento;
+    }
+
+    public ArrayList<Ponentes> getListaCoordinadores() {return listaCoordinadores;}
+
+    public void setListaCoordinadores(ArrayList<Ponentes> listaCoordinadores) {this.listaCoordinadores = listaCoordinadores;}
 }

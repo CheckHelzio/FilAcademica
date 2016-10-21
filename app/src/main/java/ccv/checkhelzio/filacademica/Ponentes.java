@@ -13,15 +13,17 @@ public class Ponentes {
     private String universidad;
     private String profesion;
     private String descripcion;
-    private int eventos[];
+    private ArrayList<Integer> eventos;
 
-    public Ponentes(int id, String nombre, String apellidos, String universidad, String profesion, String descripcion) {
+
+    public Ponentes(int id, String nombre, String apellidos, String universidad, String profesion, String descripcion, ArrayList<Integer> eventos) {
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.universidad = universidad;
         this.profesion = profesion;
         this.descripcion = descripcion;
+        this.eventos = eventos;
     }
 
     public int getId() {
