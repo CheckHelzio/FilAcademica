@@ -16,6 +16,8 @@ public class ListaEventos {
 
         // CODIGO DE MUESTRA PARA REGISTRAR UN EVENTO
         listaEventos.add(new Eventos(
+                //ID DEL CARTEL
+                1,
                 // TITULO
                 "Coloquio Gobernanza y Democracia en América Latina",
                 // SUBTITULO
