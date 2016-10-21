@@ -27,25 +27,41 @@ public class Fecha {
         setSede(sede);
     }
 
-    public String getSede(String stSede) {
-        Sedes mSede;
-        switch (stSede){
-            case "Salón 6, planta baja, Expo Guadalajara":
-                mSede = new Sedes(stSede, "Av. Mariano Otero #1499" )
-                break;
-        }
+    public String getStSede() {
+        return stSede;
+    }
+
+    public void setStSede(String stSede) {
+        this.stSede = stSede;
+    }
+
+    public Calendar getFecha_inicial() {
+        return fecha_inicial;
+    }
+
+    public void setFecha_inicial(Calendar fecha_inicial) {
+        this.fecha_inicial = fecha_inicial;
+    }
+
+    public Calendar getFecha_final() {
+        return fecha_final;
+    }
+
+    public void setFecha_final(Calendar fecha_final) {
+        this.fecha_final = fecha_final;
+    }
+
+    public Sedes getSede() {
         return sede;
     }
 
     public void setSede(String sede) {
-        this.sede = sede;
-    }
-
-    public Calendar getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Calendar fecha) {
-        this.fecha = fecha;
+        Sedes mSede = null;
+        switch (sede){
+            case "Salón 6, planta baja, Expo Guadalajara":
+                mSede = new Sedes(sede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+                break;
+        }
+        this.sede = mSede;
     }
 }

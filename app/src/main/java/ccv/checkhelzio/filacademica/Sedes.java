@@ -10,7 +10,7 @@ public class Sedes {
     private float longitud;
     private float latitud;
 
-    public Sedes(String nombre, String direccion, float longitud, float latitud) {
+    public Sedes(String nombre, String direccion, double longitud, double latitud) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.longitud = longitud;
