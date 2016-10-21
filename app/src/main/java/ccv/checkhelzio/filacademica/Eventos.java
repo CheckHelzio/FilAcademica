@@ -61,8 +61,10 @@ public class Eventos {
     public void setDatos(int datos) {
         switch (datos){
             case 1:
+                this.id_cartel =  R.drawable.cartel1;
                 this.titulo = "Coloquio Gobernanza y Democracia en América Latina";
                 this.subtitulo = "Carta Democrática";
+                this.descripcion = "";
                 break;
             case 2:
                 break;

@@ -9,8 +9,17 @@ import java.util.Calendar;
 public class Fecha {
     private Calendar fecha_inicial, fecha_final;
     private Sedes sede;
+    String id = "";
 
-    public Fecha(String nombreSede, String fecha, String hora_inicial, String hora_final) {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Fecha(String id, String nombreSede, String fecha, String hora_inicial, String hora_final) {
         //FORMATO FECHA 19/10/2016.
         String fecha_s [] = fecha.split("/");
         //FORMATO HORA(24 HORAS) 21:00
@@ -29,6 +38,8 @@ public class Fecha {
 
         this.fecha_final.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_final_a[0]));
         this.fecha_final.add(Calendar.MINUTE,Integer.parseInt(hora_inicial_a[1]));
+
+        this.id = id;
 
         setSede(nombreSede);
     }
