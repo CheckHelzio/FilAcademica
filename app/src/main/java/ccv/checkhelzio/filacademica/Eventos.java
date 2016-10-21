@@ -61,6 +61,8 @@ public class Eventos {
     public void setDatos(int datos) {
         switch (datos){
             case 1:
+                this.titulo = "Coloquio Gobernanza y Democracia en América Latina";
+                this.subtitulo = "Carta Democrática";
                 break;
             case 2:
                 break;

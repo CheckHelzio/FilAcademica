@@ -2,13 +2,12 @@ package ccv.checkhelzio.filacademica;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 /**
  * Created by FICG on 19/10/2016.
  */
 
-public class ListaEventos {
+public class NListaEventos {
     private ArrayList<Eventos> listaEventos;
     protected ArrayList<Fecha> listaF;
 
