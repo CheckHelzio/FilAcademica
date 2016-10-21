@@ -7,8 +7,9 @@ import java.util.Calendar;
  */
 
 public class Fecha {
-    private String sede;
+    private String stSede;
     private Calendar fecha_inicial, fecha_final;
+    private Sedes sede;
 
     public Fecha(String sede, String fecha, String hora_inicial, String hora_final) {
         //FORMATO FECHA 19/10/2016
@@ -22,9 +23,17 @@ public class Fecha {
         this.fecha.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
         this.fecha.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_s[0]));
         this.fecha.add(Calendar.MINUTE,Integer.parseInt(hora_s[1]));
+
+        setSede(sede);
     }
 
-    public String getSede() {
+    public String getSede(String stSede) {
+        Sedes mSede;
+        switch (stSede){
+            case "Salón 6, planta baja, Expo Guadalajara":
+                mSede = new Sedes(stSede, )
+                break;
+        }
         return sede;
     }
 
