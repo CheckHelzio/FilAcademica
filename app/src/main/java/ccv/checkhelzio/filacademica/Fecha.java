@@ -12,7 +12,7 @@ public class Fecha {
     private Sedes sede;
 
     public Fecha(String sede, String fecha, String hora_inicial, String hora_final) {
-        //FORMATO FECHA 19/10/2016
+        //FORMATO FECHA 19/10/2016.
         String fecha_s [] = fecha.split("/");
         //FORMATO HORA(24 HORAS) 21:00
         String hora_s [] = hora_inicial.split(":");
