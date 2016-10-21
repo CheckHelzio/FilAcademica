@@ -15,12 +15,8 @@ public class Eventos {
     private ArrayList<Fecha> listaFecha;
     private String descripcion;
 
-    public Eventos(int id_cartel, String titulo, ArrayList<Ponentes> listaCoordinadores, String subtitulo, String descripcion, ArrayList<Fecha> fechas) {
-        this.id_cartel = id_cartel;
-        this.titulo = titulo;
-        this.listaCoordinadores = listaCoordinadores;
-        this.subtitulo = subtitulo;
-        this.descripcion = descripcion;
+    public Eventos(int id_evento, ArrayList<Fecha> fechas) {
+        this.id_evento = id_evento;
         this.fechas = fechas;
     }
 
