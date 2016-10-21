@@ -1,6 +1,8 @@
 package ccv.checkhelzio.filacademica;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by FICG on 19/10/2016.
@@ -11,37 +13,24 @@ public class ListaEventos {
     protected ArrayList<Fecha> listaF;
 
     //FUNCION PARA REGRESAR TODOS LOS PONENTES
-    public ArrayList<Ponentes> getEventos() {
+    public ArrayList<Eventos> getEventos() {
         listaEventos = new ArrayList<Eventos>();
 
         // CODIGO DE MUESTRA PARA REGISTRAR UN EVENTO
         listaEventos.add(new Eventos(
-                //ID DEL CARTEL
+                //ID DEL EVENTO
                 1,
-                // TITULO
-                "Coloquio Gobernanza y Democracia en América Latina",
-                // SUBTITULO
-                "Carta Democrática",
-                // LISTA DE COORDINADORES
-                // ...
                 // LISTA DE FECHAS
                 crearFechas(
                         new Fecha("Salón 6, planta baja, Expo Guadalajara", "27/11/16", "17:30", "18:50"),
                         new Fecha("Salón 6, planta baja, Expo Guadalajara", "27/11/16", "19:30", "21:15")
-                ));
-                // DESCRIPCION DEL EVENTO
-
-
-
-        );
-
+                )
+        ));
         return listaEventos;
     }
 
-    private void crearFechas(Fecha... datos){
-        listaF.add(new Fecha());
-
+    private ArrayList<Fecha> crearFechas(Fecha... datos){
+        Collections.addAll(listaF, datos);
+        return listaF;
     }
-
-
 }
