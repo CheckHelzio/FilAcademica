@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by FICG on 19/10/2016.
  */
 
-public class listaEventos {
+public class ListaEventos {
     private ArrayList<Eventos> listaEventos;
     protected ArrayList<Fecha> listaF;
 
