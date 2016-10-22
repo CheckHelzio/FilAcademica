@@ -1,37 +1,34 @@
 package ccv.checkhelzio.filacademica;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by FICG on 19/10/2016.
  */
 
 public class Ponentes {
-    private int id;
+    private int id_ponente;
     private String nombre;
     private String apellidos;
     private String universidad;
     private String profesion;
     private String descripcion;
     private ArrayList<Integer> eventos;
+    private ArrayList<Integer> eventos_organizador;
 
 
-    public Ponentes(int id, String nombre, String apellidos, String universidad, String profesion, String descripcion, ArrayList<Integer> eventos) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.universidad = universidad;
-        this.profesion = profesion;
-        this.descripcion = descripcion;
-        this.eventos = eventos;
+    public Ponentes(int id_ponente) {
+        this.id_ponente = id_ponente;
+        setDatos(id_ponente);
     }
 
-    public int getId() {
-        return id;
+    public int getId_ponente() {
+        return id_ponente;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId_ponente(int id_ponente) {
+        this.id_ponente = id_ponente;
     }
 
     public String getNombre() {
@@ -74,4 +71,25 @@ public class Ponentes {
         this.descripcion = descripcion;
     }
 
+    public ArrayList<Integer> getEventos() {return eventos;}
+
+    public void setEventos(ArrayList<Integer> eventos) {this.eventos = eventos;}
+
+    public ArrayList<Integer> getEventos_organizador() {return eventos_organizador;}
+
+    public void setEventos_organizador(ArrayList<Integer> eventos_organizador) {this.eventos_organizador = eventos_organizador;}
+
+    public void setDatos(int id){
+        switch(id){
+            case 1:
+                this.nombre = "";
+                this.apellidos = "";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos = new ArrayList<Integer>(Arrays.asList(1,2));
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(1,2));
+                break;
+        }
+    }
 }

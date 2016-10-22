@@ -5,19 +5,17 @@ import java.util.ArrayList;
 
 public class ListaPonentes {
     private ArrayList<Ponentes> listaPonentes;
+    private final int NUMERO_PONENTES = 100;
 
     //FUNCION PARA REGRESAR TODOS LOS PONENTES
     public ArrayList<Ponentes> getPonentes() {
         listaPonentes = new ArrayList<Ponentes>();
-        listaPonentes.add(new Ponentes(
-                //ID
-                1,
-                //Nombre
-                "Ricardo",
-                //Apellidos
-                "Lagos",
-                "","","", new ArrayList<Integer>(new int[]{1}));
-
+        for (int i = 0; i <  NUMERO_PONENTES;i++) {
+            listaPonentes.add(new Ponentes(
+            //ID
+            i
+            ));
+        }
         return listaPonentes;
     }
 }
