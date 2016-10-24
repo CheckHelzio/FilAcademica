@@ -7,7 +7,7 @@ import java.util.Calendar;
  */
 
 public class Fecha {
-    private Calendar fecha_inicial, fecha_final;
+    private Calendar cal_fecha_ini, cal_fecha_fin;
     private Sedes sede;
     String id = "";
 
@@ -26,38 +26,40 @@ public class Fecha {
         String hora_inicial_a [] = hora_inicial.split(":");
         String hora_final_a [] = hora_final.split(":");
 
-        this.fecha_inicial.add(Calendar.YEAR,Integer.parseInt(fecha_s[2]));
-        this.fecha_final.add(Calendar.YEAR,Integer.parseInt(fecha_s[2]));
-        this.fecha_inicial.add(Calendar.MONTH,Integer.parseInt(fecha_s[1]));
-        this.fecha_final.add(Calendar.MONTH,Integer.parseInt(fecha_s[1]));
-        this.fecha_inicial.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
-        this.fecha_inicial.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
+        cal_fecha_ini = Calendar.getInstance();
+        cal_fecha_fin = Calendar.getInstance();
+        this.cal_fecha_ini.add(Calendar.YEAR, Integer.parseInt(fecha_s[2]));
+        this.cal_fecha_fin.add(Calendar.YEAR,Integer.parseInt(fecha_s[2]));
+        this.cal_fecha_ini.add(Calendar.MONTH,Integer.parseInt(fecha_s[1]));
+        this.cal_fecha_fin.add(Calendar.MONTH,Integer.parseInt(fecha_s[1]));
+        this.cal_fecha_ini.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
+        this.cal_fecha_ini.add(Calendar.DAY_OF_MONTH,Integer.parseInt(fecha_s[0]));
 
-        this.fecha_inicial.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_inicial_a[0]));
-        this.fecha_inicial.add(Calendar.MINUTE,Integer.parseInt(hora_inicial_a[1]));
+        this.cal_fecha_ini.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_inicial_a[0]));
+        this.cal_fecha_ini.add(Calendar.MINUTE,Integer.parseInt(hora_inicial_a[1]));
 
-        this.fecha_final.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_final_a[0]));
-        this.fecha_final.add(Calendar.MINUTE,Integer.parseInt(hora_inicial_a[1]));
+        this.cal_fecha_fin.add(Calendar.HOUR_OF_DAY,Integer.parseInt(hora_final_a[0]));
+        this.cal_fecha_fin.add(Calendar.MINUTE,Integer.parseInt(hora_inicial_a[1]));
 
         this.id = id;
 
         setSede(nombreSede);
     }
 
-    public Calendar getFecha_inicial() {
-        return fecha_inicial;
+    public Calendar getcal_fecha_ini() {
+        return cal_fecha_ini;
     }
 
-    public void setFecha_inicial(Calendar fecha_inicial) {
-        this.fecha_inicial = fecha_inicial;
+    public void setcal_fecha_ini(Calendar cal_fecha_ini) {
+        this.cal_fecha_ini = cal_fecha_ini;
     }
 
-    public Calendar getFecha_final() {
-        return fecha_final;
+    public Calendar getcal_fecha_fin() {
+        return cal_fecha_fin;
     }
 
-    public void setFecha_final(Calendar fecha_final) {
-        this.fecha_final = fecha_final;
+    public void setcal_fecha_fin(Calendar cal_fecha_fin) {
+        this.cal_fecha_fin = cal_fecha_fin;
     }
 
     public Sedes getSede() {

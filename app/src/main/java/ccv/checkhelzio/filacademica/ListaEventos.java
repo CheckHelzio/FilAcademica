@@ -15,6 +15,7 @@ public class ListaEventos {
     //FUNCION PARA REGRESAR TODOS LOS PONENTES
     public ArrayList<Eventos> getEventos() {
         listaEventos = new ArrayList<Eventos>();
+        listaF = new ArrayList<Fecha>();
 
         // CODIGO DE MUESTRA PARA REGISTRAR UN EVENTO
         listaEventos.add(new Eventos(

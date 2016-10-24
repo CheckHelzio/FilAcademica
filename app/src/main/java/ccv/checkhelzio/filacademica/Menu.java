@@ -1,10 +1,18 @@
 package ccv.checkhelzio.filacademica;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.balysv.materialripple.MaterialRippleLayout;
+
+import butterknife.BindView;
+import butterknife.OnClick;
 
 /**
  * Created by check on 19/10/2016.
@@ -18,6 +26,15 @@ public class Menu extends AppCompatActivity {
         FullScreencall();
         setContentView(R.layout.menu);
 
+        MaterialRippleLayout bt_actividades = (MaterialRippleLayout) findViewById(R.id.bt_actividades);
+        bt_actividades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Menu.this, Actividades.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     public void FullScreencall() {
@@ -30,5 +47,9 @@ public class Menu extends AppCompatActivity {
             int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
             decorView.setSystemUiVisibility(uiOptions);
         }
+    }
+
+    @OnClick (R.id.bt_actividades)
+    public void irActividades(){
     }
 }
