@@ -7,8 +7,8 @@ package ccv.checkhelzio.filacademica;
 public class Sedes {
     private String nombre;
     private String direccion;
-    private float longitud;
-    private float latitud;
+    private double longitud;
+    private double latitud;
 
     public Sedes(String nombre, String direccion, double longitud, double latitud) {
         this.nombre = nombre;
@@ -33,7 +33,7 @@ public class Sedes {
         this.direccion = direccion;
     }
 
-    public float getLongitud() {
+    public double getLongitud() {
         return longitud;
     }
 
@@ -41,7 +41,7 @@ public class Sedes {
         this.longitud = longitud;
     }
 
-    public float getLatitud() {
+    public double getLatitud() {
         return latitud;
     }
 

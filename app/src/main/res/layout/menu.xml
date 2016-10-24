@@ -23,22 +23,22 @@
             android:background="@color/colorPrimary" />
 
         <include
-            layout="@layout/menu_botones"/>
+            layout="@layout/menu_actividades"/>
 
         <include
-            layout="@layout/menu_botones"/>
+            layout="@layout/menu_historia"/>
 
         <include
-            layout="@layout/menu_botones"/>
+            layout="@layout/menu_ponentes"/>
 
         <include
-            layout="@layout/menu_botones"/>
+            layout="@layout/menu_sedes"/>
 
         <include
-            layout="@layout/menu_botones"/>
+            layout="@layout/menu_spot"/>
 
         <include
-            layout="@layout/menu_botones"/>
+            layout="@layout/menu_noticias"/>
 
     </LinearLayout>
 
