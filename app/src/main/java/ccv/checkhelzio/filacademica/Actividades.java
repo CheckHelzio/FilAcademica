@@ -1,11 +1,14 @@
 package ccv.checkhelzio.filacademica;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
 import butterknife.OnClick;
 
@@ -13,9 +16,10 @@ import butterknife.OnClick;
  * Created by check on 21/10/2016.
  */
 
-public class Actividades extends AppCompatActivity {
+public class Actividades extends AppCompatActivity implements View.OnClickListener {
 
     private ViewPager viewPager;
+    private ImageView iv_info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,16 @@ public class Actividades extends AppCompatActivity {
         setContentView(R.layout.actividades);
 
         iniciarPager();
+        iniciarObjetos();
+        setListenners();
+    }
+
+    private void setListenners() {
+        iv_info.setOnClickListener(this);
+    }
+
+    private void iniciarObjetos() {
+        iv_info = (ImageView) findViewById(R.id.bt_info);
     }
 
     private void iniciarPager() {
@@ -47,7 +61,19 @@ public class Actividades extends AppCompatActivity {
 
     @OnClick (R.id.bt_info)
     public void DialogInfo(){
-
+        Intent i = new Intent (Actividades.this, InfoEventoDialog.class);
+        i.putExtra("ACTIVIDAD", new ListaEventos().getEventos().get(viewPager.getCurrentItem()));
+        startActivity(i);
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.bt_info: Intent i = new Intent (Actividades.this, InfoEventoDialog.class);
+                Eventos e = new ListaEventos().getEventos().get(viewPager.getCurrentItem());
+                i.putExtra("ACTIVIDAD", e);
+                startActivity(i);
+                break;
+        }
+    }
 }

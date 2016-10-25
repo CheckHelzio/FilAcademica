@@ -40,6 +40,6 @@
         android:layout_weight="1"
         android:padding="14dp"
         android:tint="#fff"
-        app:srcCompat="@drawable/fil_academica_01" />
+        app:srcCompat="@drawable/fil_academica" />
 
 </LinearLayout>

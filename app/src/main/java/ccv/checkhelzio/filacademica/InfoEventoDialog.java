@@ -1,25 +1,21 @@
 package ccv.checkhelzio.filacademica;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.transition.Slide;
 import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.DatePicker;
-
-import java.util.Calendar;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
-import ccv.checkhelzio.nuevaagendacucsh.util.AnimUtils;
 
 public class InfoEventoDialog extends Activity {
 
+    @BindView(R.id.tv_titulo_evento) TextView tv_titulo_evento;
+    @BindView(R.id.tv_subtitulo) TextView tv_subtitulo_evento;
+    Eventos evento;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,19 +26,24 @@ public class InfoEventoDialog extends Activity {
         }
         ButterKnife.bind(this);
 
-        Slide slide = null;
+        evento = getIntent().getParcelableExtra("ACTIVIDAD");
+
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            slide = new Slide(Gravity.BOTTOM);
-            slide.setInterpolator(AnimUtils.getLinearOutSlowInInterpolator(DateDialogHelzio.this));
+
+            Slide slide = new Slide(Gravity.BOTTOM);
+            slide.setInterpolator(AnimUtils.getLinearOutSlowInInterpolator(InfoEventoDialog.this));
             slide.excludeTarget(android.R.id.statusBarBackground, true);
             slide.excludeTarget(android.R.id.navigationBarBackground, true);
             getWindow().setEnterTransition(slide);
             startPostponedEnterTransition();
         }
 
+        setDatos();
+    }
 
-        //FabTransition.setup(this, conte);
-        //getWindow().getSharedElementEnterTransition();
+    private void setDatos() {
+        tv_titulo_evento.setText(evento.getTitulo());
+        tv_subtitulo_evento.setText(evento.getSubtitulo());
     }
 
     @Override
@@ -51,28 +52,11 @@ public class InfoEventoDialog extends Activity {
         cerrar(null);
     }
 
-
-    @OnClick (R.id.bt_dialog_aceptar)
-    public void irDia(View view) {
-
-        int mes;
-        if (datePicker.getYear() == 2016) {
-            mes = datePicker.getMonth();
-        } else {
-            mes = datePicker.getMonth();
-            for (int x = 2016; x < datePicker.getYear(); x++) {
-                mes += 12;
-            }
-        }
-
-        Intent i = getIntent();
-        i.putExtra("NUMERO_DE_MES", mes);
-        setResult(RESULT_OK, i);
-        cerrar(null);
-    }
-
-    @OnClick (R.id.bt_dialog_cancenlar)
     public void cerrar(View view) {
-        finishAfterTransition();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            finishAfterTransition();
+        }else {
+            finish();
+        }
     }
 }

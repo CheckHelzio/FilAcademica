@@ -10,16 +10,16 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/textura_header_01" />
+        app:srcCompat="@drawable/textura_header_izq_01" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
-        android:padding="24dp"
+        android:padding="26dp"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/fil_academica_01" />
+        app:srcCompat="@drawable/fil_academica" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -29,14 +29,13 @@
         android:layout_marginRight="48dp"
         android:padding="16dp"
         android:scaleType="fitEnd"
-        app:srcCompat="@drawable/america_latina_01" />
+        app:srcCompat="@drawable/america_latina" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:rotationY="180"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/textura_header_01" />
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/textura_header_der_01" />
 
 </RelativeLayout>

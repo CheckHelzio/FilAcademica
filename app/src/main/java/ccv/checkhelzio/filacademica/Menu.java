@@ -37,6 +37,8 @@ public class Menu extends AppCompatActivity {
 
     }
 
+
+
     public void FullScreencall() {
         if(Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
             View v = this.getWindow().getDecorView();
