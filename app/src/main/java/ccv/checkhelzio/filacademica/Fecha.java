@@ -19,7 +19,7 @@ public class Fecha {
         this.id = id;
     }
 
-    public Fecha(String id, String nombreSede, String fecha, String hora_inicial, String hora_final) {
+    public Fecha(String id, int id_Sede, String fecha, String hora_inicial, String hora_final) {
         //FORMATO FECHA 19/10/2016.
         String fecha_s [] = fecha.split("/");
         //FORMATO HORA(24 HORAS) 21:00
@@ -42,7 +42,7 @@ public class Fecha {
 
         this.id = id;
 
-        setSede(nombreSede);
+        setSede(id_Sede);
     }
 
     public Calendar getcal_fecha_ini() {
@@ -65,62 +65,62 @@ public class Fecha {
         return sede;
     }
 
-    public void setSede(String nombreSede) {
+    public void setSede(int nombreSede) {
         Sedes mSede = null;
         switch (nombreSede){
-            case "Salón 1, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 1:
+                mSede = new Sedes("Salón 1, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón 2, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 2:
+                mSede = new Sedes("Salón 2, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón 3, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 3:
+                mSede = new Sedes("Salón 3, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón 4, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 4:
+                mSede = new Sedes("Salón 4, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón 5, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 5:
+                mSede = new Sedes("Salón 5, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón 6, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 6:
+                mSede = new Sedes("Salón 6, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón Juan Rulfo, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 7:
+                mSede = new Sedes("Salón Juan Rulfo, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 8:
+                mSede = new Sedes("Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón Salón Elías Nandino, planta baja, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 9:
+                mSede = new Sedes("Salón Salón Elías Nandino, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón E, Área Internacional, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 10:
+                mSede = new Sedes("Salón E, Área Internacional, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Salón José Luis Martínez, planta alta, Expo Guadalajara":
-                mSede = new Sedes(nombreSede, "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+            case 11:
+                mSede = new Sedes("Salón José Luis Martínez, planta alta, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
-            case "Hotel Hilton":
-                mSede = new Sedes(nombreSede, "Av. de la Rosas #2933, Rincon del Bosque", 20.665237, -103390012);
+            case 12:
+                mSede = new Sedes("Hotel Hilton", "Av. de la Rosas #2933, Rincon del Bosque", 20.665237, -103390012);
                 break;
-            case "Auditorio Silvano Barba, CUCSH":
-                mSede = new Sedes(nombreSede, "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+            case 13:
+                mSede = new Sedes("Auditorio Silvano Barba, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
-            case "Sala de Juicios orales Mariano Otero, CUCSH":
-                mSede = new Sedes(nombreSede, "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+            case 14:
+                mSede = new Sedes("Sala de Juicios orales Mariano Otero, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
-            case "Auditorio Adalberto Navarro Sánchez, CUCSH":
-                mSede = new Sedes(nombreSede, "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+            case 15:
+                mSede = new Sedes("Auditorio Adalberto Navarro Sánchez, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
-            case "Auditorio Carlos Ramírez, CUCSH":
-                mSede = new Sedes(nombreSede, "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+            case 16:
+                mSede = new Sedes("Auditorio Carlos Ramírez, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
-            case "Aula Magna del Edificio de Derecho, CUCSH":
-                mSede = new Sedes(nombreSede, "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+            case 17:
+                mSede = new Sedes("Aula Magna del Edificio de Derecho, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
-            case "Auditorio Fernando Pozos, primer piso, CUCSH Belenes":
-                mSede = new Sedes(nombreSede, "Prol. Parres Arias #150, San José del Bajío,Zapopan,", 20.7407378, -103.3809367);
+            case 18:
+                mSede = new Sedes("Auditorio Fernando Pozos, primer piso, CUCSH Belenes", "Prol. Parres Arias #150, San José del Bajío,Zapopan,", 20.7407378, -103.3809367);
                 break;
         }
         this.sede = mSede;
