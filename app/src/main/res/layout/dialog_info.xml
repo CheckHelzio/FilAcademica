@@ -63,7 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"/>
 
-    <TextView
+    <ccv.checkhelzio.filacademica.TextViewEx
+        android:id="@+id/tv_descripcion"
         android:textColor="#121212"
         android:layout_margin="16dp"
         android:text="@string/lorem"
