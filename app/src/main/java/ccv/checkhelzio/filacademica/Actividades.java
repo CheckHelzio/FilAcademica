@@ -67,6 +67,12 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        fullScreencall();
+    }
+
+    @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.bt_info: Intent i = new Intent (Actividades.this, InfoEventoDialog.class);

@@ -11,6 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <ccv.checkhelzio.filacademica.InkPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/padding_normal"
+        app:pageIndicatorColor="@color/page_indicator_dark"
+        app:currentPageIndicatorColor="@color/page_indicator_dark_selected" />
+
+
     <LinearLayout
         android:id="@+id/botonera"
         android:weightSum="4"
@@ -32,6 +42,7 @@
             android:layout_height="match_parent" />
 
         <ImageView
+            android:background="?android:selectableItemBackgroundBorderless"
             android:padding="8dp"
             android:tint="#fff"
             app:srcCompat="@drawable/ic_fechas"
@@ -40,6 +51,7 @@
             android:layout_height="match_parent" />
 
         <ImageView
+            android:background="?android:selectableItemBackgroundBorderless"
             android:padding="8dp"
             android:tint="#fff"
             app:srcCompat="@drawable/ic_organizador"
@@ -48,6 +60,7 @@
             android:layout_height="match_parent" />
 
         <ImageView
+            android:background="?android:selectableItemBackgroundBorderless"
             android:padding="8dp"
             android:tint="#fff"
             app:srcCompat="@drawable/ponencias"

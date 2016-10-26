@@ -6,12 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.Toast;
+import android.widget.RelativeLayout;
 
-import com.balysv.materialripple.MaterialRippleLayout;
-
-import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
@@ -26,7 +22,7 @@ public class Menu extends AppCompatActivity {
         FullScreencall();
         setContentView(R.layout.menu);
 
-        MaterialRippleLayout bt_actividades = (MaterialRippleLayout) findViewById(R.id.bt_actividades);
+        RelativeLayout bt_actividades = (RelativeLayout) findViewById(R.id.bt_actividades);
         bt_actividades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +33,11 @@ public class Menu extends AppCompatActivity {
 
     }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        FullScreencall();
+    }
 
     public void FullScreencall() {
         if(Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
