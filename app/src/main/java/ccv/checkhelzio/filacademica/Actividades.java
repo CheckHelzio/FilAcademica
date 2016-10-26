@@ -1,6 +1,6 @@
 package ccv.checkhelzio.filacademica;
 
-import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,6 +10,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -20,16 +24,24 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
 
     private ViewPager viewPager;
     private ImageView iv_info;
+    @BindView(R.id.indicator) InkPageIndicator pageIndicator;
+    private ArrayList<Eventos> listaEventos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         fullScreencall();
         setContentView(R.layout.actividades);
+        ButterKnife.bind(this);
 
         iniciarPager();
         iniciarObjetos();
         setListenners();
+        obtenerListaEventos();
+    }
+
+    private void obtenerListaEventos() {
+        listaEventos = new ListaEventos().getEventos();
     }
 
     private void setListenners() {
@@ -45,6 +57,7 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
         viewPager.setOffscreenPageLimit(1);
         viewPager.setPageMargin((int) getResources().getDimension(R.dimen.fab_size));
         viewPager.setAdapter(new HelzioAdapter(getSupportFragmentManager()));
+        pageIndicator.setViewPager(viewPager);
     }
 
     public void fullScreencall() {
@@ -75,10 +88,17 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.bt_info: Intent i = new Intent (Actividades.this, InfoEventoDialog.class);
-                Eventos e = new ListaEventos().getEventos().get(viewPager.getCurrentItem());
-                i.putExtra("ACTIVIDAD", e);
-                startActivity(i);
+            case R.id.bt_info:
+                Intent i = new Intent (Actividades.this, InfoEventoDialog.class);
+                i.putExtra("ACTIVIDAD", listaEventos.get(viewPager.getCurrentItem()));
+                Bundle bundle = null;
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+                    Log.v("ERROR", "INICIAR ACTIVIY CON BUNDLE");
+                    startActivity(i, bundle);
+                }else {
+                    startActivity(i);
+                }
                 break;
         }
     }

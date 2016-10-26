@@ -15,7 +15,7 @@
         android:id="@+id/indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/padding_normal"
         app:pageIndicatorColor="@color/page_indicator_dark"
         app:currentPageIndicatorColor="@color/page_indicator_dark_selected" />

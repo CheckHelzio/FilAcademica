@@ -1,74 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_gravity="center"
+    android:onClick="cerrar"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <RelativeLayout android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent">
-
-        <TextView
-            android:text="Coloquio Gobernanza y Democracia en América Latina"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:background="#00000000"
-            android:paddingTop="14dp"
-            android:paddingBottom="16dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"
-            android:textSize="14dp"
-            android:id="@+id/tv_titulo_evento"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <android.support.v7.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignTop="@+id/tv_titulo_evento"
-            android:layout_alignBottom="@+id/tv_titulo_evento"
-            android:scaleType="fitStart"
-            app:srcCompat="@drawable/textura_header_izq_01" />
-
-        <android.support.v7.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/tv_titulo_evento"
-            android:layout_alignBottom="@+id/tv_titulo_evento"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/textura_header_der_01" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:text="Carta Democrática"
-        android:textSize="14dp"
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="2dp"
+        android:clickable="true"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#fff"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@color/colorAccent"
-        android:id="@+id/tv_subtitulo"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="90"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
 
-    <View
-        android:background="@color/colorAccent"
-        android:layout_margin="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <ccv.checkhelzio.filacademica.TextViewEx
-        android:id="@+id/tv_descripcion"
-        android:textColor="#121212"
-        android:layout_margin="16dp"
-        android:text="@string/lorem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_titulo_evento"
+                    android:layout_alignBottom="@+id/tv_titulo_evento"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/textura_boton_izq_01" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tv_titulo_evento"
+                    android:layout_alignBottom="@+id/tv_titulo_evento"
+                    android:scaleType="fitEnd"
+                    app:srcCompat="@drawable/textura_boton_der_01" />
+
+                <TextView
+                    android:text="Coloquio Gobernanza y Democracia en América Latina"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="#00000000"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginEnd="36dp"
+                    android:textSize="14dp"
+                    android:id="@+id/tv_titulo_evento"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="Carta Democrática"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tv_subtitulo"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/colorAccent"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <ccv.checkhelzio.filacademica.TextViewEx
+                android:id="@+id/tv_descripcion"
+                android:textColor="#121212"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>

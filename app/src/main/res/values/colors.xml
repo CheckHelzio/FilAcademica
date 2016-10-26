@@ -4,7 +4,8 @@
     <color name="colorPrimaryDark">#511d19</color>
     <color name="colorAccent">#009999</color>
     <color name="colorBlanco">#ffffff</color>
+    <color name="transparente">#00000000</color>
 
-    <color name="page_indicator_dark">#80333333</color>
-    <color name="page_indicator_dark_selected">#ff333333</color>
+    <color name="page_indicator_dark">#80ffffff</color>
+    <color name="page_indicator_dark_selected">#fff</color>
 </resources>

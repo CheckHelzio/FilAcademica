@@ -7,6 +7,7 @@ import android.transition.Slide;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,16 +22,18 @@ public class InfoEventoDialog extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FullScreencall();
         setContentView(R.layout.dialog_info);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             postponeEnterTransition();
         }
         ButterKnife.bind(this);
 
         evento = getIntent().getParcelableExtra("ACTIVIDAD");
+        setDatos();
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-
             Slide slide = new Slide(Gravity.BOTTOM);
             slide.setInterpolator(AnimUtils.getLinearOutSlowInInterpolator(InfoEventoDialog.this));
             slide.excludeTarget(android.R.id.statusBarBackground, true);
@@ -38,8 +41,6 @@ public class InfoEventoDialog extends Activity {
             getWindow().setEnterTransition(slide);
             startPostponedEnterTransition();
         }
-
-        setDatos();
     }
 
     private void setDatos() {
@@ -79,4 +80,5 @@ public class InfoEventoDialog extends Activity {
             finish();
         }
     }
+
 }
