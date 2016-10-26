@@ -93,34 +93,46 @@ public class Fecha {
                 mSede = new Sedes("Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
             case 9:
-                mSede = new Sedes("Salón Salón Elías Nandino, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+                mSede = new Sedes("Salones Zapopan y Tonalá, planta alta, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
             case 10:
-                mSede = new Sedes("Salón E, Área Internacional, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+                mSede = new Sedes("Salón Elías Nandino, planta alta, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
             case 11:
-                mSede = new Sedes("Salón José Luis Martínez, planta alta, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+                mSede = new Sedes("Salón E, Área Internacional, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
             case 12:
-                mSede = new Sedes("Hotel Hilton", "Av. de la Rosas #2933, Rincon del Bosque", 20.665237, -103390012);
+                mSede = new Sedes("Salón José Luis Martínez, planta alta, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
                 break;
             case 13:
-                mSede = new Sedes("Auditorio Silvano Barba, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+                mSede = new Sedes("Hotel Hilton", "Av. de la Rosas #2933, Rincon del Bosque", 20.665237, -103390012);
                 break;
             case 14:
-                mSede = new Sedes("Sala de Juicios orales Mariano Otero, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+                mSede = new Sedes("Auditorio Silvano Barba, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
             case 15:
-                mSede = new Sedes("Auditorio Adalberto Navarro Sánchez, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+                mSede = new Sedes("Sala de Juicios orales Mariano Otero, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
             case 16:
-                mSede = new Sedes("Auditorio Carlos Ramírez, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+                mSede = new Sedes("Auditorio Adalberto Navarro Sánchez, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
             case 17:
-                mSede = new Sedes("Aula Magna del Edificio de Derecho, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+                mSede = new Sedes("Auditorio Carlos Ramírez, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
             case 18:
+                mSede = new Sedes("Aula Magna del Edificio de Derecho, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+                break;
+            case 19:
                 mSede = new Sedes("Auditorio Fernando Pozos, primer piso, CUCSH Belenes", "Prol. Parres Arias #150, San José del Bajío,Zapopan,", 20.7407378, -103.3809367);
+                break;
+            case 20:
+                mSede = new Sedes("Salón Juan José Arreola, planta alta, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+                break;
+            case 21:
+                mSede = new Sedes("Pabellón del Invitado de Honor, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701);
+                break;
+            case 22:
+                mSede = new Sedes("Auditorio Tenamaxtle, El Colegio de Jalisco ", "Calle 5 de Mayo 321, Zapopan", 20.7194854, -103.3887629);
                 break;
         }
         this.sede = mSede;
