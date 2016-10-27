@@ -80,17 +80,24 @@
                 android:layout_height="wrap_content" />
 
             <View
+                android:id="@+id/separador"
                 android:background="@color/colorAccent"
                 android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"/>
 
-            <ccv.checkhelzio.filacademica.TextViewEx
-                android:id="@+id/tv_descripcion"
-                android:textColor="#121212"
-                android:layout_margin="16dp"
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+
+                <ccv.checkhelzio.filacademica.TextViewEx
+                    android:id="@+id/tv_descripcion"
+                    android:textColor="#121212"
+                    android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
 
         </LinearLayout>
 

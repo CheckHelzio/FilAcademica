@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+
 
 public class ActividadFragment extends Fragment {
     int fragVal;
@@ -32,7 +34,7 @@ public class ActividadFragment extends Fragment {
                 false);
         ImageView iv = (ImageView) layout.findViewById(R.id.iv_cartel);
         String st_id = "cartel" + (fragVal + 1);
-        iv.setImageResource(getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica"));
+        Picasso.with(getActivity().getApplicationContext()).load(getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica")).into(iv);
         return layout;
     }
 

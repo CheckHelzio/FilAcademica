@@ -7,7 +7,6 @@ import android.transition.Slide;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,6 +16,7 @@ public class InfoEventoDialog extends Activity {
     @BindView(R.id.tv_titulo_evento) TextView tv_titulo_evento;
     @BindView(R.id.tv_subtitulo) TextView tv_subtitulo_evento;
     @BindView(R.id.tv_descripcion) TextViewEx tv_descripcion;
+    @BindView(R.id.separador) View separador;
     Eventos evento;
 
     @Override
@@ -47,6 +47,11 @@ public class InfoEventoDialog extends Activity {
         tv_titulo_evento.setText(evento.getTitulo());
         tv_subtitulo_evento.setText(evento.getSubtitulo());
         tv_descripcion.setText(evento.getDescripcion(), true);
+
+        if (tv_subtitulo_evento.getText().toString().trim().isEmpty()){
+            tv_subtitulo_evento.setVisibility(View.GONE);
+            separador.setVisibility(View.GONE);
+        }
     }
 
     @Override

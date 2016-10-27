@@ -31,6 +31,15 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        RelativeLayout bt_sedes = (RelativeLayout) findViewById(R.id.bt_sedes);
+        bt_actividades.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Menu.this, MapsActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override

@@ -27,6 +27,12 @@
             android:scaleType="fitStart"
             app:srcCompat="@drawable/textura_boton_izq_01" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/textura_boton_der_01" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -63,13 +69,6 @@
 
 
         </RelativeLayout>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:rotationY="180"
-            android:scaleType="fitEnd"
-            app:srcCompat="@drawable/textura_boton_der_01" />
     </RelativeLayout>
 
 </com.balysv.materialripple.MaterialRippleLayout>
