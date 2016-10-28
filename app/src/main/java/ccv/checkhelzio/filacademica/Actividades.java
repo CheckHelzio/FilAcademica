@@ -24,7 +24,6 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
 
     private ViewPager viewPager;
     private ImageView iv_info;
-    @BindView(R.id.indicator) InkPageIndicator pageIndicator;
     private ArrayList<Eventos> listaEventos;
 
     @Override
@@ -54,10 +53,8 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
 
     private void iniciarPager() {
         viewPager = (ViewPager) findViewById(R.id.pager);
-        viewPager.setOffscreenPageLimit(1);
-        viewPager.setPageMargin((int) getResources().getDimension(R.dimen.fab_size));
+        viewPager.setOffscreenPageLimit(30);
         viewPager.setAdapter(new HelzioAdapter(getSupportFragmentManager()));
-        pageIndicator.setViewPager(viewPager);
     }
 
     public void fullScreencall() {
