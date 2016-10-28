@@ -43,6 +43,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Spot"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="ACTIVIDADES_FIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".InfoEventoDialog"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.Transparent">
