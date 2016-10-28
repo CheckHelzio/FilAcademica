@@ -82,13 +82,22 @@ public class Ponentes {
     public void setDatos(int id){
         switch(id){
             case 1:
-                this.nombre = "";
-                this.apellidos = "";
+                this.nombre = "Mara";
+                this.apellidos = "Robles";
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(1,4,34,31));
+                this.eventos = new ArrayList<Integer>(Arrays.asList(0));
+                break;
+            case 2:
+                this.nombre = "Beatriz";
+                this.apellidos = "Paredes";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<Integer>(Arrays.asList(1,2));
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(1,2));
                 break;
         }
     }
