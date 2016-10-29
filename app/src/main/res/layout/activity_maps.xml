@@ -1,18 +1,21 @@
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<android.support.v7.widget.LinearLayoutCompat android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="100"
     android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools">
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="70"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         tools:context="ccv.checkhelzio.filacademica.MapsActivity" />
     <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="30"></android.support.v4.view.ViewPager>
+        android:layout_weight="30"
+        android:background="@color/cardview_dark_background"></android.support.v4.view.ViewPager>
 </android.support.v7.widget.LinearLayoutCompat>

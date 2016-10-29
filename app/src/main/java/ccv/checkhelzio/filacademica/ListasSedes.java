@@ -7,7 +7,8 @@ import java.util.ArrayList;
  */
 
 public class ListasSedes {
-        ArrayList<Sedes> listaSedes = new ArrayList<>();
+        public ArrayList<Sedes> listaSedes = new ArrayList<>();
+
 
     public ListasSedes() {
         listaSedes.add(new Sedes("Salón 1, planta baja, Expo Guadalajara", "Av. Mariano Otero #1499", 20.6540891, -103.3939701));
