@@ -71,23 +71,31 @@ public class Ponentes {
         this.descripcion = descripcion;
     }
 
-    public ArrayList<String> getEventos() {return eventos;}
+    public ArrayList<String> getEventos() {
+        return eventos;
+    }
 
-    public void setEventos(ArrayList<String> eventos) {this.eventos = eventos;}
+    public void setEventos(ArrayList<String> eventos) {
+        this.eventos = eventos;
+    }
 
-    public ArrayList<Integer> getEventos_organizador() {return eventos_organizador;}
+    public ArrayList<Integer> getEventos_organizador() {
+        return eventos_organizador;
+    }
 
-    public void setEventos_organizador(ArrayList<Integer> eventos_organizador) {this.eventos_organizador = eventos_organizador;}
+    public void setEventos_organizador(ArrayList<Integer> eventos_organizador) {
+        this.eventos_organizador = eventos_organizador;
+    }
 
-    public void setDatos(int id){
-        switch(id){
+    public void setDatos(int id) {
+        switch (id) {
             case 1:
                 this.nombre = "Mara";
                 this.apellidos = "Robles";
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "Embajadora de México en Brasil";
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(1,4,34,31));
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(1, 4, 34, 31));
                 this.eventos = new ArrayList<String>(Arrays.asList(""));
                 break;
             case 2:
@@ -97,7 +105,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("1A","1B"));
+                this.eventos = new ArrayList<String>(Arrays.asList("1A", "1B"));
                 break;
             case 3:
                 this.nombre = "Luis";
@@ -142,7 +150,7 @@ public class Ponentes {
                 this.profesion = "Representante de Chile en la Haya";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("1C","16A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("1C", "16A"));
                 break;
             case 8:
                 this.nombre = "Roger";
@@ -278,7 +286,7 @@ public class Ponentes {
                 this.profesion = "Ex Alcalde de Los Ángeles, California.";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("2A","7A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("2A", "7A"));
                 break;
             case 23:
                 this.nombre = "Arnoldo";
@@ -340,8 +348,8 @@ public class Ponentes {
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "";
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(3,6,10,17));
-                this.eventos = new ArrayList<String>(Arrays.asList("17B","25A"));
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(3, 6, 10, 17));
+                this.eventos = new ArrayList<String>(Arrays.asList("17B", "25A"));
                 break;
             case 30:
                 this.nombre = "Karla Alejandrina";
@@ -349,7 +357,7 @@ public class Ponentes {
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "";
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(3,6,10,17));
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(3, 6, 10, 17));
                 this.eventos = new ArrayList<String>(Arrays.asList("25E"));
                 break;
             case 31:
@@ -358,7 +366,7 @@ public class Ponentes {
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "";
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(3,15));
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(3, 15));
                 this.eventos = new ArrayList<String>(Arrays.asList(""));
                 break;
             case 32:
@@ -474,7 +482,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("4A","14A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("4A", "14A"));
                 break;
             case 44:
                 this.nombre = "Diego";
@@ -500,7 +508,7 @@ public class Ponentes {
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "";
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(34,31));
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(34, 31));
                 this.eventos = new ArrayList<String>(Arrays.asList(""));
                 break;
             case 47:
@@ -708,7 +716,7 @@ public class Ponentes {
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "";
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(10,25));
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(10, 25));
                 this.eventos = new ArrayList<String>(Arrays.asList(""));
                 break;
             case 70:
@@ -727,7 +735,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("10B","25D"));
+                this.eventos = new ArrayList<String>(Arrays.asList("10B", "25D"));
                 break;
             case 72:
                 this.nombre = "Lorenzo";
@@ -736,7 +744,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("10D","14A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("10D", "14A"));
                 break;
             case 73:
                 this.nombre = "Héctor";
@@ -754,7 +762,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("10A","18D"));
+                this.eventos = new ArrayList<String>(Arrays.asList("10A", "18D"));
                 break;
             case 75:
                 this.nombre = "Romeo";
@@ -1064,7 +1072,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("17A","22A","25C"));
+                this.eventos = new ArrayList<String>(Arrays.asList("17A", "22A", "25C"));
                 break;
             case 109:
                 this.nombre = "Joachim";
@@ -1100,7 +1108,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("17C","20D"));
+                this.eventos = new ArrayList<String>(Arrays.asList("17C", "20D"));
                 break;
             case 113:
                 this.nombre = "Gilda";
@@ -1307,7 +1315,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("18B","18D"));
+                this.eventos = new ArrayList<String>(Arrays.asList("18B", "18D"));
                 break;
             case 136:
                 this.nombre = "Natalio";
@@ -1316,7 +1324,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("18B","18F"));
+                this.eventos = new ArrayList<String>(Arrays.asList("18B", "18F"));
                 break;
             case 137:
                 this.nombre = "José María";
@@ -1325,7 +1333,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("18B","18D","18F"));
+                this.eventos = new ArrayList<String>(Arrays.asList("18B", "18D", "18F"));
                 break;
 
             case 138:
@@ -1428,7 +1436,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("18A","18H"));
+                this.eventos = new ArrayList<String>(Arrays.asList("18A", "18H"));
                 break;
             case 149:
                 this.nombre = "Cessia Esther";
@@ -1889,7 +1897,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("23A","23D"));
+                this.eventos = new ArrayList<String>(Arrays.asList("23A", "23D"));
                 break;
             case 199:
                 this.nombre = "Gómez Agero";
@@ -1952,7 +1960,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("24A","24E"));
+                this.eventos = new ArrayList<String>(Arrays.asList("24A", "24E"));
                 break;
             case 206:
                 this.nombre = "Elizabeth";
@@ -1961,7 +1969,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("24A","24E"));
+                this.eventos = new ArrayList<String>(Arrays.asList("24A", "24E"));
                 break;
             case 207:
                 this.nombre = "Alfonso";
@@ -1970,7 +1978,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("24A","24E"));
+                this.eventos = new ArrayList<String>(Arrays.asList("24A", "24E"));
                 break;
             case 208:
                 this.nombre = "Salvador";
@@ -2411,7 +2419,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("28A","28C"));
+                this.eventos = new ArrayList<String>(Arrays.asList("28A", "28C"));
                 break;
             case 257:
                 this.nombre = "Ricardo";
@@ -2420,7 +2428,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("28B","28C"));
+                this.eventos = new ArrayList<String>(Arrays.asList("28B", "28C"));
                 break;
             case 258:
                 this.nombre = "Daniel";
@@ -2438,7 +2446,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(29));
-                this.eventos = new ArrayList<String>(Arrays.asList("29A","29I","29X"));
+                this.eventos = new ArrayList<String>(Arrays.asList("29A", "29I", "29X"));
                 break;
             case 260:
                 this.nombre = "Luis";
@@ -2492,7 +2500,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("29E","29M"));
+                this.eventos = new ArrayList<String>(Arrays.asList("29E", "29M"));
                 break;
             case 266:
                 this.nombre = "Gabriel";
@@ -2519,7 +2527,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("29G","29S"));
+                this.eventos = new ArrayList<String>(Arrays.asList("29G", "29S"));
                 break;
             case 269:
                 this.nombre = "Teresa";
@@ -2528,7 +2536,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("29H","29V"));
+                this.eventos = new ArrayList<String>(Arrays.asList("29H", "29V"));
                 break;
             case 270:
                 this.nombre = "Luis";
@@ -2582,7 +2590,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("29M","29V"));
+                this.eventos = new ArrayList<String>(Arrays.asList("29M", "29V"));
                 break;
             case 276:
                 this.nombre = "Jorge";
@@ -2619,7 +2627,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("29P","29R"));
+                this.eventos = new ArrayList<String>(Arrays.asList("29P", "29R"));
                 break;
 
             case 280:
@@ -2746,7 +2754,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("30B","30E"));
+                this.eventos = new ArrayList<String>(Arrays.asList("30B", "30E"));
                 break;
             case 294:
                 this.nombre = "Ramón";
@@ -2919,6 +2927,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(33));
                 this.eventos = new ArrayList<String>(Arrays.asList(""));
                 break;
+
             case 313:
                 this.nombre = "Andrés";
                 this.apellidos = "Serbin";
@@ -2928,6 +2937,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("33A"));
                 break;
+
             case 314:
                 this.nombre = "Ana";
                 this.apellidos = "Covarrubias";
@@ -2937,6 +2947,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("33A"));
                 break;
+
             case 315:
                 this.nombre = "Stephan";
                 this.apellidos = "Sberro";
@@ -2946,6 +2957,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("33A"));
                 break;
+
             case 316:
                 this.nombre = "Elodie";
                 this.apellidos = "Brun";
@@ -2955,6 +2967,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("33A"));
                 break;
+
             case 317:
                 this.nombre = "Roberto";
                 this.apellidos = "Hernández";
@@ -2964,6 +2977,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("33A"));
                 break;
+
             case 318:
                 this.nombre = "Jonathan";
                 this.apellidos = "Luckhurst";
