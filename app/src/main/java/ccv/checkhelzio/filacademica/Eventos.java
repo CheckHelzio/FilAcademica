@@ -240,12 +240,14 @@ public class Eventos implements Parcelable {
             case 32:
                 this.titulo = "XXVI Seminario sobre la Enseñanza de Lenguas Extranjeras";
                 this.subtitulo = "";
-                this.descripcion = "";
+                this.descripcion = "Es a través de las lenguas, como instrumento, que al nombrar la realidad en un afán de apredenderla, la recorta, la divide y la reformula sin cesar creando unidades de distintas dimensiones. Nuestras diferentes posibilidades como sujetos sociales nos determinan en la organización y el funcionamiento de dichas unidades que " +
+                        "se convierten en discursos una vez que son atravesadas por el contexto y la situación. Es así que en espacios como el aula, la literatura y la sociedad el discurso se revela como una parte fundamental de campos y quehaceres específicos  tales como la construcción de una ideología,  la creación literaria y la enseñanza-aprendizaje de lenguas extranjeras.";
                 break;
             case 33:
                 this.titulo = "Seminario internacional Las relaciones internacionales de América Latina: tendencias y desafíos";
                 this.subtitulo = "";
-                this.descripcion = "";
+                this.descripcion = "En un mundo en profunda mutación, en lo que va del siglo XXI las relaciones internacionales de la región latinoamericana y caribeña han evolucionado en el marco de tres mega-tendencias inter-relacionadas que caracterizan al escenario mundial: la globalización, portadora de oportunidades y de riesgos; la emergencia de China que va de la mano con un peso creciente Asia-Pacífico en la escena internacional ;  y la persistencia de las mega-región es aunque sometidas a nuevas dificultades y problemas. En este contexto de profundas transformaciones sufridas por el sistema internacional se han suscitado numerosos análisis y debates sobre los grados de autonomía nacional, el rol y la capacidad de influencia de los organismos internacionales, la multiplicidad de actores internacionales, el déficit en materia de gobernanza global y regional.. En el caso de América Latina, las estrategias de inserción internacional de los países de la región –que presenta una gran heterogeneidad en este plano- se ven confrontadas a numerosos desafíos, por ejemplo, las implicaciones en las relaciones internacionales de la crisis de la Unión Europea, " +
+                        "los efectos de la desaceleración de la economía de China o  las consecuencias de lo que se suele considerar como el « retorno » de Estados Unidos en la región a partir del lanzamiento del proceso de normalización de las relaciones cubano-estadounidenses…Este seminario se propone analizar estas tendencias y desafíos  con el objetivo de identificar sus implicaciones a corto y mediano plazo y con especial énfasis en los aspectos económicos, políticos y geopolíticos de la relaciones externas de la región.";
                 break;
             case 34:
                 this.titulo = "VI Coloquio Internacional de Políticas Culturales 2016";
