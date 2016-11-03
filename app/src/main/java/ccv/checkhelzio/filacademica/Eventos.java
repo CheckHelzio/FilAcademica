@@ -53,8 +53,8 @@ public class Eventos implements Parcelable {
 
     public void setListaCoordinadores(ArrayList<Ponentes> listaCoordinadores) {this.listaCoordinadores = listaCoordinadores;}
 
-    public void setDatos(int datos) {
-        switch (datos){
+    public void setDatos(int id_evento) {
+        switch (id_evento){
             case 1:
                 this.titulo = "Coloquio Gobernanza y Democracia en América Latina";
                 this.subtitulo = "Carta Democrática";
@@ -232,6 +232,27 @@ public class Eventos implements Parcelable {
                 this.subtitulo = "";
                 this.descripcion = "";
                 break;
+            case 31:
+                this.titulo = "Presencia de aspirantes a la Presidencia y líderes de partidos";
+                this.subtitulo = "";
+                this.descripcion = "";
+                break;
+            case 32:
+                this.titulo = "XXVI Seminario sobre la Enseñanza de Lenguas Extranjeras";
+                this.subtitulo = "";
+                this.descripcion = "";
+                break;
+            case 33:
+                this.titulo = "Seminario internacional Las relaciones internacionales de América Latina: tendencias y desafíos";
+                this.subtitulo = "";
+                this.descripcion = "";
+                break;
+            case 34:
+                this.titulo = "VI Coloquio Internacional de Políticas Culturales 2016";
+                this.subtitulo = "";
+                this.descripcion = "";
+                break;
+
         }
     }
 
