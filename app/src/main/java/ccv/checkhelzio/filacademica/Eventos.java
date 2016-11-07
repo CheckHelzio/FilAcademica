@@ -63,7 +63,14 @@ public class Eventos implements Parcelable {
             case 2:
                 this.titulo = "Foro Iberoamericano de Ciudades Inclusivas y Cultura";
                 this.subtitulo = "";
-                this.descripcion = "";
+                this.descripcion = "La Secretaría General Iberoamericana conjuntamente con la Feria Internacional del Libro de Guadalajara, México, en su edición número 30 confirman una alianza estratégica con este Foro, " +
+                        "para debatir y proponer líneas estratégicas para procurar, desde la cooperación Iberoamericana, la transversalidad de la cultura como factor de desarrollo, inclusión y cohesión social en las políticas culturales locales.\n\n" +
+                        "Las Ciudades Iberoamericanas han desarrollado autonomía política y económica que disminuye en muchos casos la incidencia de los estados nacionales, la reivindicación del valor de la cultura local, de las interdependencias " +
+                        "con otros entes territoriales, la búsqueda de las nuevas identidades resultantes de la migración hacia los centros urbanos, el tamaño del PIB en muchas de nuestras ciudades excede al de las naciones (Buenos Aires, Sao Paulo, Bogotá y Ciudad de México, entre otras), estas circunstancias configuran nuevos escenarios en los que se debe abordar el tema de la inclusión y la cultura desde una perspectiva que trasciende " +
+                        "los gobiernos nacionales y crea nuevos tejidos que tienen alcances transnacionales.\n\n" +
+                        "Este hecho crea la necesidad de implementar políticas públicas que fomenten la relación entre ciudades, con el apoyo político y logístico de los gobiernos nacionales mediante las cuales se fomente la circulación, la interacción, el intercambio de conocimientos y experiencias.\n\n" +
+                        "Analizar el impacto de proyectos como los “Puntos de Cultura” de Brasil, “Los Faros” de México o los “Parques Biblioteca” de Colombia, sus defectos y bondades, la sostenibilidad, la cohesión social que se entreteje en su interior, identificar los riesgos que representan proyectos urbanísticos como el de “Nueva Luz” de São Paulo, Evidenciar que la Cultura desde " +
+                        "las artes, el urbanismo, la industria cultural, el turismo, la planeación, tiene un enorme potencial como herramienta de inclusión en un contexto de desarrollo humano y social.";
                 break;
             case 3:
                 this.titulo = "II Seminario Internacional ASPEN-FIL";
@@ -132,7 +139,10 @@ public class Eventos implements Parcelable {
             case 15:
                 this.titulo = "VI Foro Internacional sobre Migración y Desarrollo";
                 this.subtitulo = "Migrantes en tránsito";
-                this.descripcion = "";
+                this.descripcion = "De acuerdo a la Oficina del Alto Comisionado para los Derechos Humanos de Naciones Unidas, en 2015, más de 5.000 hombres, mujeres y niños perdieron la vida en el tránsito de las rutas migratorias de todo el mundo; en las que se estima que " +
+                        "500 niños perecieron tan sólo en las rutas marítimas. Aún cuando los avances tecnológicos permiten viajar de forma más rápida y segura, para muchos migrantes el viaje hacia su destino puede tomar semanas, meses o incluso años, y se ha vuelto cada vez más peligroso.\n" +
+                        "Los migrantes en tránsito, son vulnerables legalmente, económicamente y carecen de acceso a servicios de salud básicos; por ello, enfrentan formas distintas de discriminación y abuso que les ponen en riesgo, particularmente a las mujeres y los niños." +
+                        "El panel, pretende discutir desde distintas perspectivas de este fenómeno que tiene un alto costo en vidas humanas cada año.";
                 break;
             case 16:
                 this.titulo = "VI Seminario de Relaciones Internacionales";
@@ -149,7 +159,12 @@ public class Eventos implements Parcelable {
             case 18:
                 this.titulo = "Encuentro de Literaturas Originarias de América";
                 this.subtitulo = "";
-                this.descripcion = "";
+                this.descripcion = "La Feria Internacional de Libro de Guadalajara (FIL) cumple, en este 2016, 30 años de su creación. Desde hace más de un decenio ha dado acogida a numerosos escritores en lenguas originarias de México y de América, quienes tuvieron la oportunidad de difundir textos de creación en su lengua materna o a través de traducciones al español. Un numeroso público pudo familiarizarse con la existencia de otras literaturas originarias de América.\n\n" +
+                        "\tLa FIL ha venido contribuyendo así al reconocimiento de las lenguas originarias de América a través de la creación literaria. Las lenguas como tales no estuvieron suficientemente presentes en versiones anteriores de la FIL. La literatura no es la única manifestación de la vitalidad de las lenguas. Las lenguas se hablan y se escriben, pero también se cantan, sus productos se traducen a otras lenguas y, en la actualidad, textos de otras lenguas se traducen a las" +
+                        " lenguas americanas, no sólo textos literarios como Don Quijote o El principito, sino también textos técnicos y científicos, jurídicos, médicos, de gramática y de nanotecnología. Se están abriendo cada vez más espacios en los medios masivos de comunicación y en las redes: páginas web, programas de radio y televisión, revistas electrónicas y ediciones de periódicos. En el complejo escenario de la globalización, el espacio geográfico de las lenguas se ha extendido y" +
+                        " diversificado. Hay hablantes de lenguas americanas en muchas  ciudades del continente, que se comunican entre sí a través de los medios modernos. Muchas de ellas están ganando presencia en internet.\n\n" +
+                        "\tLas actividades que contribuyen a sacar a las lenguas de su marginación son múltiples; se están creando institutos, academias, se emiten leyes y reglamentos, se llevan a cabo programas educativos como las universidades interculturales, el Bachillerato Huichol por parte de la Universidad de Guadalajara, etc. En la Feria del Libro de Guadalajara debe haber un espacio donde todas estas actividades se difundan a través de diversos productos y de los propios hablantes. Hay que celebrar " +
+                        "que muchas lenguas de América continúan vivas, dan profundidad a la memoria histórica del continente, manteniendo vivas sus respectivas culturas, religiones y visiones particulares del mundo.";
                 break;
             case 19:
                 this.titulo = "XX Seminario Internacional Comunicación y Sociedad";

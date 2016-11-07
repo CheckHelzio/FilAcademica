@@ -134,6 +134,9 @@ public class Fecha {
             case 22:
                 mSede = new Sedes("Auditorio Tenamaxtle, El Colegio de Jalisco ", "Calle 5 de Mayo 321, Zapopan", 20.7194854, -103.3887629);
                 break;
+            case 23:
+                mSede = new Sedes("Auditorio Salvador Allende, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
+                break;
         }
         this.sede = mSede;
     }
