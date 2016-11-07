@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/textura_boton_izq_01" />
+        app:srcCompat="@drawable/textura_boton_izq" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                app:srcCompat="@drawable/actividades" />
+                app:srcCompat="@drawable/sedes" />
 
             <TextView
                 android:id="@+id/tv_nombre_actividad"
@@ -43,7 +43,7 @@
                 android:layout_height="match_parent"
                 android:gravity="start|center_vertical"
                 android:hint="ACTIVIDADES"
-                android:text="ACTIVIDADES"
+                android:text="SEDES"
                 android:textColor="#fff"
                 android:textStyle="bold" />
 
@@ -57,5 +57,5 @@
         android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
         android:scaleType="fitEnd"
-        app:srcCompat="@drawable/textura_boton_der_01" />
+        app:srcCompat="@drawable/textura_boton_der" />
 </RelativeLayout>

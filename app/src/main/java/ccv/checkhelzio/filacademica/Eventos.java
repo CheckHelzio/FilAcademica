@@ -13,15 +13,18 @@ public class Eventos implements Parcelable {
     private int id_evento;
     private String titulo;
     private String subtitulo;
-    private ArrayList<Ponentes> listaCoordinadores;
     private ArrayList<Fecha> listaFecha;
     private String descripcion;
 
     public Eventos(int id_evento, ArrayList<Fecha> fechas) {
         this.id_evento = id_evento;
+        this.listaFecha = fechas;
         setDatos(id_evento);
     }
 
+    public ArrayList<Fecha> getListaFecha() {
+        return listaFecha;
+    }
 
     public String getTitulo() {
         return titulo;
@@ -31,9 +34,13 @@ public class Eventos implements Parcelable {
         this.titulo = titulo;
     }
 
-    public String getSubtitulo() {return subtitulo;}
+    public String getSubtitulo() {
+        return subtitulo;
+    }
 
-    public void setSubtitulo(String subtitulo) {this.subtitulo = subtitulo;}
+    public void setSubtitulo(String subtitulo) {
+        this.subtitulo = subtitulo;
+    }
 
     public String getDescripcion() {
         return descripcion;
@@ -43,18 +50,17 @@ public class Eventos implements Parcelable {
         this.descripcion = descripcion;
     }
 
-    public int getId_evento() {return id_evento;}
+    public int getId_evento() {
+        return id_evento;
+    }
 
     public void setId_evento(int id_evento) {
         this.id_evento = id_evento;
     }
 
-    public ArrayList<Ponentes> getListaCoordinadores() {return listaCoordinadores;}
-
-    public void setListaCoordinadores(ArrayList<Ponentes> listaCoordinadores) {this.listaCoordinadores = listaCoordinadores;}
 
     public void setDatos(int id_evento) {
-        switch (id_evento){
+        switch (id_evento) {
             case 1:
                 this.titulo = "Coloquio Gobernanza y Democracia en América Latina";
                 this.subtitulo = "Carta Democrática";
@@ -63,14 +69,7 @@ public class Eventos implements Parcelable {
             case 2:
                 this.titulo = "Foro Iberoamericano de Ciudades Inclusivas y Cultura";
                 this.subtitulo = "";
-                this.descripcion = "La Secretaría General Iberoamericana conjuntamente con la Feria Internacional del Libro de Guadalajara, México, en su edición número 30 confirman una alianza estratégica con este Foro, " +
-                        "para debatir y proponer líneas estratégicas para procurar, desde la cooperación Iberoamericana, la transversalidad de la cultura como factor de desarrollo, inclusión y cohesión social en las políticas culturales locales.\n\n" +
-                        "Las Ciudades Iberoamericanas han desarrollado autonomía política y económica que disminuye en muchos casos la incidencia de los estados nacionales, la reivindicación del valor de la cultura local, de las interdependencias " +
-                        "con otros entes territoriales, la búsqueda de las nuevas identidades resultantes de la migración hacia los centros urbanos, el tamaño del PIB en muchas de nuestras ciudades excede al de las naciones (Buenos Aires, Sao Paulo, Bogotá y Ciudad de México, entre otras), estas circunstancias configuran nuevos escenarios en los que se debe abordar el tema de la inclusión y la cultura desde una perspectiva que trasciende " +
-                        "los gobiernos nacionales y crea nuevos tejidos que tienen alcances transnacionales.\n\n" +
-                        "Este hecho crea la necesidad de implementar políticas públicas que fomenten la relación entre ciudades, con el apoyo político y logístico de los gobiernos nacionales mediante las cuales se fomente la circulación, la interacción, el intercambio de conocimientos y experiencias.\n\n" +
-                        "Analizar el impacto de proyectos como los “Puntos de Cultura” de Brasil, “Los Faros” de México o los “Parques Biblioteca” de Colombia, sus defectos y bondades, la sostenibilidad, la cohesión social que se entreteje en su interior, identificar los riesgos que representan proyectos urbanísticos como el de “Nueva Luz” de São Paulo, Evidenciar que la Cultura desde " +
-                        "las artes, el urbanismo, la industria cultural, el turismo, la planeación, tiene un enorme potencial como herramienta de inclusión en un contexto de desarrollo humano y social.";
+                this.descripcion = "";
                 break;
             case 3:
                 this.titulo = "II Seminario Internacional ASPEN-FIL";
@@ -139,10 +138,7 @@ public class Eventos implements Parcelable {
             case 15:
                 this.titulo = "VI Foro Internacional sobre Migración y Desarrollo";
                 this.subtitulo = "Migrantes en tránsito";
-                this.descripcion = "De acuerdo a la Oficina del Alto Comisionado para los Derechos Humanos de Naciones Unidas, en 2015, más de 5.000 hombres, mujeres y niños perdieron la vida en el tránsito de las rutas migratorias de todo el mundo; en las que se estima que " +
-                        "500 niños perecieron tan sólo en las rutas marítimas. Aún cuando los avances tecnológicos permiten viajar de forma más rápida y segura, para muchos migrantes el viaje hacia su destino puede tomar semanas, meses o incluso años, y se ha vuelto cada vez más peligroso.\n" +
-                        "Los migrantes en tránsito, son vulnerables legalmente, económicamente y carecen de acceso a servicios de salud básicos; por ello, enfrentan formas distintas de discriminación y abuso que les ponen en riesgo, particularmente a las mujeres y los niños." +
-                        "El panel, pretende discutir desde distintas perspectivas de este fenómeno que tiene un alto costo en vidas humanas cada año.";
+                this.descripcion = "";
                 break;
             case 16:
                 this.titulo = "VI Seminario de Relaciones Internacionales";
@@ -159,12 +155,7 @@ public class Eventos implements Parcelable {
             case 18:
                 this.titulo = "Encuentro de Literaturas Originarias de América";
                 this.subtitulo = "";
-                this.descripcion = "La Feria Internacional de Libro de Guadalajara (FIL) cumple, en este 2016, 30 años de su creación. Desde hace más de un decenio ha dado acogida a numerosos escritores en lenguas originarias de México y de América, quienes tuvieron la oportunidad de difundir textos de creación en su lengua materna o a través de traducciones al español. Un numeroso público pudo familiarizarse con la existencia de otras literaturas originarias de América.\n\n" +
-                        "\tLa FIL ha venido contribuyendo así al reconocimiento de las lenguas originarias de América a través de la creación literaria. Las lenguas como tales no estuvieron suficientemente presentes en versiones anteriores de la FIL. La literatura no es la única manifestación de la vitalidad de las lenguas. Las lenguas se hablan y se escriben, pero también se cantan, sus productos se traducen a otras lenguas y, en la actualidad, textos de otras lenguas se traducen a las" +
-                        " lenguas americanas, no sólo textos literarios como Don Quijote o El principito, sino también textos técnicos y científicos, jurídicos, médicos, de gramática y de nanotecnología. Se están abriendo cada vez más espacios en los medios masivos de comunicación y en las redes: páginas web, programas de radio y televisión, revistas electrónicas y ediciones de periódicos. En el complejo escenario de la globalización, el espacio geográfico de las lenguas se ha extendido y" +
-                        " diversificado. Hay hablantes de lenguas americanas en muchas  ciudades del continente, que se comunican entre sí a través de los medios modernos. Muchas de ellas están ganando presencia en internet.\n\n" +
-                        "\tLas actividades que contribuyen a sacar a las lenguas de su marginación son múltiples; se están creando institutos, academias, se emiten leyes y reglamentos, se llevan a cabo programas educativos como las universidades interculturales, el Bachillerato Huichol por parte de la Universidad de Guadalajara, etc. En la Feria del Libro de Guadalajara debe haber un espacio donde todas estas actividades se difundan a través de diversos productos y de los propios hablantes. Hay que celebrar " +
-                        "que muchas lenguas de América continúan vivas, dan profundidad a la memoria histórica del continente, manteniendo vivas sus respectivas culturas, religiones y visiones particulares del mundo.";
+                this.descripcion = "";
                 break;
             case 19:
                 this.titulo = "XX Seminario Internacional Comunicación y Sociedad";
@@ -255,14 +246,12 @@ public class Eventos implements Parcelable {
             case 32:
                 this.titulo = "XXVI Seminario sobre la Enseñanza de Lenguas Extranjeras";
                 this.subtitulo = "";
-                this.descripcion = "Es a través de las lenguas, como instrumento, que al nombrar la realidad en un afán de apredenderla, la recorta, la divide y la reformula sin cesar creando unidades de distintas dimensiones. Nuestras diferentes posibilidades como sujetos sociales nos determinan en la organización y el funcionamiento de dichas unidades que " +
-                        "se convierten en discursos una vez que son atravesadas por el contexto y la situación. Es así que en espacios como el aula, la literatura y la sociedad el discurso se revela como una parte fundamental de campos y quehaceres específicos  tales como la construcción de una ideología,  la creación literaria y la enseñanza-aprendizaje de lenguas extranjeras.";
+                this.descripcion = "";
                 break;
             case 33:
                 this.titulo = "Seminario internacional Las relaciones internacionales de América Latina: tendencias y desafíos";
                 this.subtitulo = "";
-                this.descripcion = "En un mundo en profunda mutación, en lo que va del siglo XXI las relaciones internacionales de la región latinoamericana y caribeña han evolucionado en el marco de tres mega-tendencias inter-relacionadas que caracterizan al escenario mundial: la globalización, portadora de oportunidades y de riesgos; la emergencia de China que va de la mano con un peso creciente Asia-Pacífico en la escena internacional ;  y la persistencia de las mega-región es aunque sometidas a nuevas dificultades y problemas. En este contexto de profundas transformaciones sufridas por el sistema internacional se han suscitado numerosos análisis y debates sobre los grados de autonomía nacional, el rol y la capacidad de influencia de los organismos internacionales, la multiplicidad de actores internacionales, el déficit en materia de gobernanza global y regional.. En el caso de América Latina, las estrategias de inserción internacional de los países de la región –que presenta una gran heterogeneidad en este plano- se ven confrontadas a numerosos desafíos, por ejemplo, las implicaciones en las relaciones internacionales de la crisis de la Unión Europea, " +
-                        "los efectos de la desaceleración de la economía de China o  las consecuencias de lo que se suele considerar como el « retorno » de Estados Unidos en la región a partir del lanzamiento del proceso de normalización de las relaciones cubano-estadounidenses…Este seminario se propone analizar estas tendencias y desafíos  con el objetivo de identificar sus implicaciones a corto y mediano plazo y con especial énfasis en los aspectos económicos, políticos y geopolíticos de la relaciones externas de la región.";
+                this.descripcion = "";
                 break;
             case 34:
                 this.titulo = "VI Coloquio Internacional de Políticas Culturales 2016";
@@ -283,8 +272,7 @@ public class Eventos implements Parcelable {
         dest.writeInt(this.id_evento);
         dest.writeString(this.titulo);
         dest.writeString(this.subtitulo);
-        dest.writeList(this.listaCoordinadores);
-        dest.writeList(this.listaFecha);
+        dest.writeTypedList(this.listaFecha);
         dest.writeString(this.descripcion);
     }
 
@@ -292,10 +280,7 @@ public class Eventos implements Parcelable {
         this.id_evento = in.readInt();
         this.titulo = in.readString();
         this.subtitulo = in.readString();
-        this.listaCoordinadores = new ArrayList<Ponentes>();
-        in.readList(this.listaCoordinadores, Ponentes.class.getClassLoader());
-        this.listaFecha = new ArrayList<Fecha>();
-        in.readList(this.listaFecha, Fecha.class.getClassLoader());
+        this.listaFecha = in.createTypedArrayList(Fecha.CREATOR);
         this.descripcion = in.readString();
     }
 

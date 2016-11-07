@@ -1,12 +1,15 @@
 package ccv.checkhelzio.filacademica;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.Calendar;
 
 /**
  * Created by FICG on 19/10/2016.
  */
 
-public class Fecha {
+public class Fecha implements Parcelable {
     private Calendar cal_fecha_ini, cal_fecha_fin;
     private Sedes sede;
     String id = "";
@@ -140,4 +143,36 @@ public class Fecha {
         }
         this.sede = mSede;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeSerializable(this.cal_fecha_ini);
+        dest.writeSerializable(this.cal_fecha_fin);
+        dest.writeParcelable(this.sede, flags);
+        dest.writeString(this.id);
+    }
+
+    protected Fecha(Parcel in) {
+        this.cal_fecha_ini = (Calendar) in.readSerializable();
+        this.cal_fecha_fin = (Calendar) in.readSerializable();
+        this.sede = in.readParcelable(Sedes.class.getClassLoader());
+        this.id = in.readString();
+    }
+
+    public static final Parcelable.Creator<Fecha> CREATOR = new Parcelable.Creator<Fecha>() {
+        @Override
+        public Fecha createFromParcel(Parcel source) {
+            return new Fecha(source);
+        }
+
+        @Override
+        public Fecha[] newArray(int size) {
+            return new Fecha[size];
+        }
+    };
 }

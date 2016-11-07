@@ -15,7 +15,7 @@
         android:layout_marginTop="2dp"
         android:layout_weight="75.5"
         android:orientation="vertical"
-        android:weightSum="6">
+        android:weightSum="5">
 
         <View
             android:layout_width="match_parent"
@@ -33,9 +33,6 @@
 
         <include
             layout="@layout/menu_sedes"/>
-
-        <include
-            layout="@layout/menu_spot"/>
 
         <include
             layout="@layout/menu_noticias"/>

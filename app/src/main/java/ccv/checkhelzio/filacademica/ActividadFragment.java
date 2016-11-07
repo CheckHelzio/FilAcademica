@@ -6,8 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 
 
 public class ActividadFragment extends Fragment {
@@ -33,8 +36,16 @@ public class ActividadFragment extends Fragment {
         View layout = inflater.inflate(R.layout.carteles, container,
                 false);
         ImageView iv = (ImageView) layout.findViewById(R.id.iv_cartel);
+        TextView ti = (TextView) layout.findViewById(R.id.titulo);
         String st_id = "cartel" + (fragVal + 1);
-        Picasso.with(getActivity().getApplicationContext()).load(getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica")).into(iv);
+        try {
+            Picasso.with(getActivity().getApplicationContext()).load(getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica")).into(iv);
+        }catch (Exception ignored){
+            Picasso.with(getActivity().getApplicationContext()).load(R.drawable.carte_generico).into(iv);
+
+            ArrayList<Eventos> listaEventos = new ListaEventos().getEventos();
+            ti.setText(listaEventos.get(fragVal).getTitulo());
+        }
         return layout;
     }
 

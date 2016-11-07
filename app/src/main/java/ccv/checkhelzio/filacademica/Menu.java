@@ -40,15 +40,6 @@ public class Menu extends AppCompatActivity {
             }
         });
 
-        RelativeLayout bt_spot = (RelativeLayout) findViewById(R.id.bt_spot);
-        bt_spot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Menu.this, Spot.class);
-                startActivity(i);
-            }
-        });
-
     }
 
     @Override

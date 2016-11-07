@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -20,11 +21,13 @@ import butterknife.OnClick;
  * Created by check on 21/10/2016.
  */
 
-public class Actividades extends AppCompatActivity implements View.OnClickListener {
+public class Actividades extends AppCompatActivity implements View.OnClickListener, ViewPager.OnPageChangeListener {
 
     private ViewPager viewPager;
     private ImageView iv_info;
     private ArrayList<Eventos> listaEventos;
+    @BindView(R.id.indicador) TextView indicador;
+    @BindView(R.id.bt_fechas) ImageView bt_fechas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,7 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
 
     private void setListenners() {
         iv_info.setOnClickListener(this);
+        bt_fechas.setOnClickListener(this);
     }
 
     private void iniciarObjetos() {
@@ -53,8 +57,10 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
 
     private void iniciarPager() {
         viewPager = (ViewPager) findViewById(R.id.pager);
-        viewPager.setOffscreenPageLimit(30);
+        viewPager.setOffscreenPageLimit(new ListaEventos().getEventos().size());
         viewPager.setAdapter(new HelzioAdapter(getSupportFragmentManager()));
+        indicador.setText("1/" + viewPager.getAdapter().getCount());
+        viewPager.addOnPageChangeListener(this);
     }
 
     public void fullScreencall() {
@@ -69,12 +75,6 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
         }
     }
 
-    @OnClick (R.id.bt_info)
-    public void DialogInfo(){
-        Intent i = new Intent (Actividades.this, InfoEventoDialog.class);
-        i.putExtra("ACTIVIDAD", new ListaEventos().getEventos().get(viewPager.getCurrentItem()));
-        startActivity(i);
-    }
 
     @Override
     protected void onResume() {
@@ -84,19 +84,45 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
+        Intent i;
+        Bundle bundle = null;
+
         switch (view.getId()){
             case R.id.bt_info:
-                Intent i = new Intent (Actividades.this, InfoEventoDialog.class);
+                i = new Intent (Actividades.this, InfoEventoDialog.class);
                 i.putExtra("ACTIVIDAD", listaEventos.get(viewPager.getCurrentItem()));
-                Bundle bundle = null;
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-                    Log.v("ERROR", "INICIAR ACTIVIY CON BUNDLE");
+                    startActivity(i, bundle);
+                }else {
+                    startActivity(i);
+                }
+                break;
+            case R.id.bt_fechas:
+                i = new Intent (Actividades.this, InfoFechasDialog.class);
+                i.putExtra("ACTIVIDAD", listaEventos.get(viewPager.getCurrentItem()));
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
                     startActivity(i, bundle);
                 }else {
                     startActivity(i);
                 }
                 break;
         }
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        indicador.setText((position + 1 ) + "/" + viewPager.getAdapter().getCount());
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
     }
 }

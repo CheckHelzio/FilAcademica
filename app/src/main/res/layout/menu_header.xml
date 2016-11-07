@@ -16,8 +16,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="40dp"
         android:padding="26dp"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/fil_academica" />
@@ -25,9 +24,8 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="56dp"
         android:padding="16dp"
         android:scaleType="fitEnd"
         app:srcCompat="@drawable/america_latina" />

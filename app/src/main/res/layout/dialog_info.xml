@@ -28,7 +28,7 @@
 
             <RelativeLayout android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorAccent">
+                android:background="@color/colorPrimary">
 
                 <android.support.v7.widget.AppCompatImageView
                     android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
                     android:layout_alignTop="@+id/tv_titulo_evento"
                     android:layout_alignBottom="@+id/tv_titulo_evento"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/textura_boton_izq_01" />
+                    app:srcCompat="@drawable/textura_evento_der" />
 
                 <android.support.v7.widget.AppCompatImageView
                     android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
                     android:layout_alignTop="@+id/tv_titulo_evento"
                     android:layout_alignBottom="@+id/tv_titulo_evento"
                     android:scaleType="fitEnd"
-                    app:srcCompat="@drawable/textura_boton_der_01" />
+                    app:srcCompat="@drawable/textura_evento_der" />
 
                 <TextView
                     android:text="Coloquio Gobernanza y Democracia en América Latina"
@@ -71,7 +71,7 @@
                 android:textSize="13dp"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/colorPrimary"
                 android:id="@+id/tv_subtitulo"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="16dp"
@@ -81,7 +81,7 @@
 
             <View
                 android:id="@+id/separador"
-                android:background="@color/colorAccent"
+                android:background="@color/colorPrimary"
                 android:layout_margin="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"/>

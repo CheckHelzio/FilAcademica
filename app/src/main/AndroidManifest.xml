@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -43,20 +44,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Spot"
-            android:screenOrientation="sensorPortrait">
-            <intent-filter>
-                <action android:name="ACTIVIDADES_FIL" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".InfoEventoDialog"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="ACTIVIDADES_INFO_EVENTOS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InfoFechasDialog"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="ACTIVIDADES_INFO_FECHAS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -68,7 +70,6 @@
              You need a different API key for each encryption key, including the release key that is used to
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
-
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -76,7 +77,8 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps2"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
