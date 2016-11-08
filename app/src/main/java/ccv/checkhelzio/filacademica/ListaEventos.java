@@ -354,8 +354,10 @@ public class ListaEventos {
                 // LISTA DE FECHAS...
                 crearFechas(
                         new Fecha("A", 13, "29/11/16", "17:00", "18:50"),
-                        new Fecha("B", 13, "30/11/16", "11:00", "14:00"),
-                        new Fecha("C", 13, "01/12/16", "11:00", "14:00")
+                        new Fecha("B", 13, "30/11/16", "11:00", "12:15"),
+                        new Fecha("C", 13, "01/12/16", "11:00", "12:15"),
+                        new Fecha("D", 13, "30/11/16", "12:30", "14:00"),
+                        new Fecha("E", 13, "01/12/16", "12:30", "14:00")
                 )
         ));
         listaEventos.add(new Eventos(
@@ -412,6 +414,19 @@ public class ListaEventos {
                 // LISTA DE FECHAS...
                 crearFechas(
                         new Fecha("A", 15, "28/11/16", "13:00", "18:00")
+                )
+        ));
+        listaEventos.add(new Eventos(
+                //ID DEL EVENTO
+                35,
+                // LISTA DE FECHAS...
+                crearFechas(
+                        new Fecha("A", 23, "01/12/16", "09:00", "10:00"),
+                        new Fecha("B", 23, "01/12/16", "10:00", "10:45"),
+                        new Fecha("C", 23, "01/12/16", "10:45", "11:30"),
+                        new Fecha("D", 23, "01/12/16", "11:30", "12:15"),
+                        new Fecha("E", 23, "01/12/16", "12:15", "13:00"),
+                        new Fecha("F", 23, "01/12/16", "13:00", "14:00")
                 )
         ));
         return listaEventos;

@@ -258,6 +258,12 @@ public class Eventos implements Parcelable {
                 this.subtitulo = "";
                 this.descripcion = "";
                 break;
+            case 35:
+                this.titulo = "Primer Conservatorio Internacional sobre Derecho Global";
+                this.subtitulo = "";
+                this.descripcion = "Con ocasión del 30 aniversario de la Feria Internacional del Libro de Guadalajara nace el Conversatorio Internacional sobre Derecho Global emanado de la Revista Derecho Global. Estudios sobre Derecho y Justicia, publicación de la División de Estudios Jurídicos del Centro Universitario de Ciencias Sociales y Humanidades, la cual cumple su primer año de vida con tres publicaciones cuatrimestrales en su haber," +
+                        " aportando a la comunidad académica 18 artículos de investigación, reseñas de libros, ensayos sobre derecho comparado, jurisprudencias relevantes de la Suprema Corte de Justicia de la Nación y Resoluciones de la Corte Interamericana de los Derechos Humanos por lo que este nuevo espacio de interacción intelectual se configura como el evento culminante de la revista que conjuga voces de diversas partes del mundo, en esta ocasión brillantes personalidades del ámbito latinoamericano. Colombia, Chile, Argentina y México tendrán voz para compartir las experiencias más representativas en el ámbito del derecho, la justicia, las instituciones y en general para dialogar sobre la transformación social que nos hace constatar el dinámico ritmo en que evoluciona nuestra querida Latinoamérica.";
+                break;
 
         }
     }

@@ -405,7 +405,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("3A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("3A","17F"));
                 break;
             case 36:
                 this.nombre = "Ana María";
@@ -1063,7 +1063,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("17A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("17A","17F"));
                 break;
             case 108:
                 this.nombre = "Jaime";
@@ -1117,7 +1117,7 @@ public class Ponentes {
                 this.profesion = "";
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("17C"));
+                this.eventos = new ArrayList<String>(Arrays.asList("17C","17F","32F"));
                 break;
             case 114:
                 this.nombre = "Paulina";
@@ -1600,7 +1600,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("19A"));
                 break;
-
+/*
             case 166:
                 this.nombre = "Diego";
                 this.apellidos = "Zavala";
@@ -1610,7 +1610,7 @@ public class Ponentes {
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("19A"));
                 break;
-
+*/
             case 167:
                 this.nombre = "Antonio";
                 this.apellidos = "Ponce";
@@ -2986,6 +2986,655 @@ public class Ponentes {
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("33A"));
+                break;
+            case 319:
+                this.nombre = "Olaf";
+                this.apellidos = "Kaltmeier";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("17B"));
+                break;
+
+            case 320:
+                this.nombre = "Stefan";
+                this.apellidos = "Peters";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("17B"));
+                break;
+            case 321:
+                this.nombre = "Federico";
+                this.apellidos = "Finchelstein";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("17C"));
+                break;
+            case 322:
+                this.nombre = "Ludger";
+                this.apellidos = "Pries";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("17D"));
+                break;
+            case 323:
+                this.nombre = "Eleonora";
+                this.apellidos = "Rohland";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("17D"));
+                break;
+            case 324:
+                this.nombre = "José";
+                this.apellidos = "Gordon";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("17F"));
+                break;
+            case 325:
+                this.nombre = "Ruth";
+                this.apellidos = "Ban";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("32O"));
+                break;
+            case 326:
+                this.nombre = "Elizabeth";
+                this.apellidos = "Flores";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("32P"));
+                break;
+            case 327:
+                this.nombre = "Isabelle";
+                this.apellidos = "Courteau";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("32N"));
+                break;
+            case 328:
+                this.nombre = "Olivia";
+                this.apellidos = "Díaz";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("32Q"));
+                break;
+            case 329:
+                this.nombre = "Janny Amaya";
+                this.apellidos = "Trujillo";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 330:
+                this.nombre = "José Paz";
+                this.apellidos = "López Rivas";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 331:
+                this.nombre = "Isabel Mercado";
+                this.apellidos = "Archila";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 332:
+                this.nombre = "Valentina";
+                this.apellidos = "Arreola Ochoa";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 333:
+                this.nombre = "Ahtziri";
+                this.apellidos = "Molina Roldán";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 334:
+                this.nombre = "Tomás";
+                this.apellidos = "Ejea Mendoza";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 335:
+                this.nombre = "Marco Antonio";
+                this.apellidos = "Chávez Aguayo";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 336:
+                this.nombre = "Luis Gabriel";
+                this.apellidos = "Hernández Valencia";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 337:
+                this.nombre = "José Luis";
+                this.apellidos = "Mariscal Orozco";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 338:
+                this.nombre = "Israel Tonatiuh";
+                this.apellidos = "Lay Arellano";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 339:
+                this.nombre = "Ana Rosa";
+                this.apellidos = "Castellanos Castellanos";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C"));
+                break;
+            case 340:
+                this.nombre = "María Elena";
+                this.apellidos = "Chan Núñez";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21C","21E"));
+                break;
+            case 341:
+                this.nombre = "Rebeca";
+                this.apellidos = "Mateos Morfín";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21D"));
+                break;
+            case 342:
+                this.nombre = "Manuel";
+                this.apellidos = "Moreno Castañeda";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21D"));
+                break;
+            case 343:
+                this.nombre = "Rosana";
+                this.apellidos = "Ruiz Sánchez";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21D"));
+                break;
+            case 344:
+                this.nombre = "Dolores del Carmen";
+                this.apellidos = "Chinas Salazar";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21D"));
+                break;
+            case 345:
+                this.nombre = "Carmen Julia";
+                this.apellidos = "Prudencio González";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21D"));
+                break;
+            case 346:
+                this.nombre = "Miguel";
+                this.apellidos = "Zapata Ros";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E","21G"));
+                break;
+            case 347:
+                this.nombre = "Martín";
+                this.apellidos = "Restrepo";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E","21H"));
+                break;
+            case 348:
+                this.nombre = "Erica";
+                this.apellidos = "Casado";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 349:
+                this.nombre = "Julieta";
+                this.apellidos = "Palma";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 350:
+                this.nombre = "María";
+                this.apellidos = "Flores Briseño";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 351:
+                this.nombre = "Juan de Dios";
+                this.apellidos = "Rodríguez Velázquez";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 352:
+                this.nombre = "Jorge Carlos";
+                this.apellidos = "Sanabria Zepeda";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E","21H"));
+                break;
+            case 353:
+                this.nombre = "Rafael";
+                this.apellidos = "Morales Gamboa";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 354:
+                this.nombre = "Juan Manuel";
+                this.apellidos = "Álvarez";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 355:
+                this.nombre = "María del Carmen";
+                this.apellidos = "Coronado Gallardo";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 356:
+                this.nombre = "Beatriz de la Mora";
+                this.apellidos = "";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 357:
+                this.nombre = "Irving";
+                this.apellidos = "Sánchez";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+            case 358:
+                this.nombre = "Cristopher";
+                this.apellidos = "Pegueros";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+           case 359:
+                this.nombre = "Paulina";
+                this.apellidos = "Ramirez";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+           case 360:
+                this.nombre = "Adrián";
+                this.apellidos = "Orozco Quiñones";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21E"));
+                break;
+           case 361:
+                this.nombre = "José María";
+                this.apellidos = "Antón";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21F","21L"));
+                break;
+           case 362:
+                this.nombre = "José Alberto";
+                this.apellidos = "Becerra Santiago";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 363:
+                this.nombre = "José Manuel";
+                this.apellidos = "Ríos";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 364:
+                this.nombre = "Ignacio Criado";
+                this.apellidos = "Ríos";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 365:
+                this.nombre = "Jorge Alberto";
+                this.apellidos = "Alatorre Flores";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 366:
+                this.nombre = "Roberto";
+                this.apellidos = "Arias de la Mora";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 367:
+                this.nombre = "José Barbosa";
+                this.apellidos = "Corbacho";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 368:
+                this.nombre = "Rafael";
+                this.apellidos = "Vidal Uribe";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 369:
+                this.nombre = "Antonio";
+                this.apellidos = "Gago Huguet";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21G"));
+                break;
+           case 370:
+                this.nombre = "Erik";
+                this.apellidos = "Huesca Morales";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21H"));
+                break;
+           case 371:
+                this.nombre = "Felipe";
+                this.apellidos = "Centeno";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21J"));
+                break;
+           case 372:
+                this.nombre = "Carlos Alberto";
+                this.apellidos = "Guzmán Machuca";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21J"));
+                break;
+           case 373:
+                this.nombre = "Josep María";
+                this.apellidos = "Duart";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21K"));
+                break;
+           case 374:
+                this.nombre = "Alma";
+                this.apellidos = "Rosa de la Selva";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21L"));
+                break;
+           case 375:
+                this.nombre = "Rosario";
+                this.apellidos = "Rogel";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21L"));
+                break;
+           case 376:
+                this.nombre = "Enrique";
+                this.apellidos = "Sánchez Ruiz";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21L"));
+                break;
+           case 377:
+                this.nombre = "Rodolfo";
+                this.apellidos = "Uribe Iniesta";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21L"));
+                break;
+           case 378:
+                this.nombre = "Jesús";
+                this.apellidos = "Galindo Cáceres";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21L"));
+                break;
+           case 379:
+                this.nombre = "Dinorah";
+                this.apellidos = "Miller Flores";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21M"));
+                break;
+           case 380:
+                this.nombre = "Libna Elizabeth";
+                this.apellidos = "Oviedo Castillo";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21M"));
+                break;
+           case 381:
+                this.nombre = "Marcela";
+                this.apellidos = "García Bátiz";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21O"));
+                break;
+           case 382:
+                this.nombre = "Cristina";
+                this.apellidos = "Yoshida";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("21O"));
+                break;
+           case 383:
+                this.nombre = "Tiziano";
+                this.apellidos = "Leoni";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("28C"));
+                break;
+           case 384:
+                this.nombre = "Argelia";
+                this.apellidos = "Castillo";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("28C"));
+                break;
+           case 385:
+                this.nombre = "Jorge Juanes";
+                this.apellidos = "López";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("28C"));
+                break;
+           case 386:
+                this.nombre = "Silvia Patricia";
+                this.apellidos = "López González";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(35));
+                this.eventos = new ArrayList<String>(Arrays.asList(""));
+                break;
+           case 387:
+                this.nombre = "Jorge Eduardo";
+                this.apellidos = "Londoño Ulloa";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("35A"));
+                break;
+           case 388:
+                this.nombre = "Luis";
+                this.apellidos = "Díaz Muller";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("35B"));
+                break;
+           case 389:
+                this.nombre = "Pablo";
+                this.apellidos = "Sánchez Alatorre";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("35C"));
+                break;
+           case 390:
+                this.nombre = "Héctor Julio";
+                this.apellidos = "Prieto Cely";
+                this.universidad = "";
+                this.profesion = "";
+                this.descripcion = "";
+                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
+                this.eventos = new ArrayList<String>(Arrays.asList("35D"));
                 break;
 
         }
