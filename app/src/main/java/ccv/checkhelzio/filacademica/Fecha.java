@@ -140,6 +140,18 @@ public class Fecha implements Parcelable {
             case 23:
                 mSede = new Sedes("Auditorio Salvador Allende, CUCSH", "Calle Guanajuato #1045, Alcalde Barranquita, Artesanos", 20.694322, -103.34933);
                 break;
+            case 24:
+                mSede = new Sedes("Salon 1, Fiesta Americana", "Avenida Providencia entre Avenida las Americas", 20.7025495, -103.3772636);
+                break;
+            case 25:
+                mSede = new Sedes("Salon 2, Fiesta Americana", "Avenida Providencia entre Avenida las Americas", 20.7025495, -103.3772636);
+                break;
+            case 26:
+                mSede = new Sedes("Salon 3, Fiesta Americana", "Avenida Providencia entre Avenida las Americas", 20.7025495, -103.3772636);
+                break;
+            case 27:
+                mSede = new Sedes("Fiesta Americana", "Avenida Providencia entre Avenida las Americas", 20.7025495, -103.3772636);
+                break;
         }
         this.sede = mSede;
     }
