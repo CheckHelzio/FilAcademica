@@ -152,6 +152,9 @@ public class Fecha implements Parcelable {
             case 27:
                 mSede = new Sedes("Fiesta Americana", "Avenida Providencia entre Avenida las Americas", 20.7025495, -103.3772636);
                 break;
+            case 28:
+                mSede = new Sedes("Museo de las Artes de la Universidad de Guadalajara", "Calle Juárez, 975, Colonia Centro", 20.6744152, -103.3589414);
+                break;
         }
         this.sede = mSede;
     }

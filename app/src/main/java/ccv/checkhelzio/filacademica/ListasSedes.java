@@ -17,6 +17,7 @@ public class ListasSedes {
         listaSedes.add(new Sedes("CUCSH Belenes", "Prol. Parres Arias #150, San José del Bajío, Zapopan", 20.7407378, -103.3809367));
         listaSedes.add(new Sedes("Auditorio Tenamaxtle, El Colegio de Jalisco ", "Calle 5 de Mayo #321, Zapopan", 20.7194854, -103.3887629));
         listaSedes.add(new Sedes("Fiesta Americana", "Avenida Providencia entre Avenida las Americas", 20.7025495, -103.3772636));
+        listaSedes.add(new Sedes("Museo de las Artes de la Universidad de Guadalajara", "Calle Juárez, 975, Colonia Centro", 20.6744152, -103.3589414));
     }
 
     public ArrayList<Sedes> getListaSedes(){

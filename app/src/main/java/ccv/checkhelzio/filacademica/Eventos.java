@@ -89,12 +89,13 @@ public class Eventos implements Parcelable {
             case 6:
                 this.titulo = "Diálogo La Unión Europea";
                 this.subtitulo = "¿El fin de un sueño? Terrorismo, migración, derechas y el Brexit";
-                this.descripcion = "";
+                this.descripcion = "Ante los complejos acontecimientos políticos y sociales en Europa, que están formando un nuevo escenario internacional, nace la pregunta sobre si el sueño de la Unión Europea está llegando a su fin. La mesa de diálogo “La Unión Europea: ¿El fin de un sueño? Terrorismo, migración, derechas y el Brexit” tiene como objetivo reflexionar sobre lo que está aconteciendo en Europa a propósito de la ola migratoria, de la crisis de refugiados, del impacto de ISIS, de los ataques terroristas, del resurgimiento de la extrema derecha y el cuestionamiento de la Unión Europea como proyecto, tras la salida del Reino Unido.";
                 break;
             case 7:
-                this.titulo = "Conferencia Magistral";
-                this.subtitulo = "";
-                this.descripcion = "";
+                this.titulo = "Diálogo Magistral entre Pierre Salama y Alexis Saludjian";
+                this.subtitulo = "Relaciones de América Latina";
+                this.descripcion = "La tormenta en América Latina. ¿Hacia dónde se dirigen las economías de la región? Diálogo magistral entre Pierre Salama y Alexis Saludjian\n\n"+
+                        "La mayor parte de los países latinoamericanos están en un cambio de su historia. América Latina entro a principios de los años 2000 en nuevas vulnerabilidades. En las tormentas que atraviesa con más o menos intensidad según los países se dibujan sus futuros.";
                 break;
             //ESTE EVENTO NO SE ENCUENTRA EN EL PROGRAMA DE LA VERSION 25 OCT
             /*
@@ -128,7 +129,8 @@ public class Eventos implements Parcelable {
                 this.titulo = "Comentario al libro No siembro para mí: biografía de Adolfo Ruiz Cortines, de " +
                         "Miguel Alemán Velasco";
                 this.subtitulo = "";
-                this.descripcion = "";
+                this.descripcion = "Miguel Alemán Velasco aborda en este trabajo la biografía de un personaje que precisamente por la serenidad y discreción con la que cumplió su misión, prácticamente pasa inadvertido en la historia: don Adolfo Ruiz Cortines, quien un día observando los tamarindos en la tierra de Iguala, cuna de nuestra independencia y nacionalidad, instó a unos regidores a favorecer la siembra de este árbol, pese a que, como argumentaban éstos, tarda varios años en dar fruto.\n\n" +
+                        "Esta anécdota fue la que sirvíó de base, en el primero de sus informes, para dictar una frase plena de filosofía y sabiduría: No siembro para mí, siembro para México, que es precisamente el apotegma en que fincó su vida pública, como lo podremos analizar en las páginas que contiene este volumen, en el que Alemán Velasco habla también de los principales incidentes de nuestro período revolucionario, donde Ruiz Cortines intervino directamente, alcanzando el grado de mayor en el Ejército Nacional, así como el hecho prácticamente desconocido de que en la tragedia de Aljibes, don Adolfo quedó como responsable de la totalidad del tesoro nacional, el cual entregó mediante acta notarial al gobierno de don Adolfo de la Huerta";
                 break;
             case 14:
                 this.titulo = "Presentación de la Colección Ensayística Liberal";
@@ -184,7 +186,7 @@ public class Eventos implements Parcelable {
                 this.titulo = "XVI Encuentro Internacional sobre Cultura Democrática";
                 this.subtitulo = "Las Encrucijadas Democráticas de América Latina";
                 this.descripcion = "Las coyunturas por las que atraviesan los países y sociedades latinoamericanas, con sus flujos y reflujos políticos, constituyen un punto de partida para reflexionar sobre el presente y el futuro de la democracia en esta región del mundo. Los dilemas no son pocos, recorren la economía, la política y la cultura de conglomerados caracterizados por historias específicas, por la diversidad, la polarización social y la búsqueda de alternativas políticas de naturaleza democrática. \n\n" +
-                        "Con la participación de connotados académicos, este Encuentro tiene por objeto ahondar en el análisis de las tendencias prevalecientes y de los derroteros posibles para la vida democrática en nuestro continente.";
+                        "Con la participación de connotados académicos latinoamericanos, este Encuentro tiene por objeto ahondar en el análisis de las tendencias prevalecientes y de los derroteros posibles para la vida democrática en nuestro continente.";
                 break;
             case 23:
                 this.titulo = "IX Foro Internacional Interdisciplinario de Investigaciones Filológicas";
@@ -219,7 +221,7 @@ public class Eventos implements Parcelable {
                 break;
             case 27:
                 this.titulo = "XX  Encuentro Internacional de Juristas";
-                this.subtitulo = "Nuevas tendencias teóricas del derecho";
+                this.subtitulo = "Latinoamérica y las nuevas tendencias del derecho";
                 this.descripcion = "";
                 break;
             case 28:
@@ -246,7 +248,7 @@ public class Eventos implements Parcelable {
             case 32:
                 this.titulo = "XXVI Seminario sobre la Enseñanza de Lenguas Extranjeras";
                 this.subtitulo = "";
-                this.descripcion = "";
+                this.descripcion = "Es a través de las lenguas, como instrumento, que al nombrar la realidad en un afán de aprenderla, la recorta, la divide y la reformula sin cesar creando unidades de distintas dimensiones. Nuestras diferentes posibilidades como sujetos sociales nos determinan en la organización y el funcionamiento de dichas unidades que se convierten en discursos una vez que son atravesadas por el contexto y la situación. Es así que en espacios como el aula, la literatura y la sociedad el discurso se revela como una parte fundamental de campos y quehaceres específicos  tales como la construcción de una ideología,  la creación literaria y la enseñanza-aprendizaje de lenguas extranjeras.";
                 break;
             case 33:
                 this.titulo = "Seminario internacional Las relaciones internacionales de América Latina: tendencias y desafíos";
