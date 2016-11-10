@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="#fff"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:orientation="vertical">
 
         <android.support.v7.widget.AppCompatImageView
@@ -23,7 +23,6 @@
             app:srcCompat="@drawable/ic_map" />
 
         <TextView
-            android:textStyle="bold"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginTop="12dp"
@@ -33,7 +32,8 @@
             android:paddingStart="72dp"
             android:text="@string/label_lugar"
             android:textColor="#121212"
-            android:textSize="@dimen/diez_sp" />
+            android:textSize="@dimen/diez_sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_lugar"
@@ -72,12 +72,12 @@
             android:layout_marginTop="12dp"
             android:background="#00000000"
             android:maxLines="1"
-            android:textStyle="bold"
             android:paddingEnd="56dp"
             android:paddingStart="72dp"
             android:text="@string/label_fecha"
             android:textColor="#121212"
-            android:textSize="@dimen/diez_sp" />
+            android:textSize="@dimen/diez_sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_fecha"
@@ -117,11 +117,11 @@
             android:background="#00000000"
             android:maxLines="1"
             android:paddingEnd="56dp"
-            android:textStyle="bold"
             android:paddingStart="72dp"
             android:text="@string/label_hora"
             android:textColor="#121212"
-            android:textSize="@dimen/diez_sp" />
+            android:textSize="@dimen/diez_sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv_hora"
@@ -141,200 +141,46 @@
     </RelativeLayout>
 
     <HorizontalScrollView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#fff">
+        android:layout_gravity="center"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarSize="2dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbHorizontal="@color/colorAccent"
+        android:scrollbars="horizontal">
 
         <LinearLayout
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
+            android:id="@+id/contenedor_ponentes_mini"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="8dp">
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp">
+                android:visibility="invisible">
 
-                <com.mikhaellopez.circularimageview.CircularImageView
-                    android:id="@+id/imagen"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ponente7"
-                    app:civ_border_color="@color/colorAccent"
-                    app:civ_border_width="0dp"
-                    app:civ_shadow="true"
-                    app:civ_shadow_radius="0" />
+                <View
+                    android:id="@+id/imagen_ponente"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
 
                 <TextView
-                    android:layout_width="56dp"
+                    android:id="@+id/nombre_ponente"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/imagen"
-                    android:layout_alignStart="@+id/imagen"
-                    android:layout_below="@+id/imagen"
+                    android:layout_alignEnd="@+id/imagen_ponente"
+                    android:layout_alignStart="@+id/imagen_ponente"
+                    android:layout_below="@+id/imagen_ponente"
                     android:layout_marginTop="1dp"
-                    android:text="Oscar M."
-                    android:textAlignment="center"
-                    android:textColor="#121212"
                     android:textSize="@dimen/diez_sp" />
 
             </RelativeLayout>
 
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp">
-
-                <com.mikhaellopez.circularimageview.CircularImageView
-                    android:id="@+id/imagen2"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ponente9"
-                    app:civ_border_color="@color/colorAccent"
-                    app:civ_border_width="0dp"
-                    app:civ_shadow="true"
-                    app:civ_shadow_radius="0" />
-
-                <TextView
-                    android:layout_width="56dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/imagen2"
-                    android:layout_alignStart="@+id/imagen2"
-                    android:layout_below="@+id/imagen2"
-                    android:layout_marginTop="1dp"
-                    android:text="Hiram P."
-                    android:textAlignment="center"
-                    android:textColor="#121212"
-                    android:textSize="@dimen/diez_sp" />
-
-            </RelativeLayout>
-
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp">
-
-                <com.mikhaellopez.circularimageview.CircularImageView
-                    android:id="@+id/imagen3"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ponente98"
-                    app:civ_border_color="@color/colorAccent"
-                    app:civ_border_width="0dp"
-                    app:civ_shadow="true"
-                    app:civ_shadow_radius="0" />
-
-                <TextView
-                    android:layout_width="56dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/imagen3"
-                    android:layout_alignStart="@+id/imagen3"
-                    android:layout_below="@+id/imagen3"
-                    android:layout_marginTop="1dp"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:text="Emmanuel C."
-                    android:textAlignment="center"
-                    android:textColor="#121212"
-                    android:textSize="@dimen/diez_sp" />
-
-            </RelativeLayout>
-
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp">
-
-                <com.mikhaellopez.circularimageview.CircularImageView
-                    android:id="@+id/imagen4"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ponente100"
-                    app:civ_border_color="@color/colorAccent"
-                    app:civ_border_width="0dp"
-                    app:civ_shadow="true"
-                    app:civ_shadow_radius="0" />
-
-                <TextView
-                    android:layout_width="56dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/imagen4"
-                    android:layout_alignStart="@+id/imagen4"
-                    android:layout_below="@+id/imagen4"
-                    android:layout_marginTop="1dp"
-                    android:text="Jair P."
-                    android:textAlignment="center"
-                    android:textColor="#121212"
-                    android:textSize="@dimen/diez_sp" />
-
-            </RelativeLayout>
-
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp">
-
-                <com.mikhaellopez.circularimageview.CircularImageView
-                    android:id="@+id/imagen5"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ponente250"
-                    app:civ_border_color="@color/colorAccent"
-                    app:civ_border_width="0dp"
-                    app:civ_shadow="true"
-                    app:civ_shadow_radius="0" />
-
-                <TextView
-                    android:layout_width="56dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/imagen5"
-                    android:layout_alignStart="@+id/imagen5"
-                    android:layout_below="@+id/imagen5"
-                    android:layout_marginTop="1dp"
-                    android:text="Luis M."
-                    android:textAlignment="center"
-                    android:textColor="#121212"
-                    android:textSize="@dimen/diez_sp" />
-
-            </RelativeLayout>
-
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp">
-
-                <com.mikhaellopez.circularimageview.CircularImageView
-                    android:id="@+id/imagen5"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ponente119"
-                    app:civ_border_color="@color/colorAccent"
-                    app:civ_border_width="0dp"
-                    app:civ_shadow="true"
-                    app:civ_shadow_radius="0" />
-
-                <TextView
-                    android:layout_width="56dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/imagen5"
-                    android:layout_alignStart="@+id/imagen5"
-                    android:layout_below="@+id/imagen5"
-                    android:layout_marginTop="1dp"
-                    android:text="Luis M."
-                    android:textAlignment="center"
-                    android:textColor="#121212"
-                    android:textSize="@dimen/diez_sp" />
-
-            </RelativeLayout>
         </LinearLayout>
     </HorizontalScrollView>
 

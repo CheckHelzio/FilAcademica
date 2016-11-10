@@ -1,75 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:elevation="8dp"
-        android:id="@+id/indicador"
-        android:textColor="#fff"
-        android:gravity="center"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
         android:background="@color/colorPrimary"
-        android:layout_alignParentTop="true"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"/>
+        android:elevation="8dp">
 
-    <android.support.v4.view.ViewPager
-        android:layout_below="@+id/indicador"
-        android:background="@color/colorAccent"
-        android:layout_above="@+id/botonera"
-        android:id="@+id/pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <LinearLayout
-        android:elevation="8dp"
-        android:id="@+id/botonera"
-        android:weightSum="4"
-        android:orientation="horizontal"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/indicador"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#fff" />
 
         <ImageView
-            android:clickable="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:padding="6dp"
             android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:elevation="9dp"
+            android:tint="#fff"
+            app:srcCompat="@drawable/ic_menu" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botonera"
+        android:layout_below="@+id/indicador"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/botonera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageView
             android:id="@+id/bt_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
             android:padding="10dp"
             android:tint="#fff"
-            app:srcCompat="@drawable/ic_info"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            app:srcCompat="@drawable/ic_info" />
 
         <ImageView
             android:id="@+id/bt_fechas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
             android:clickable="true"
-            android:background="?android:selectableItemBackgroundBorderless"
             android:padding="10dp"
             android:tint="#fff"
-            app:srcCompat="@drawable/ic_fechas"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            app:srcCompat="@drawable/ic_fechas" />
 
         <ImageView
+            android:id="@+id/bt_coordinadores"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:background="?android:selectableItemBackgroundBorderless"
             android:padding="10dp"
             android:tint="#fff"
-            app:srcCompat="@drawable/ic_organizador"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            app:srcCompat="@drawable/ic_organizador" />
 
         <ImageView
+            android:id="@+id/bt_ponentes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:background="?android:selectableItemBackgroundBorderless"
             android:padding="10dp"
             android:tint="#fff"
-            app:srcCompat="@drawable/ponencias"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            app:srcCompat="@drawable/ponencias" />
     </LinearLayout>
 </RelativeLayout>

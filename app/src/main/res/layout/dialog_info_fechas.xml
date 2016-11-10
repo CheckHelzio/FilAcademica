@@ -38,7 +38,7 @@
                     android:layout_alignBottom="@+id/tv_titulo_evento"
                     android:layout_alignTop="@+id/tv_titulo_evento"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/textura_evento_der" />
+                    app:srcCompat="@drawable/textura_evento_izq" />
 
                 <android.support.v7.widget.AppCompatImageView
                     android:layout_width="wrap_content"
@@ -68,29 +68,41 @@
 
             </RelativeLayout>
 
-            <android.support.v4.view.ViewPager
+            <include
+                android:id="@+id/i"
+                layout="@layout/fechas_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@+id/h"
+                android:visibility="invisible" />
+
+            <android.support.v4.view.ViewPager
                 android:id="@+id/pagerFechas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/i"
+                android:layout_alignTop="@+id/i" />
 
             <ccv.checkhelzio.filacademica.InkPageIndicator
+                android:layout_marginTop="8dp"
                 android:id="@+id/indicador_fechas"
-                android:layout_below="@+id/pagerFechas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/i"
+                app:currentPageIndicatorColor="@color/colorPrimary"
+                app:pageIndicatorColor="#80ca4941"/>
 
             <TextView
-                android:layout_below="@+id/indicador_fechas"
-                android:background="@color/colorPrimary"
-                android:padding="8dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#fff"
-                android:text="Ponentes de esta sesión"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:layout_below="@+id/i"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:text="Ponentes de esta sesión"
+                android:textColor="#fff"
+                android:textStyle="bold" />
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>

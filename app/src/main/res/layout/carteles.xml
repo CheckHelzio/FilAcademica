@@ -3,14 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <ImageView
+        android:scaleType="center"
         android:id="@+id/iv_cartel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/carte_generico" />
-
+        android:layout_height="match_parent"/>
 
     <TextView
         android:id="@+id/titulo"

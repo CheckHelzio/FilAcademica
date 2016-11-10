@@ -14,8 +14,7 @@ public class ListaEventos {
 
     //FUNCION PARA REGRESAR TODOS LOS PONENTES
     public ArrayList<Eventos> getEventos() {
-        listaEventos = new ArrayList<Eventos>();
-        listaF = new ArrayList<Fecha>();
+        listaEventos = new ArrayList<>();
 
         // CODIGO DE MUESTRA PARA REGISTRAR UN EVENTO
         listaEventos.add(new Eventos(
@@ -24,10 +23,10 @@ public class ListaEventos {
                 // LISTA DE FECHAS...
                 crearFechas(
                         new Fecha("A", 6, "27/11/16", "17:00", "17:40"),
-                        new Fecha("B",6, "27/11/16", "17:45", "18:30"),
-                        new Fecha("C",6, "27/11/16", "18:35", "19:20"),
-                        new Fecha("D",6, "27/11/16", "19:25", "20:05"),
-                        new Fecha("E",6, "27/11/16", "20:10", "20:50")
+                        new Fecha("B", 6, "27/11/16", "17:45", "18:30"),
+                        new Fecha("C", 6, "27/11/16", "18:35", "19:20"),
+                        new Fecha("D", 6, "27/11/16", "19:25", "20:05"),
+                        new Fecha("E", 6, "27/11/16", "20:10", "20:50")
                 )
         ));
         listaEventos.add(new Eventos(
@@ -152,7 +151,7 @@ public class ListaEventos {
                         new Fecha("A", 7, "27/11/16", "19:00", "20:50")
                 )
         ));
-        /////////////////////////////////
+        /*
         listaEventos.add(new Eventos(
                 //ID DEL EVENTO
                 31,
@@ -161,7 +160,7 @@ public class ListaEventos {
                         new Fecha("A", 4, "03/12/16", "10:00", "10:50"),
                         new Fecha("B", 4, "03/12/16", "11:00", "11:50")
                 )
-        ));
+        ));*/
         listaEventos.add(new Eventos(
                 //ID DEL EVENTO
                 15,
@@ -442,6 +441,7 @@ public class ListaEventos {
     }
 
     private ArrayList<Fecha> crearFechas(Fecha... datos){
+        listaF = new ArrayList<>();
         Collections.addAll(listaF, datos);
         return listaF;
     }
