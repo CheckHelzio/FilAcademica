@@ -430,6 +430,14 @@ public class ListaEventos {
                         new Fecha("F", 23, "01/12/16", "13:00", "14:00")
                 )
         ));
+        listaEventos.add(new Eventos(
+                //ID DEL EVENTO
+                36,
+                // LISTA DE FECHAS...
+                crearFechas(
+                        new Fecha("A", 16, "29/11/16", "10:00", "14:00")
+                )
+        ));
         return listaEventos;
     }
 
