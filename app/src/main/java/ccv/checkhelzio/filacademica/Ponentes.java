@@ -148,7 +148,7 @@ public class Ponentes {
                 this.apellidos = "Insulza";
                 this.universidad = "";
                 this.profesion = "Representante de Chile en la Haya";
-                this.descripcion = "";
+                this.descripcion = "Ex Secretario General de la Organización de los Estados Americanos (OEA) del año 2005 al 2015; político chileno que ocupó los cargos de Ministro del Interior de Chile entre el año 2000 y 2005, así como el de Ministro de Relaciones Exteriores de Chile desde 1994 a 1999. Insulza fue también Director del Instituto de Estudios de Estados Unidos en el Centro de Investigación y Docencia Económicas (CIDE).";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("1C", "16A"));
                 break;
@@ -166,7 +166,7 @@ public class Ponentes {
                 this.apellidos = "Rojas";
                 this.universidad = "";
                 this.profesion = "Historiador y ensayista cubano";
-                this.descripcion = "";
+                this.descripcion = "Profesor Investigador del CIDE en la División de Historia Internacional. Es Doctor en Historia por el Colegio de México, su línea de investigación se desarrolla en estudios de Historia intelectual y política de América Latina; Rojas es ganador del Premio de Ensayo Isabel de Polanco, coorganizado por la Fundación Santillana y la FIL Guadalajara.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("1C"));
                 break;
@@ -917,7 +917,7 @@ public class Ponentes {
                 this.universidad = "";
                 this.profesion = "(Unión Europea) " +
                         "Organización Internacional para las Migraciones";
-                this.descripcion = "";
+                this.descripcion = "Es especialista de la Organización Internacional para las Migraciones (OIM) en temas sobre la migración laboral, integración, migración y  desarrollo. Actualmente se desempeña en la oficina para Centro América de la OIM, organismo en el cual ha participado en la Unión Europea, Noruega y Suiza. Estuvo a cargo de la Red Independiente de la OIM para la Migración Laboral y Expertos en Integración (LINET), y publicó una serie de estudios comparativos sobre diversos aspectos del desarrollo de la política de migración y de integración de los inmigrantes en el mercado laboral. Antes de unirse a la OIM, trabajó en temas de libertad de movimiento en la Oficina de Instituciones Democráticas y Derechos Humanos de la Organización para la Seguridad y la Cooperación en Europa (OSCE ODIHR). ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("15A"));
                 break;
@@ -927,7 +927,8 @@ public class Ponentes {
                 this.apellidos = "Rigoni";
                 this.universidad = "";
                 this.profesion = "Activista de los Derechos de los Migrantes";
-                this.descripcion = "";
+                this.descripcion = "Es Maestro en Filosofía y Teología en la Universidad Gregoriana de Roma. Reconocido como de Hombre del año 2006 por su labor en la defensa de los Derechos humanos, y premio Quetzalcóatl 2009 por el mismo motivo. Su labor humanitaria por los migrantes lo ha llevado a fundar casas del Migrante en la ciudad de Tijuana, donde fundó la primera Casa del Migrante Scalabrini, la Casa del Migrante en Ciudad Juárez. Trabajó en África para la Agencia de las Naciones Unidas para los Refugiados (ACNUR) en Mozambique y Angola. \n" +
+                        "En 1998 fundó la Casa del Migrante Scalabrini en Tapachula, Chiapas, que dirige desde entonces brindando alojamiento a migrantes, solicitantes de asilo y refugiados. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("15A"));
                 break;
@@ -937,7 +938,7 @@ public class Ponentes {
                 this.apellidos = "O´Neill";
                 this.universidad = "";
                 this.profesion = "Defensora de los Derechos Humanos";
-                this.descripcion = "";
+                this.descripcion = "Maestra en Comunicación y en Estudios del Desarrollo por la Universidad de la Ciudad de Dublín y Doctora en Ciencias Sociales por la Universidad Nacional de Honduras, actualmente es Consultora para América Central del Fondo para los Derechos Humanos Mundiales. Tiene más de treinta años de experiencia trabajando en la cooperación y el desarrollo, fue Directora Regional de Trocaire para América Latina, con sede en Honduras, supervisando el trabajo de esta asociación humanitaria Irlandesa en siete países de América Latina y el Caribe.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("15A"));
                 break;
@@ -945,18 +946,20 @@ public class Ponentes {
             case 93:
                 this.nombre = "Benedetto";
                 this.apellidos = "Giuntini";
-                this.universidad = "";
+                this.universidad = "Universidad de Florencia";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Estudió Ciencia Política en la Universidad de Florencia, es miembro del Servicio Exterior Italiano desde 2001, donde fue asignado al sur de Asia, Tanzania, y Washington trabajando en un amplio rango de asuntos bilaterales. Desde 2013 trabaja en la División de Políticas Migratorias del Ministerio de Relaciones Exteriores, a cargo de la unidad de asilo y la protección internacional.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("15A"));
                 break;
             case 94:
                 this.nombre = "Carlos";
-                this.apellidos = "García de Alba";
-                this.universidad = "";
+                this.apellidos = "García de Alba Zepeda";
+                this.universidad = "Universidad de Roma";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Doctor en Sociología en la Universidad de Roma, Italia. Cónsul de México en Los Ángeles, California. \n" +
+                        "Diplomático de carrera en la Secretaría de Relaciones Exteriores desde 1987, alcanzando el rango de Embajador a partir de abril del 2006.\n" +
+                        "Fue Director Ejecutivo del Instituto de los Mexicanos en el Exterior y Director General de Relaciones Internacionales de la Secretaría de Educación Pública.  Ex Presidente del Comité Académico en la Comisión México Estados Unidos para el Intercambio Educativo y Cultural (COMEXUS). Fue encargado de Negocios a.i. de México ante la Organización de Cooperación y Desarrollo Económico (OCDE). ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("15A"));
                 break;
@@ -992,7 +995,7 @@ public class Ponentes {
                 this.apellidos = "Durand";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es Profesor Investigador en el Departamento de Estudios sobre Movimientos Sociales de la Universidad de Guadalajara. Doctor en Geografía y Ordenamiento Territorial por la Universidad de Toulouise-Le Mirail, Francia; se ha distinguido por sus aportes en la investigación del proceso migratorio entre México y Estados Unidos. Durand es miembro de la Academia de Ciencias de Estados Unidos.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("16B"));
                 break;
@@ -1001,7 +1004,7 @@ public class Ponentes {
                 this.apellidos = "Wolf";
                 this.universidad = "";
                 this.profesion = "(CIDE, Aguascalientes) – Crimen organizado";
-                this.descripcion = "";
+                this.descripcion = "Es profesora Investigadora en el Programa de Política de Drogas en el CIDE, Región Centro. Doctora en Política Internacional por la Universidad de Aberystwyth; experta en el estudio de política de drogas en México y Centroamérica.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("16B"));
                 break;
@@ -1010,7 +1013,7 @@ public class Ponentes {
                 this.apellidos = "Segovia";
                 this.universidad = "";
                 this.profesion = "(INCIDE, El Salvador) – Economía";
-                this.descripcion = "";
+                this.descripcion = "Es Doctor en Economía por la Universidad de Londres y actualmente es Presidente del Instituto Centroamericano de Investigaciones para el Desarrollo y el Cambio Social; experto en temas económicos de América Latina.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("16B"));
                 break;
@@ -1019,7 +1022,7 @@ public class Ponentes {
                 this.apellidos = "Mantilla";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Profesor Investigador Titular de la División de Estudios Internacionales del CIDE. Doctor en Ciencia Política por la Universidad de Minnesota, su trabajo académico se enfoca principalmente al estudio del Derecho internacional humanitario y los derechos humanos. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("16C"));
                 break;
@@ -1028,7 +1031,7 @@ public class Ponentes {
                 this.apellidos = "Rodrigues";
                 this.universidad = "";
                 this.profesion = "(INCIDE, El Salvador) – Economía";
-                this.descripcion = "";
+                this.descripcion = "Jefe del Departamento de Estudios Estratégicos y Relaciones Internacionales de la Universidad de la Universidad Federal Fluminense. Doctor en Ciencias Sociales por la Pontificia Universidad Católica de Sao Paulo; especialista en temas de seguridad internacional, conflicto y narcotráfico.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("16C"));
                 break;
@@ -1037,7 +1040,7 @@ public class Ponentes {
                 this.apellidos = "Legler";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Director de Investigación y profesor titular en el Departamento de Estudios Internacionales de la Universidad Iberoamericana. Doctor en Ciencia Política por la Universidad de York; especialista en Relaciones Internacionales de América Latina.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("16C"));
                 break;
@@ -1046,7 +1049,7 @@ public class Ponentes {
                 this.apellidos = "Schamis";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Profesor en el Centro de Estudios Latinoamericanos y en el programa “Democracy & Governance” de la Universidad de Georgetown. Doctor en Ciencia Política por la Universidad de Columbia; experto en temas de economía política y democratización en América Latina y Europa.  Schamis es además columnista de el periódico español El País.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("16C"));
                 break;
@@ -2154,7 +2157,7 @@ public class Ponentes {
             case 217:
                 this.nombre = "María Antonia";
                 this.apellidos = "Chávez";
-                this.universidad = "";
+                this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
                 this.descripcion = "Profesora investigadora del Departamento de Desarrollo Social de la Universidad de Guadalajara. Profesora del Diplomado Derechos de los niños en ITESO";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
@@ -2172,9 +2175,18 @@ public class Ponentes {
             case 219:
                 this.nombre = "Mariana";
                 this.apellidos = "Espeleta Olivera";
-                this.universidad = "";
+                this.universidad = "ITESO";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Labora como académica en el Centro de Investigación y Formación Social del ITESO, imparte la clase de Teoría de género y prácticas sexuales, y forma parte de la Red de Género de esta misma universidad. Anteriormente ha impartido clases en temas relacionados con globalización, derecho internacional de las mujeres, género y movimiento social, y Derechos Humanos.\n" +
+                        "Es doctora (2015) en Ciudadanía y Derechos Humanos, en el área de “Género, diferencia y alteridad”,  por la Facultad de Filosofía de la Universidad de Barcelona, estudió el Máster de Estudios de mujeres, género y ciudadanía (2009-2011) en esta misma Universidad, una maestría en Derechos Humanos por la Universidad Internacional de Andalucía (2005); es licenciada en Derecho por el Instituto Tecnológico de Estudios Superiores de Occidente (ITESO, 1999).\n" +
+                        "Su tesis doctoral tiene como tema las estrategias de resistencia de las mujeres subalternas en México, desde una perspectiva gramsciana, y fue dirigida por la Dra. Fina Birulés (UB) y por la Dra. Beatriz Ferrús (UAB). Ha sido becaria MAEC-AECID y CONACYT (México). Sus publicaciones e intereses académicos giran en torno a los movimientos sociales de mujeres, su relación con el feminismo, las posibilidades de agencia política de las mujeres y las estrategias de emancipación.\n" +
+                        "Forma parte del “Seminari Filosofia i Gènere” de la UB,  y del Grupo de Investigación “Creació i Pensament de les Dones”, de esta misma universidad.\n" +
+                        "\n" +
+                        "\n" +
+                        "Lic. Martha Lucía Micher Camarena (Diputada Federal PRD)\n" +
+                        "Política mexicana, de Izquierda, que ha sido Diputada Federal en dos ocasiones.\n" +
+                        "Es Licenciada en Pedagogía egresada de la Universidad Panamericana, ha participado en varias organizaciones de izquierda y lucha por la igualdad de la mujer, entre ellas varias organizadas por la Internacional Socialista en representación del PRD e integrante de la delegación mexicana a la Conferencia Mundial de la Mujer celebrada en Pekín, China, también ha sido Secretaria de la Mujer en el Comité Ejecutivo Nacional del PRD.\n" +
+                        "Candidata a gobernadora de Guanajuato en 1995. Del 2000 al 2002 fue Secretaria de la Mujer del Comité Ejecutivo Nacional del PRD. En 2003 fue electa diputada plurinominal a la LIX Legislatura. En el 2006 fue nombrada Directora General del Instituto de las Mujeres del Distrito Federal.\n";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("24D"));
                 break;
@@ -2243,10 +2255,10 @@ public class Ponentes {
                 break;
             case 227:
                 this.nombre = "Jaime";
-                this.apellidos = "Olveda";
+                this.apellidos = "Olveda Legaspi";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Originario de Yahualica, Jalisco, realizó estudios de abogacía y un doctorado en Historia por la UNAM. Autor de diversos libros, capítulos, artículos, reseñas, ponencias y obras de carácter histórico-cultural; miembro del Colegio de Jalisco y catedrático de la Universidad de Guadalajara, ha participado como miembro en diversos comités editoriales. Es Investigador Nacional Nivel II del Sistema Nacional de Investigadores, desde 1988 a la fecha. Ha sido acreedor a diversos premios como el Banamex “Atanasio G. Saravia” de Historia Regional Mexicana 1997 por la mejor Tesis Doctoral; Presea “Prisciliano Sánchez” otorgada por el Instituto de Estudios del Federalismo del Gobierno del Estado de Jalisco, en 2003; Presea Enrique Díaz de León, Edición 2006";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("25A"));
                 break;
@@ -2255,16 +2267,16 @@ public class Ponentes {
                 this.apellidos = "Williamson";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Edwin Williamson titular de la Cátedra Rey Alfonso XIII de español en Oxford; ha sido profesor de la universidad de Exeter desde 2003. Anteriormente fue profesor de Estudios Hispánicos de la Universidad de Edimburgo, y ha ocupado cargos académicos en el Trinity College, Dublín, y Birkbeck College, Universidad de Londres. Ha sido profesor visitante en la Universidad de Stanford, California, y en la Universidad de Sao Paulo, Brasil. Sus investigaciones y práctica docente reflejan sus intereses sobre América Latina y la Edad de Oro de España. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("25B"));
                 break;
             case 229:
                 this.nombre = "Silvestre";
                 this.apellidos = "Villegas Revueltas";
-                this.universidad = "";
+                this.universidad = "Facultad de Ciencias Políticas y Sociales";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Profesor de la asignatura Estado y sociedad en México, licenciatura en Ciencias Políticas y Administración Pública, Facultad de Ciencias Políticas y Sociales, UNAM. Profesor del Seminario Historia de Texas, 1880-1920, Posgrado en Historia, UNAM. Tutor del Posgrado en Historia, UNAM. Tutor del Posgrado en Arquitectura, UNAM. Autor de varias obras entre las que destaca: Deuda y diplomacia. La relación México-Gran Bretaña 1824-1884, México, Universidad Nacional Autónoma de México, Instituto de Investigaciones Históricas, 2005. Miembro del Sistema Nacional de Investigadores. Sus líneas de investigación giran en torno al estudio de las tendencias políticas en la segunda mitad del siglo XIX mexicano, al análisis de las relaciones diplomáticas de México con la Gran Bretaña y a la condición de los mexicano-americanos en Texas (1880-1920).";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("25B"));
                 break;
@@ -2280,9 +2292,10 @@ public class Ponentes {
             case 231:
                 this.nombre = "Pedro";
                 this.apellidos = "Castro Martinez";
-                this.universidad = "";
+                this.universidad = "Universidad Autónoma Metropolitana";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Profesor-Investigador en la Unidad Iztapalapa de la Universidad Autónoma Metropolitana.\n" +
+                        "Área de Ciencia Política. Responsable de las materias: Análisis de las Relaciones Internacionales I y II. Principales líneas de investigación son: Historia Política de México, biografías políticas, procesos políticos de México y de su política exterior. Miembro del Sistema Nacional de Investigadores (SNI), Nivel III. En 2010 obtuvo el Premio Francisco Javier Clavijero de Investigación, otorgado por el Instituto Nacional de Antropología e Historia (INAH), por el libro Álvaro Obregón: fuego y cenizas de la Revolución Mexicana.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("25C"));
                 break;
@@ -2291,7 +2304,7 @@ public class Ponentes {
                 this.apellidos = "López Vega";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Profesor de Historia Contemporánea de la Universidad Complutense de Madrid; fue Director de la Fundación Gregorio Marañón,  Subdirector del Instituto Universitario Ortega y Gasset Actualmente dirige la publicación \"El Pulso de España\" de Metroscopia, think tank español que hace estudios sociales para instituciones como el diario El País. En su trayectoria docente ha sido también profesor en la Universidad Carlos III de Madrid y ha sido Visiting Scholar con la categoría de Senior Member Associated del St. Antony's College de la Universidad de Oxford donde trabajó sobre \"1914: El año que cambió la historia\", que ha sido objeto de su último libro. Su trayectoria investigadora fue reconocida con el Premio “Julián Marías” de Humanidades de la Comunidad de Madrid en su edición de 2012. Entre otros reconocimientos es miembro correspondiente de la Sociedad Peruana de la Historia.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("25C"));
                 break;
@@ -2334,9 +2347,9 @@ public class Ponentes {
             case 237:
                 this.nombre = "Kim";
                 this.apellidos = "Diaz";
-                this.universidad = "";
+                this.universidad = "Universidad de Texas";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Kim es profesora visitante en la University of Texas at El Paso. Sus áreas de espacialidad son filosofía social y política, pragmatismo norteamericano  y filosofía latinoamericana. Entre sus artículos publicados están: \"U.S. Border Wall: A Poggean Analysis of Illegal Immigration\"  y  \"Mexican Immigration Scenarios Based on the South African Experience of Ending Apartheid. Además, ha realizado las entradas sobre \"Latin American Identity,\" \"Flores Magón Brothers,\" \"Lukumi Babalu Aye,\" \"Santeria,\" \"José Vasconcelos,\" y \"La Raza”, en la Encyclopedia of Latino and Latina History de 2015. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("26A"));
                 break;
@@ -2345,7 +2358,7 @@ public class Ponentes {
                 this.apellidos = "Rey";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Santiago Rey es doctor en filosofía por la New School for Social Research y profesor en la Universidad El Bosque y la Universidad de los Andes en Bogotá, Colombia. Su disertación doctoral “Words made Flesh. A Stereoscopic Account of Conceptual Praxis” fue reconocida con el Hans Jonas Award in Philosophy y está siendo preparada para su publicación. Su trabajo gira en torno a la hermenéutica filosófica y el pragmatismo americano (tanto en su vertiente clásica como contemporánea), buscando posibles puntos de intersección entre tradiciones filosóficas que usualmente se presentan como antagónicas. Ha publicado artículos sobre estos temas, y recientemente realizó la traducción del libro “Violence: Thinking without Banisters” de Richard J. Bernstein para la editorial Gedisa. Actualmente prepara la traducción del último libro de Bernstein “Pragmatic Encounters”, también para editorial Gedisa, y trabaja en el proyecto de edición de las obras completas del filósofo colombiano Carlos B. Gutiérrez. Hace parte del grupo de investigación “Normas y justificación” de la Universidad El Bosque.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("26A"));
                 break;
@@ -2354,7 +2367,7 @@ public class Ponentes {
                 this.apellidos = "Ortega Esquivel";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Aureliano es doctor en Filosofía por la UNAM. Actualmente es profesor-investigador de tiempo completo en la Universidad de Guanajuato; ha sido profesor e investigador en instituciones privadas (Enciclopedia de México) y públicas (Escuela Nacional de Restauración SEP-INAH; Facultad de Ciencias Políticas, Escuela Nacional de Artes Plásticas, UNAM). Ha publicado ensayos sobre cultura, política y sociedad en revistas universitarias y suplementos culturales y políticos, y artículos sobre filosofía e historia en revistas especializadas. Entre sus libros se cuentan: Juan Diego; Notas sobre la cultura mexicana (1979); El instante de Emilio Uranga (1993); Los grandes problemas nacionales 1995; Las tareas filosóficas del presente (1999); Crisis de la razón histórica y Hacia la nada. Ensayo de interpretación histórica (2000), Ideas, políticas e historias del humanismo en Guanajuato (2001) y Contribución a la crítica de la razón histórica (2004). La ceguera del Cíclope. En sayos sobre historia y ciencia. (2009) e Historiografía e identidad y otros ensayos sobre la filosofía de la historia mexicana. (2009).";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("26A"));
                 break;
@@ -2372,7 +2385,7 @@ public class Ponentes {
                 this.apellidos = "Becerra Ramírez";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es profesor investigador de la Universidad de Guadalajara, miembro del Sistema Nacional de Investigadores. Cuenta con estudios de Licenciatura y maestría en Derecho por la Universidad de Guadalajara, maestro y doctor en Derechos Humanos por el Instituto de Derechos Humanos “Bartolomé de las Casas” de la Universidad Carlos III de Madrid y la especialidad en justicia constitucional por la Universidad de Pisa. Autor de diversas publicaciones nacionales e internacionales en temas de derechos humanos, entre los que destacan los libros: El constitucionalismo ante los instrumentos internacionales de derechos fundamentales, Ubijus-Ara, México-Perú, 2012 y El constitucionalismo ante el control de convencionalidad su debate actual, México, Porrúa, 2015. Fue Director del Instituto de Investigación y Capacitación en Derechos Humanos en la Comisión Estatal de Derechos Humanos Jalisco, México. Actualmente Director de la División de Estudios Jurídicos en el Centro Universitario de Ciencias Sociales y Humanidades de la Universidad de Guadalajara.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(27));
                 this.eventos = new ArrayList<String>(Arrays.asList("27A"));
                 break;
@@ -2381,7 +2394,15 @@ public class Ponentes {
                 this.apellidos = "Castellanos González";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Doctor en Derecho Fiscal por la Universidad Nacional Autónoma de México. Abogado por la Universidad de Guadalajara. Profesor en la División de Estudios Jurídicos del Centro Universitario de Ciencias Sociales y Humanidades de la Universidad de Guadalajara, impartiendo cátedra en la Coordinación del Posgrado en Derecho.\n\n" +
+                        "Ha sido funcionario público en los niveles de gobierno municipal, estatal y federal, destacando el cargo de Subadministrador de la Administración Local Jurídica de Ingresos de Zapopan del SAT, Director de Finanzas del Fovissste, y Consejero Presidente del Instituto Electoral del Estado de Jalisco.\n" +
+                        "Actualmente funge como Delegado federal de la Secretaría de Educación Pública en el Estado de Jalisco.\n" +
+                        "Igualmente se ha desempeñado como litigante en las materias de derecho administrativo, fiscal y amparo.\n" +
+                        "Como docente ha impartido cátedra de licenciatura en la Universidad de Guadalajara, en las Divisiones de Estudios Jurídicos y en la de Estudios Políticos; asimismo ha sido maestro en el Instituto Tecnológico y de Estudios Superiores de Monterrey, Campus Guadalajara.\n" +
+                        "A nivel posgrado su labor docente se ha desarrollado en la Universidad de Guadalajara en las maestrías en Gestión Pública; en la de Derecho y en el Colegio de Jalisco en la maestría en Gobierno y Administración Pública Estatal y Municipal. Igualmente fue maestro en el Doctorado Interinstitucional en Derecho de la Universidad de Guadalajara, y en el Doctorado de Estudios Fiscales del CUCEA de la misma Universidad.\n" +
+                        "En la investigación sus campos de estudio abarcan los temas referentes a Teoría de la Constitución, Derechos Humanos, Doble y Múltiple Tributación Internacional; la armonización y la coordinación fiscal entre niveles de gobierno, y los procedimientos de defensa administrativa del gobernado.\n" +
+                        "Ha publicado en diversas revistas especializadas y obras de difusión jurídica.\n" +
+                        "Ha sido conferencista en innumerables ocasiones en organismos públicos y privados.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(27));
                 this.eventos = new ArrayList<String>(Arrays.asList("27A"));
                 break;
@@ -2433,9 +2454,9 @@ public class Ponentes {
             case 248:
                 this.nombre = "Luiz";
                 this.apellidos = "Flávio Gomes";
-                this.universidad = "";
+                this.universidad = "Universidad Complutense de Madrid";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Luiz Flávio Gomes es profesor y jurista doctor en derecho por la Universidad Complutense de Madrid maestría en derecho penal por la USP. Director presidente del Instituto avante Brasil fue delegado promotor de justicia, juez, y abogado formo parte como experto de la 10ª reunión de la ONU para la prevención del delito y tratamiento del delincuente, cuenta con más de 1000 ponencias a nivel internacional es profesor honorífico la Universidad Católica de Santa María Arequipa Perú,  profesor en la facultad de derecho de la Universidad austral de Buenos Aires. Forma parte del Consejo de Editorial de la revista letras jurídicas revista electrónica de la ciénega, tiene más de 100 artículos científicos en materia penal y más de 50 libros en materia de derecho penal, criminología, procesal penal, victimología.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("27C"));
                 break;
@@ -2488,26 +2509,26 @@ public class Ponentes {
                 this.nombre = "Alejandro";
                 this.apellidos = "Sánchez Cortés";
                 this.universidad = "";
-                this.profesion = "";
-                this.descripcion = "";
+                this.profesion = "Periodista Cultural.";
+                this.descripcion = "Licenciado en artes y maestrante en Historia y Crítica del arte. Realizó estudios de Periodismo Cultural con los maestros Hugo Gutiérrez Vega, Humberto Musacchio, Braulio Peralta y Héctor Perea. Especialista en Documental Cinematográfico por el CUEC-UNAM., Director del Foro de Periodismo Cultural en la FIL Guadalajara, Miembro del Comité de selección de cine documental en el Festival Internacional de Cine en Guadalajara. Director de EXPRESIONES La Revista, Director del Seminario Internacional de Crítica de Arte. Director de Letras en la Mar Encuentro Internacional de Poetas y el Arte en Puerto Vallarta, Jalisco. Director de la Cátedra Hugo Gutiérrez Vega de Periodismo Cultural y las Letras de Universidad de Guadalajara. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(28));
                 this.eventos = new ArrayList<String>(Arrays.asList("28C"));
                 break;
             case 255:
                 this.nombre = "Viktor";
                 this.apellidos = "Boga";
-                this.universidad = "";
+                this.universidad = "Universidad Nacional Autónoma de México";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Maestro en Literatura, con especialidad en Letras de Jalisco, por la Secretaría de Educación Jalisco y la Secretaría de Cultura del Gobierno de Jalisco, con el tema de tesis El erotismo en la poesía de Hugo Gutiérrez Vega. Además es productor y director de cine. Realizó estudios de cine en el Departamento de Imagen y Sonido de la Universidad de Guadalajara, es Diplomado en Cine documental por la Universidad Nacional Autónoma de México. Es director de Cinematógrafo Arte Audiovisual donde promueve y fomenta la creación de públicos en el área documental a través del programa DOCUMENTArte una mirada al cine documental con sede en el Festival Internacional de Cine de Guadalajara. Actualmente, es Secretario de la Cátedra Hugo Gutiérrez Vega de la Universidad de Guadalajara. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(28));
                 this.eventos = new ArrayList<String>(Arrays.asList("28C"));
                 break;
             case 256:
                 this.nombre = "José Luis";
-                this.apellidos = "Barrios";
-                this.universidad = "";
+                this.apellidos = "Barrios Lara";
+                this.universidad = "Universidad Iberoamericana";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Filósofo e historiador del arte, es profesor investigador de tiempo completo de la Universidad Iberoamericana, Ciudad de México, profesor en la Facultad de Filosofía y Letras de la Universidad Nacional Autónoma de México. Curador asociado del Museo Universitario Arte Contemporáneo (MuAC). Tiene publicado nueve libros y más de cincuenta artículos en revistas especializadas de arte y crítica cultural. Sus últimos libros son: Máquinas, dispositivos y agenciamientos, arte, afecto y representación. México, Universidad Iberoamericana, 2015, Melanie Smith. Fordlandia, .México: Ramón Reverte, 2014; Atrocitas fascinans. Imagen, horror, deseo México: Conejo Blanco/UIA, 2010. El cuerpo disuelto. Lo colosal y lo monstruoso. México: Universidad Iberoamericana, 2010. Esta por aparece su último libro Lengua herida y crítica del presente. México: Fractal, 2016. Sus áreas de investigación y docencia son la estética, la teoría crítica del la cultura y el arte y la cultura visual de contemporáneas. Ha realizado curadurías para el Museo Nacional de Arte, para el Museo Universitario de Artes y Ciencias, el Museo de Arte Carrillo Gil, el Museo Universitario Arte Contemporáneo. Fue curador del Pabellón de México para la 54ª. Bienal de Venecia, Junio-Octubre 2011. Su más recientes curadurías son Automatismos. Rafael Lozano-Hemmer en co-curaduría con Alejandra Labastida para Museo de Arte Contemporáneo de la UNAN, El derrumbe de la estatua para MUAC y Una habitación. Fragilidades sobre el exterior para el Laboratorio de Arte Alameda Fue asesor académico para el Pabellón de México en la 56º.Bienal de Venecia. Es investigador nacional nivel II.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("28A", "28C"));
                 break;
@@ -2523,18 +2544,18 @@ public class Ponentes {
             case 258:
                 this.nombre = "Daniel";
                 this.apellidos = "Montero Fayad";
-                this.universidad = "";
+                this.universidad = "UNAM";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es Investigador del Instituto de Investigaciones Estéticas de la UNAM. Es Doctor en Historia del Arte por la Universidad Nacional Autónoma de México. Ha sido docente en varias instituciones de educación superior como la UNAM y la Universidad Nacional de Colombia. Ha participado en diferentes proyectos de curaduría y promoción cultural en Colombia y México. Fue Curador Académico del MUAC. Además, ha publicado reseñas y textos en revistas y catálogos de arte contemporáneo colombiano, mexicano y norteamericano. Su investigación está dirigida a entender el arte en relación a la política y a la economía en un contexto de globalización y de neoliberalismo. Es autor del libro El Cubo de Rubik: arte mexicano en los años 90. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("28C"));
                 break;
             case 259:
                 this.nombre = "Hariet";
                 this.apellidos = "Quint";
-                this.universidad = "";
+                this.universidad = "Universidad de Bucarest, Rumania";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Estudió filología germánica en la Universidad de Bucarest, Rumania. En 1986  obtuvo la beca DAAD que otorga el gobierno alemán y estudió un semestre en la Universidad de Freiburg, Alemania. En el 2005 obtuvo el grado de Maestra por la Universidad de Guadalajara, México. Es profesora investigadora titular en el Departamento de Estudios Literarios de la Universidad de Guadalajara y Coordina del Taller de Traducción del mismo departamento. En el 2007, por un semestre, fue profesora huésped en la Universidad de Zagreb, Croacia. Publicó el ensayo Tiempo y espacio histórico en El Perfume de Patrick Süskind (Cálamo, 2000), Un acercamiento pragmático al apodo burlesco (UDG, 2007) y tradujo del alemán el libro de Christine Schulz-Reis Filosofía. Conocimiento básico para el diálogo (Arlequín, 2007). En su investigación actualmente muestra interés por los orígenes del mestizaje durante la conquista de México.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(29));
                 this.eventos = new ArrayList<String>(Arrays.asList("29A", "29I", "29X"));
                 break;
@@ -2550,9 +2571,9 @@ public class Ponentes {
             case 261:
                 this.nombre = "Jorge";
                 this.apellidos = "Souza Jauffred";
-                this.universidad = "";
+                this.universidad = "UNAM";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es poeta y doctor en Lingüística por la UNAM nacido en Guadalajara. Se desempeña como profesor investigador en el Centro de Investigaciones Filológicas de la Universidad de Guadalajara desde hace más de 20 años y ha obtenido diversos premios y reconocimientos por su obra poética. Fue director de Literatura del gobierno de Jalisco de 2004 a 2013. Es autor de doce poemarios y ocho libros de ensayo y antologías. Actualmente coordina la Maestría en Letras de Jalisco.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29B"));
                 break;
@@ -2561,52 +2582,56 @@ public class Ponentes {
                 this.apellidos = "Hernández Araico";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es originaria de Ensenada, Baja California; doctorado de UCLA; especialista en teatro barroco (principalmente de Calderón y de Sor Juana); Profesora Emérita de California State Polytechnic University, Pomona; profesora visitante en universidades de EE.UU., Canadá y España. Ha sido presidenta  de la Modern Language Association  del Pacífico, directora del Instituto de Verano de Lenguas y Cultura Hispánicas de UCSB, y vicepresidente en Norteamérica de la Asociación Internacional de Teatro Español y Novohispano de los Siglos de Oro.Ha publicado numerosos ensayos y reseñas en revistas prestigiosas y dictado conferencias en congresos y universidades en  Canadá, Europa, Estados Unidos e Hispanoamérica. Participa en consejos editoriales de revistas importantes en su campo de investigación  y en mesas directivas de organizaciones culturales de la ciudad de Los Angeles, California";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29C"));
                 break;
             case 263:
                 this.nombre = "Tanius";
                 this.apellidos = "Karam";
-                this.universidad = "";
+                this.universidad = "Universidad Complutense de Madrid";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es integrante de UC-Mexicanista. Doctor en ciencias de la información por la Universidad Complutense de Madrid. Miembro del sistema nacional de investigadores. A nivel nacional ha impartido cursos, charlas así como cursos en pregrado y postgrado en más de 20 universidades mexicanas. Sus áreas de trabajo son las teoría de comunicación, los estudios del discurso y semiótica aplicado a los medios masivos y algunas prácticas socio-culturales como la música popular.\n" +
+                        "Entre sus publicaciones están *Música, ciudad y subjetividad*. 2015; *Discurso y comunicación* (e-book), 2014; *Trova Yucateca como experiencia de recepción y consumo cultural en las familias yucatecas*, entre varios títulos.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29D"));
                 break;
             case 264:
                 this.nombre = "Sara";
                 this.apellidos = "Poot Herrera";
-                this.universidad = "";
+                this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es egresada de la Facultad de Filosofía y Letras de la Universidad de Guadalajara y doctora en literatura hispánica por El Colegio de México. Es profesora investigadora del Departamento de Español y Portugués de la Universidad de California, Santa Bárbara. Sus áreas de especialización e interés son la literatura hispanoamericana colonial (especialmente Sor Juana Inés de la Cruz y el teatro novohispano) y la literatura mexicana contemporánea (especialmente la narrativa de los siglos XX y XXI). Es cofundadora y Directora de UC-Mexicanistas (Intercampus Research Program [asociación de investigación del sistema Universidad de California dedicada a estudios sobre historia, cultura y literatura mexicanas]).";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29E"));
                 break;
             case 265:
                 this.nombre = "Patricia";
                 this.apellidos = "Córdova Abundis";
-                this.universidad = "";
+                this.universidad = "Universidad de Córdoba, España";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Realizó estudios de doctorado en la Universidad de Córdoba, España. En el año 2000 su tesis doctoral fue publicada por el Instituto Nacional de Estudios Históricos de la Revolución Mexicana. Posteriormente publicó Habla y sociedad (2003). Participó como autora en el libro Análisis del discurso: raza y género (2003).  Ambos publicados por la Universidad de Guadalajara. Coordinó el libro Textos y argumentos (2008) publicado por la Universidad Veracruzana. Ha publicado artículos, entre otros, en las revistas: Oralia, Tonos Digital y Signos. Sus  líneas de investigación han sido el análisis sociolingüístico de textos literarios y textos de habla, género y lengua, análisis conversacional y análisis del discurso.  Ha sido profesora en la Universidad de Guadalajara por más de quince años. De 2008 a 2010 impartió cursos como profesora invitada en la Universidad de Texas, en Austin. De 2010 a 2013 participó como instructora en lengua y literatura hispana, acreditada por College Board, en el proyecto Knwoledge is Power Program en la ciudad de Austin, Texas. Actualmente es Jefa del Departamento de Letras de la Universidad de Guadalajara.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29E", "29M"));
                 break;
             case 266:
-                this.nombre = "Gabriel";
+                this.nombre = "Gabriel Guillermo";
                 this.apellidos = "Gómez López";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Nació el 25 marzo de 1947. Es Médico Cirujano y Partero en Facultad de Medicina en la UdeG. (1964-70) con postgrado en Pediatría Médica. Obtuvo la  el grado de Maestro por haber cursado la Maestría en literaturas del Siglo XX en el Departamento de Estudios Literarios de la UdeG en donde labora como investigador.\n" +
+                        "Profesor en el CUSCH de la UdeG. donde ha impartido en las cátedras de Introducción al estudio de las religiones, Literatura de Ciencia Ficción, Literatura Europea, literatura latinoamericana, literatura de Asia y África y literatura Norteamericana y del Canadá. Sus publicaciones son: ”Acercamientos a Olga Orozco” (colaborador) UdeG, “Con la punta de su arpón” ed. Alfaguara y “Quetzalcóatl, un acercamiento al mito” en Literatura en diálogo”, UdG 2010 y la novela: El ojo de Dios, publicada bajo el seudónimo de Guillermo Tessel, bajo el sello de la editorial Planeta en 2015.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29F"));
                 break;
             case 267:
-                this.nombre = "Celina";
+                this.nombre = "Lourdes Celina";
                 this.apellidos = "Vázquez Parada";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es Doctora en Letras y Maestra en Sociología política por la Universidad de Guadalajara. Licenciada en Ciencia Política por la Universidad Autónoma Metropllitana-Iztapalapa.\n" +
+                        "Actualmente labora como Profesora-Investigadora del Departamento de Estudios Literarios de la UdeG y es Coordinadora del Cuerpo Académico en consolidación Cultura, Religión y Sociedad. Fue cofundadora del Centro de Estudios religión y Sociedad y directora de 1998 a 2008.\n" +
+                        "Autora, coautora y coordinadora de 16 libros, entre ellos: La guerra cristera. Narrativa, testimonios y propaganda (2012); Testimonios sobre la revolución cristera. Hacia una hermenéutica de la conciencia histórica (2000);  Identidad, cultura y religión en el sur de Jalisco (1996). En coautoría con Wolfgang Vogt El judaismo y la literatura occidental (2013); en coautoría con Federico Munguía, protagonistas y testigos de la guerra cristera (2004); en coautoría con Darío Flores, Mujeres jaliscienses del siglo XIX. Cultura, religión y vida privada (2010); en coautoría con Wolfgang Vogt, La recepción de la cultura europea en el pensamiento de Juan José Arreola (2006). Actualmente tiene en prensa el libro: Que besa su mano... correspondencia de mujeres a religiosos franciscanos en el siglo XIX. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29G"));
                 break;
@@ -2622,9 +2647,9 @@ public class Ponentes {
             case 269:
                 this.nombre = "Teresa";
                 this.apellidos = "González Arce";
-                this.universidad = "";
+                this.universidad = "Universidad Paul Valéry (Francia)";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es doctora en Estudios Románicos por la Universidad Paul Valéry (Francia). Es autora de El aprendizaje de la mirada. La experiencia hermenéutica en Antonio Muñoz Molina  (CUCSH, 2005),  Libro de los miradores. Ensayos sobre narrativa española contemporánea (Universidad de Guanajuato/ UdeG, 2010), y de los libros colectivos Tras la noche. Estudios de Literatura española contemporánea (UdeG, 2006) y Triunfar de la vejez y del olvido. Miradas sobre el retrato literario en la España contemporánea (Arlequín, 2013). Como ensayista, ha sido antologada en El hacha puesta en la raíz. Ensayistas mexicanos para el siglo XXI, coordinado por Verónica Murguía y Geney Beltrán (Tierra Adentro, 2006) y ha publicado el libro Días hábiles (UNAM, 2012). Es profesora investigadora titular del Departamento de Estudios Literarios de la Universidad de Guadalajara y miembro del Sistema Nacional de Investigadores.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29H", "29V"));
                 break;
@@ -2640,9 +2665,14 @@ public class Ponentes {
             case 271:
                 this.nombre = "Hernán";
                 this.apellidos = "Horna";
-                this.universidad = "";
+                this.universidad = "Universidad Vanderbilt";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Obtuvo su grado de Doctor en Universidad Vanderbilt en 1970. Es Coordinador del Foro para estudios Latinoamericanos en la Universidad de Uppsala, Suecia, donde se desempeña como profesor de historia. Sus publicaciones recientes son:\n" +
+                        "1)”The Latin American Railroads of the XIX Century and the Cases of Peru and Colombia [Chinese],” Studies of Modernization: Theories & Process, Volume 3 (University of Peking, 2005), pp. 337-356. \n" +
+                        "2) “Asiatic Migrations to the Andean Zone [Chinese],” COLLECTED WRITINGS of ASIA-PACIFIC STUDIES, Volume 6 (Peking: Peking University Press, 2009), pp. 140-149. \n" +
+                        "3) La Conquête des Amériques: Vue Par Les Indiens Du Nouveau Monde (Paris: Éditions Demi-Lune, 2009), 213pp. \n" +
+                        "4) A History of Latin America (Uppsala: Acta Universitatis Upsaliensia, 2011), 260 pp.\n" +
+                        "5) A People’s History of Latin America (Princeton NJ: Markus Wiener Publishers, 2014), 330 pp. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29J"));
                 break;
@@ -2651,7 +2681,9 @@ public class Ponentes {
                 this.apellidos = "Aronsson";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Doctora en Antropología Cultural, con especialidades en reasentamiento y desarrollo, por la Universidad de Uppsala, Suecia. Su tesis se titula Negotiating Involuntary Resettlement: a study of local bargaining during the construction of the Zimapán dam (2002). Desde 2005 y hasta la actualidad se desempeña como profesora universitaria e investigadora en el Departamento de Archivo, Biblioteca y Museo por la Universidad de Uppsala. Sus campos de investigación, de una perspectiva interdisciplinaria, son reasentamiento y negociaciones, patrimonio, memorias y reconciliación en áreas de post-conflictos.\n" +
+                        "Sus últimos artículos científicos publicados son “Heritage as Life Value: a critical investigation of the heritage concept” (2016) (coautor Johan Josefsson) y “El Ambivalente Concepto de Patrimonio” (2013)  (en Sueco). Además, es editora de un libro sobre género en museos (2009) que se usa como manual en varios cursos de patrimonio en diferentes universidades en Suecia. Aparte de escribir, se ha dedicado a desarrollar unos de los más populares cursos en su departamento que atrae estudiantes de toda Europa. \n" +
+                        "Es miembro del Foro de Estudios Latinoamericanos de la Universidad de Uppsala, y del Colegio del Instituto de Investigación de Suecia en Estambul, Turquía. Entre (2006-2011) fue directora de la NOHA (Network on Humanitarian Action), una red universitaria importante de la Unión Europea. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29K"));
                 break;
@@ -2667,36 +2699,41 @@ public class Ponentes {
             case 274:
                 this.nombre = "Gerardo";
                 this.apellidos = "Gutiérrez Cham";
-                this.universidad = "";
+                this.universidad = "Universidad Autónoma de Madrid";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es doctor en Análisis del Discurso por la Universidad Autónoma de Madrid. Ha publicado los siguientes títulos de investigación en Análisis del Discurso: Teoría del discurso (2003), La rebelión zapatista en el diario El País (2004), Fernando del Paso. Vértigos del cuerpo, rupturas de la historia (2013). En colaboración: Representación y racismo (2004), Discurso, raza y género (2007), Textos y Argumentos (2008), De política lingüística y análisis del discurso. Como narrador ha publicado las novelas: Viaje a los Olivos (1998), Bajo la niebla de París (2005), Snapshot (2012) y El hombre higiénico (2013). Pertenece al Sistema Nacional de Investigadores. Imparte cursos de Análisis del Discurso y Teoría Literaria. Actualmente es profesor e investigador de tiempo completo en la Universidad de Guadalajara. Acaba de regresar de una estancia académica de un año en la Universidad de Bielefeld, Alemania.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29L"));
                 break;
             case 275:
                 this.nombre = "Blanca Estela";
                 this.apellidos = "Ruiz Zaragoza";
-                this.universidad = "";
+                this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es Doctora en Letras por la Universidad de Guadalajara. Profesora-Investigadora Titular, con perfil PROMEP, del Departamento de Estudios Literarios y miembro del Cuerpo Académico en Consolidación Literaturas Comparadas. Tiene bajo su adscripción los proyectos de estudio “Estrategias lúdicas y humorísticas del discurso literario”, “LA TREMENDA CORTE, un caso de lingüisticidio” y “Metodología de la investigación literaria y el análisis de sus textos”. Es autora de un libro de investigación y crítica sobre el escritor jalisciense Fernando Calderón.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29M", "29V"));
                 break;
             case 276:
-                this.nombre = "Jorge";
+                this.nombre = "Jorge Martín";
                 this.apellidos = "Gómez Bocanegra";
-                this.universidad = "";
+                this.universidad = "Universidad de Córdoba";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Estudió música en la Universidad de Guadalajara, y en esta misma casa de estudios realizó sus estudios de Licenciatura en Letras Hispanoamericanas.\n" +
+                        "En la Universidad de Córdoba, en Córdoba, España, obtuvo el grado de Doctor en Filología Hispánica.\n" +
+                        "\tComo Lecturer, trabajó en la Universidad de Texas en Austin, Texas (Agosto 2010-Mayo 2014). Ha sido Profesor del Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO), de la Universidad del Valle de Atemajac (UNIVA), y de la Universidad de Guadalajara (U de G). Actualmente es Profesor Investigador del Departamento de Filosofía del Centro Universitario de Ciencias Sociales y Humanidades (CUCSH) de la Universidad de Guadalajara. \n" +
+                        "\tHa publicado textos académicos como: Análisis Crítico del Discurso: Raza y Género. Universidad de Guadalajara (2006); Fundamentos para el análisis del discurso político. Universidad de Guadalajara (2008). Tiene, además, numerosas publicaciones de textos de creación y ha sido antalogado en varias publicaciones.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29N"));
                 break;
             case 277:
                 this.nombre = "Leonardo";
-                this.apellidos = "Rossiello";
+                this.apellidos = "Rossiello Ramírez";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Nació en Montevideo, Uruguay, en 1953 y reside en Suecia, país del que es ciudadano, desde 1978. Es Doctor en Filosofía y Letras, con especialidad en Literatura en Lengua Española por la Universidad de Gotemburgo, Suecia (1990), y Docent (Associate professor, 1997). Desde 1995 y hasta la actualidad se desempeña como investigador y profesor universitario en la Universidad de Uppsala. Sus campos de investigación son Romanticismo, Narrativa contemporánea de Hispanoamérica, Literatura Colonial y Siglo de Oro.\n" +
+                        "Es miembro del comité científico de varias revistas, Miembro Correspondiente de la Academia Norteamericana de la Lengua Española y presidente del Foro de Estudios Latinoamericanos de la Universidad de Uppsala.\n" +
+                        "Es autor de libros de investigación y de más de una treintena de artículos científicos publicados, así como de novelas, colecciones de cuentos y poemarios publicados en editoriales nacionales e internacionales. Y ha recibido varios premios y reconocimientos, entre otros el Premio Narradores de la Banda Oriental (1992); La maison de l´Amérique Latine en Francia, en el Premio Juan Rulfo de cuentos (1996), el primer premio del Ministerio de Educación y Cultura de Uruguay en Ensayo y en Narrativa (1990, 1996 y 2000) así como el Premio de Novela Breve Álvaro Cepeda Samudio, en Colombia, en 2003. ";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29O"));
                 break;
@@ -2713,19 +2750,19 @@ public class Ponentes {
             case 279:
                 this.nombre = "María Mercedes";
                 this.apellidos = "Galván Dávila";
-                this.universidad = "";
+                this.universidad = "Escuela Normal Superior de Jalisco";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Estudió en la Escuela Normal Superior de Jalisco la licenciatura en Educación media en la especialidad de Español;  la licenciatura en Letras, en el Centro Universitario de Ciencias Sociales y Humanidades de la Universidad de Guadalajara.; la Maestría en Literaturas del siglo XX, en el Departamento de Estudios Literarios de la mencionada institución. Desde 1992 , trabaja en el Departamento de Estudios Literarios de la Universidad de Guadalajara. Es miembro de la Academia de materias Teórico Prácticas del departamento de Letras, donde imparte La Redacción y su didáctica, y Redacción de textos académicos y científicos; forma parte del Cuerpo Académico en formación 419 del departamento de Estudios Literarios. Escribe ensayo y ha colaborado y producido video educativo para los niveles de Educación Media y Superior.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29P", "29R"));
                 break;
 
             case 280:
                 this.nombre = "Raúl";
-                this.apellidos = "Aceves";
-                this.universidad = "";
+                this.apellidos = "Aceves Lozano";
+                this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Nació en Guadalajara en 1951. Es Licenciado en psicología por el ITESO, profesor investigador del Departamento de Estudios Literarios, de la Universidad de Guadalajara desde 1988. Es autor de libros de poesía, cuentos y minificciones, aforismos, ensayo literario, antologías, diccionarios y  traducciones diversas.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29Q"));
                 break;
@@ -2750,9 +2787,9 @@ public class Ponentes {
             case 283:
                 this.nombre = "Luis";
                 this.apellidos = "Martín Ulloa";
-                this.universidad = "";
+                this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Doctor en Letras por la Universidad de Guadalajara, donde trabaja actualmente como profesor e investigador. Ha coordinado talleres literarios desde 1990. Tiene un libro de cuentos titulado Damas y caballeros. Desarrolla las investigaciones \"Narradores mexicanos contemporáneos\" y \"La homosexualidad en la narrativa mexicana del siglo XX\". Ha publicado textos académicos y de ficción en diversas publicaciones nacionales e internacionales. Parte de su obra ha sido traducida al croata.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29U"));
                 break;
@@ -2761,25 +2798,27 @@ public class Ponentes {
                 this.apellidos = "Castillo";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Trabaja en el Departamento de Estudios Literarios de la Universidad de Guadalajara como profesor investigador donde ha realizado los siguientes trabajos de investigación: La máquina del instante de formulación poética (UdG- CONACYT, 2001)  -libro-CD con juego interactivo y libro juego de mesa-, primer lugar en 2008 en el “Premio Universidad Complutense de Madrid-Microsoft, Literaturas en español del texto al hipermedia”.\n" +
+                        " La hendidura obstruida. El poeta como personaje en la obra de ficción contemporánea (inédito como conjunto, pero en gran parte publicado en libros colectivos y revistas). Actualmente realiza una investigación en torno a los diferentes formatos y géneros poéticos que las nuevas tecnologías vienen produciendo en el en el siglo XXI. Dirigió “El caramillo y el fauno”, colección de CD de audio producida por la UdG de 1992 a 1994. La serie compuesta por tres discos recoge diferentes ensambles de poesía y música.  \n" +
+                        "Ha publicado también diez títulos de poesía, algunos de ellos incluyen diferentes exploraciones dentro de dichos formatos y géneros poéticos emergentes: un par de discos de audio, la elaboración de varios performances y así como algunos registros en video.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29W"));
                 break;
             case 285:
                 this.nombre = "Marco Aurelio";
                 this.apellidos = "Larios";
-                this.universidad = "";
+                this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Es Doctor en Filosofía por la Universidad de Viena, Austria. Actualmente es profesor investigador en el Departamento de Estudios Literarios e imparte cátedra en la Licenciatura de Letras Hispánicas de la Universidad de Guadalajara, y es coordinador del Doctorado en Humanidades del Centro Universitario de Ciencias Sociales y Humanidades. Como autor literario obtuvo el Premio Nacional Juan Rulfo para Primera Novela 1998, otorgado por el Instituto Nacional de Bellas Artes por su novela El cangrejo de Beethoven. Tiene, además, los libros de ficción La música y otras razones para contar (1994);  Erato. Ars amatoria en Guadalajara (1998); y La oportunidad y otros relatos (2007).  Obtuvo el Premio Nacional de Historia Edmundo O’Gorman 2011 otorgado por el Instituto Nacional de Antropología e Historia por su ensayo sobre novela histórica Utilización de la historia en la narrativa (2010). Actualmente es Coordinador del Doctorado en Humanidades, de nuestra casa de estudios.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29X"));
                 break;
             case 286:
                 this.nombre = "Carmen Beatriz";
-                this.apellidos = "López Portillo";
+                this.apellidos = "López Portillo Romano";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Licenciada en Derecho. Es miembro del Consejo Consultivo para el Rescate del Centro Histórico; Fundadora de la Sociedad Mexicana de Bibliófilos e integrante también del grupo de investigadores convocado por la Universidad de California y del International Women Forum (IWF). Ha impartido clases en México, dictado conferencias y participado en mesas redondas en distintas universidades del país y el extranjero. Coordinó el libro Sor Juana y su mundo, Memorias del Congreso Internacional, coedición de la UCSJ, FCE y UNEXCO. Desde 1991 trabaja en la Universidad del Claustro de Sor Juana de la que actualmente es Rectora, promoviendo la investigación y difusión de la vida y obra de Sor Juana, el conocimiento del arte, la cultura y la gastronomía de México y el rescate del ex Convento de San Jerónimo, espacio en el que vivió la Décima Musa.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29Y"));
                 break;
@@ -2804,9 +2843,9 @@ public class Ponentes {
             case 289:
                 this.nombre = "Luis Antonio";
                 this.apellidos = "Medina Gutiérrez";
-                this.universidad = "";
+                this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Nació en Guadalajara, en 1962. Realizó estudios superiores (Licenciatura y Maestría) en la Universidad de Guadalajara. Fue instructor de natación, guardavidas y secretario del Cuerpo Oficial de Guardavidas. Entre los reconocimientos obtenidos destacan el Premio de Poesía Joven “Elías Nandino” 1989, el Premio de Poesía “Ramón López Velarde” 1994, el Premio de Poesía de Tijuana, 1998, y el Premio de Ensayo Malcom Lowry, 2003. Tiene publicado los libros de poemas: Albercas con cielo caído (1991), Una isla desde la ventana (1994), Héroes (1995), Lapidación del mar (1996), Aura de la estatua (1998). Y el libro de ensayo Destierro mítico mexicano y destierro catalán: Quetzalcíoatl y Agustí Bartra (2004). Es profesor investigador y Jefe del Departamento de Estudios Literarios de la Universidad de Guadalajara.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29Z"));
                 break;
@@ -3757,9 +3796,9 @@ public class Ponentes {
             case 394:
                 this.nombre = "David";
                 this.apellidos = "Velasco";
-                this.universidad = "";
+                this.universidad = "UNAM";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Ambrosio obtuvo la licenciatura en Ciencia Política por la UNAM, una Maestría en Filosofía de la Ciencia en la Universidad Autónoma Metropolitana-Iztapalapa y otra Maestría en Ciencia Política (Master of Arts) en la Universidad de Minnesota y el Doctorado en el área de Historia y Filosofía de la Teoría Política en 1991, también en la Universidad de Minnesota. Forma parte del personal académico de la UNAM, desde 1976. Durante más de 33 años ha combinado la docencia y la investigación en las áreas de epistemología, filosofía de la ciencia y filosofía política en varias dependencias de la UNAM. Ha sido profesor invitado en varias Universidades de México, Argentina y España. Sus participaciones en congresos, mesas redondas y simposios nacionales e internacionales suman más de 250. En 1994 obtuvo el Premio Distinción Universidad Nacional para Jóvenes Académicos en el Área de Docencia en Humanidades. Es Investigador Titular C en el Instituto de Investigaciones Filosóficas de la UNAM, Investigador Nacional Nivel III.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("22D"));
                 break;

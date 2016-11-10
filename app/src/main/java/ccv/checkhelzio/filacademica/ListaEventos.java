@@ -153,6 +153,7 @@ public class ListaEventos {
                 )
         ));
         /////////////////////////////////
+        /*
         listaEventos.add(new Eventos(
                 //ID DEL EVENTO
                 31,
@@ -162,6 +163,7 @@ public class ListaEventos {
                         new Fecha("B", 4, "03/12/16", "11:00", "11:50")
                 )
         ));
+        */
         listaEventos.add(new Eventos(
                 //ID DEL EVENTO
                 15,
