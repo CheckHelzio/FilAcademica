@@ -28,12 +28,14 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
     private ArrayList<Eventos> listaEventos;
     @BindView(R.id.indicador) TextView indicador;
     @BindView(R.id.bt_fechas) ImageView bt_fechas;
+    @BindView(R.id.bt_coordinadores) ImageView bt_coordinadores;
+    @BindView(R.id.bt_ponentes) ImageView bt_ponentes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         fullScreencall();
-        setContentView(R.layout.actividades);
+        setContentView(R.layout.actividades_super);
         ButterKnife.bind(this);
 
         iniciarPager();
@@ -49,6 +51,8 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
     private void setListenners() {
         iv_info.setOnClickListener(this);
         bt_fechas.setOnClickListener(this);
+        bt_coordinadores.setOnClickListener(this);
+        bt_ponentes.setOnClickListener(this);
     }
 
     private void iniciarObjetos() {
@@ -75,7 +79,6 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
         }
     }
 
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -100,6 +103,26 @@ public class Actividades extends AppCompatActivity implements View.OnClickListen
                 break;
             case R.id.bt_fechas:
                 i = new Intent (Actividades.this, InfoFechasDialog.class);
+                i.putExtra("ACTIVIDAD", listaEventos.get(viewPager.getCurrentItem()));
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+                    startActivity(i, bundle);
+                }else {
+                    startActivity(i);
+                }
+                break;
+            case R.id.bt_coordinadores:
+                i = new Intent (Actividades.this, InfoCoordinadoresDialog.class);
+                i.putExtra("ACTIVIDAD", listaEventos.get(viewPager.getCurrentItem()));
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                    bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+                    startActivity(i, bundle);
+                }else {
+                    startActivity(i);
+                }
+                break;
+            case R.id.bt_ponentes:
+                i = new Intent (Actividades.this, InfoPonentesDialog.class);
                 i.putExtra("ACTIVIDAD", listaEventos.get(viewPager.getCurrentItem()));
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();

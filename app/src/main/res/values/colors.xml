@@ -5,6 +5,7 @@
     <color name="colorAccent">#009999</color>
     <color name="colorBlanco">#ffffff</color>
     <color name="transparente">#00000000</color>
+    <color name="semitransparente">#99323232</color>
 
     <color name="page_indicator_dark">#80ffffff</color>
     <color name="page_indicator_dark_selected">#fff</color>

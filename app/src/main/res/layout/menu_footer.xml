@@ -38,7 +38,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:padding="14dp"
+        android:padding="13dp"
         android:tint="#fff"
         app:srcCompat="@drawable/fil_academica" />
 
