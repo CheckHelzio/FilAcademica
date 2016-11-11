@@ -1083,7 +1083,7 @@ public class Ponentes {
             case 108:
                 this.nombre = "Jaime Antonio";
                 this.apellidos = "Preciado Coronado";
-                this.universidad = "";
+                this.universidad = "ITESO";
                 this.profesion = "";
                 this.descripcion = "Doctor en Estudios Latinoamericanos con especialidad en Geografía y Ordenación Territorial, por la Universidad de Paris III. Profesor-Investigador del Departamento de Estudios Ibéricos y Latinoamericanos en la Universidad de Guadalajara. Fundador  del Centro de Estudios Latinoamericanos por invitación de Manuel Rodríguez Lapuente, y el Centro de Estudios Ibéricos y Latinoamericanos.\n\n" +
                         "Fue becario del gobierno francés entre 1985 y 1991 y logró mención honorífica en las tesis de maestría y de doctorado. Entre otros reconocimientos ha recibido estímulos a la docencia y al desempeño académico en la U de G, desde 1989. Es miembro del Grupo de Liderazgo Académico: Democracia e Integración en América Latina, desde 1997 a la fecha. Así como miembro del Sistema Nacional de Investigadores, Nivel 2, desde 1992. Fue galardonado con el premio “Cátedra México” (2010), otorgado por la Universidad de Toulouse, Francia y por el Consejo Europeo de Investigaciones sobre América Latina (CEISAL). Entre sus obras se encuentra como coordinador del Número doble del Anuario de la Integración Latinoamericana y Caribeña 2006-2007 (2010). Además de Las elecciones estadounidenses de cara a las Américas, (2009), en coedición con Ignacio Medina.";
@@ -1103,11 +1103,8 @@ public class Ponentes {
             case 110:
                 this.nombre = "Federicho";
                 this.apellidos = "Finchelstein";
-                this.universidad = "";
+                this.universidad = "The New School for Social Research";
                 this.profesion = "";
-                this.descripcion = "";
-                this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("17A"));
                 break;
             case 111:
                 this.nombre = "Rolando";
@@ -1208,7 +1205,14 @@ public class Ponentes {
                 this.apellidos = "Chatillon";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Nacido en Nicolet, Quebec, en 1939, estudió literatura  en la Universidad “Sorbonne”, Paris, Francia.  \n" +
+                        "De 1968 a 1996 enseñó en la Universidad de Quebec en Trois-Rivières donde animó  numerosos talleres de creación literaria. Entre sus obras encontramos poemas, novelas, cuentos, ensayos y su autobiografía titulada  ”Le château de sable”\n" +
+                        "Pierre Chatillon fue finalista en el « Grand Prix » de la ciudad de Montreal en 1969, con “Les cris”, finalista en el “Grand-Prix” de la Ciudad de Montreal, en 1974, con “Le mangeur de neige”, y finalista del « Prix France-Québec », en 1975, con “La mort rousse”. Durante cinco años, se enseñó su novela “Philédor Beausoleil”. en la Universidad de Cork, en Irlanda. También recibió el “Grand Prix” de la ciudad de Trois-Rivières, en 1987, por el  acervo de su obra.  Y en 2000, la sociedad Saint-Jean-Baptiste del Centro de Quebec, le otorgó el premio Lionel-Groulx, también por la compilación de su obra. En 2005, ameritaba el premio Adagio del salón del libro de Trois-Rivières y del premio de Excelencia en Literatura del Consejo de Desarrollo Cultural del Centro de Quebec. \n" +
+                        "Entre sus obras podemos encontrar: \n" +
+                        "-Les fils du feu, essais sur le mythe de Prométhée, les descentes aux enfers, les voyages symboliques sur la mer, Sylvia Plath et Mary Oliver. Montréal, Fondation Fleur de Lys, 2013.\n" +
+                        "-Les cris, poèmes, réédition,  Trois-Rivières, Écrits des Forges, 2013.\n" +
+                        "-Wild Red Love, traduction du roman La mort rousse, par Kathe Roth, Toronto, BookLand Press, 2013.\n" +
+                        "-Los Encantadores, anthologie de poèmes traduits en espagnol, par Silvia Pratt, Écrits des Forges et Mantis editores, Guadalajara, 2014.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("32N"));
                 break;
@@ -1607,7 +1611,7 @@ public class Ponentes {
             case 163:
                 this.nombre = "Guillermo";
                 this.apellidos = "Orozco Gómez";
-                this.universidad = "";
+                this.universidad = "Universidad de Harvard";
                 this.profesion = "";
                 this.descripcion = "Maestro y Doctor en Educación por la Universidad de Harvard. Profesor de la Universidad de Guadalajara, Investigador Nacional Nivel III, Miembro de la Academia Mexicana de Ciencias y Jefe del Departamento de Estudios de la Comunicación Social de la Universidad de Guadalajara.  Especialista en temas de recepción de audiencias y educomunicación. Coordinador General de la Cátedra UNESCO-UdeG sobre Alfabetización Mediática e Informacional; Co-Coordinador Internacional del Observatorio Iberoamericano de Ficción Televisiva (OBITEL) y Coordinador en México del Grupo de Estudios de Recepción de la Asociación Mexicana de Investigadores de la Comunicación (AMIC), de la cual es socio fundador. Última publicación: (Re)invención de géneros y formatos de la ficción televisiva (Globo Universidade, 2016).";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(19));
@@ -1730,6 +1734,7 @@ public class Ponentes {
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("20B"));
+
                 break;
             case 175:
                 this.nombre = "Cármen de la Peza";
@@ -1838,8 +1843,8 @@ public class Ponentes {
                 this.eventos = new ArrayList<String>(Arrays.asList("20H"));
                 break;
             case 186:
-                this.nombre = "Pablo";
-                this.apellidos = "Gentili";
+                this.nombre = "Pablo Antonio";
+                this.apellidos = " Amadeo Gentili";
                 this.universidad = "";
                 this.profesion = "";
                 this.descripcion = "Doctor en Educación en la Universidad de Buenos Aires. Reside en Brasil desde hace más de 20 años, donde es profesor de la Universidad del Estado de Río de Janeiro (UERJ). Actualmente, ejerce como secretario ejecutivo del Consejo Latinoamericano de Ciencias Sociales (CLACSO).\n" +
@@ -2074,20 +2079,20 @@ public class Ponentes {
                 this.apellidos = "Chávez Ramírez";
                 this.universidad = "Universidad de Guadalajara";
                 this.profesion = "";
-                this.descripcion = "Médico Cirujano y Partero por U de G. 1980. Maestría en Salud Pública por U de G. 1986. Maestría en Gestión de la Calidad de los Servicios de Salud. Univ de Murcia, España. 2004. Doctorante de Economía de la Salud. UNED, España 2013. Profesor Investigador Titular C. CUCS-Ude G. Coordinador del Cuerpo Académico 463-UDG \"Calidad y Seguridad de los Servicios de Salud\". Jubilado de la Secretaría de Salud como Médico Especialista. 2012.\n\n" +
-                        "Dr. José Elías García Ortiz\n" +
-                        "Jefe de laboratorio de diagnóstico bioquímico de enfermedades lisosomales en la División de Genética del Centro de Investigación Biomédica de Occidente (CIBO), CMNO-IMSS y miembro del Grupo de Expertos en Enfermedades Lisosomales (GEEL) del IMSS .\n" +
-                        "Médico Cirujano (Facultad de Medicina, Universidad Autónoma de Coahuila – Unidad Torreón); Master y Doctor en Genética Humana, Centro Universitario de Ciencias de la Salud. Universidad de Guadalajara. Estancia postdoctoral en el Laboratory of Genetics, National Institute on Aging, National Institutes of Health, Baltimore, Maryland, USA. Certificado vigente como médico especialista en Genética Humana por el Consejo Mexicano de Genética A.C (2010-2015). Pertenece al Consejo Mexicano de Genética A.C. (vocal), la Asociación Mexicana de Genética Humana (socio), the American Society of Human Genetics (socio) y a la Sociedad Mexicana de Medicina Genómica (socio).\n" +
-                        "Investigador Nivel II en el Sistema Nacional de Investigadores, CONACYT e Investigador Titular A en el IMSS. Ha participado en múltiples congresos y foros nacionales e internacionales. Ha publicado más de 30 artículos indexados en el área de la genética clínica y molecular. Sus principales áreas de interés son el estudio y el diagnóstico de enfermedades raras, particularmente enfermedades lisosomales.";
+                this.descripcion = "Médico Cirujano y Partero por U de G. 1980. Maestría en Salud Pública por U de G. 1986. Maestría en Gestión de la Calidad de los Servicios de Salud. Univ de Murcia, España. 2004. Doctorante de Economía de la Salud. UNED, España 2013. Profesor Investigador Titular C. CUCS-Ude G. Coordinador del Cuerpo Académico 463-UDG \"Calidad y Seguridad de los Servicios de Salud\". Jubilado de la Secretaría de Salud como Médico Especialista. 2012.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("24B"));
                 break;
             case 209:
                 this.nombre = "José Elías";
                 this.apellidos = "García Ortiz";
-                this.universidad = "";
+                this.universidad = "Universidad Autónoma de Coahuila";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Jefe de laboratorio de diagnóstico bioquímico de enfermedades lisosomales en la División de Genética del Centro de Investigación Biomédica de Occidente (CIBO), CMNO-IMSS y miembro del Grupo de Expertos en Enfermedades Lisosomales (GEEL) del IMSS .\n" +
+                        "Médico Cirujano (Facultad de Medicina, Universidad Autónoma de Coahuila – Unidad Torreón); Master y Doctor en Genética Humana, Centro Universitario de Ciencias de la Salud. Universidad de Guadalajara. Estancia postdoctoral en el Laboratory of Genetics, National Institute on Aging, National Institutes of Health, Baltimore, Maryland, USA. Certificado vigente como médico especialista en Genética Humana por el Consejo Mexicano de Genética A.C (2010-2015). Pertenece al Consejo Mexicano de Genética A.C. (vocal), la Asociación Mexicana de Genética Humana (socio), the American Society of Human Genetics (socio) y a la Sociedad Mexicana de Medicina Genómica (socio).\n" +
+                        "\n" +
+                        "\n" +
+                        "Investigador Nivel II en el Sistema Nacional de Investigadores, CONACYT e Investigador Titular A en el IMSS. Ha participado en múltiples congresos y foros nacionales e internacionales. Ha publicado más de 30 artículos indexados en el área de la genética clínica y molecular. Sus principales áreas de interés son el estudio y el diagnóstico de enfermedades raras, particularmente enfermedades lisosomales.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("24B"));
                 break;
@@ -2180,13 +2185,8 @@ public class Ponentes {
                 this.descripcion = "Labora como académica en el Centro de Investigación y Formación Social del ITESO, imparte la clase de Teoría de género y prácticas sexuales, y forma parte de la Red de Género de esta misma universidad. Anteriormente ha impartido clases en temas relacionados con globalización, derecho internacional de las mujeres, género y movimiento social, y Derechos Humanos.\n" +
                         "Es doctora (2015) en Ciudadanía y Derechos Humanos, en el área de “Género, diferencia y alteridad”,  por la Facultad de Filosofía de la Universidad de Barcelona, estudió el Máster de Estudios de mujeres, género y ciudadanía (2009-2011) en esta misma Universidad, una maestría en Derechos Humanos por la Universidad Internacional de Andalucía (2005); es licenciada en Derecho por el Instituto Tecnológico de Estudios Superiores de Occidente (ITESO, 1999).\n" +
                         "Su tesis doctoral tiene como tema las estrategias de resistencia de las mujeres subalternas en México, desde una perspectiva gramsciana, y fue dirigida por la Dra. Fina Birulés (UB) y por la Dra. Beatriz Ferrús (UAB). Ha sido becaria MAEC-AECID y CONACYT (México). Sus publicaciones e intereses académicos giran en torno a los movimientos sociales de mujeres, su relación con el feminismo, las posibilidades de agencia política de las mujeres y las estrategias de emancipación.\n" +
-                        "Forma parte del “Seminari Filosofia i Gènere” de la UB,  y del Grupo de Investigación “Creació i Pensament de les Dones”, de esta misma universidad.\n" +
-                        "\n" +
-                        "\n" +
-                        "Lic. Martha Lucía Micher Camarena (Diputada Federal PRD)\n" +
-                        "Política mexicana, de Izquierda, que ha sido Diputada Federal en dos ocasiones.\n" +
-                        "Es Licenciada en Pedagogía egresada de la Universidad Panamericana, ha participado en varias organizaciones de izquierda y lucha por la igualdad de la mujer, entre ellas varias organizadas por la Internacional Socialista en representación del PRD e integrante de la delegación mexicana a la Conferencia Mundial de la Mujer celebrada en Pekín, China, también ha sido Secretaria de la Mujer en el Comité Ejecutivo Nacional del PRD.\n" +
-                        "Candidata a gobernadora de Guanajuato en 1995. Del 2000 al 2002 fue Secretaria de la Mujer del Comité Ejecutivo Nacional del PRD. En 2003 fue electa diputada plurinominal a la LIX Legislatura. En el 2006 fue nombrada Directora General del Instituto de las Mujeres del Distrito Federal.\n";
+                        "Forma parte del “Seminari Filosofia i Gènere” de la UB,  y del Grupo de Investigación “Creació i Pensament de les Dones”, de esta misma universidad.";
+
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("24D"));
                 break;
@@ -2356,7 +2356,7 @@ public class Ponentes {
             case 238:
                 this.nombre = "Santiago";
                 this.apellidos = "Rey";
-                this.universidad = "";
+                this.universidad = "New School for Social Research";
                 this.profesion = "";
                 this.descripcion = "Santiago Rey es doctor en filosofía por la New School for Social Research y profesor en la Universidad El Bosque y la Universidad de los Andes en Bogotá, Colombia. Su disertación doctoral “Words made Flesh. A Stereoscopic Account of Conceptual Praxis” fue reconocida con el Hans Jonas Award in Philosophy y está siendo preparada para su publicación. Su trabajo gira en torno a la hermenéutica filosófica y el pragmatismo americano (tanto en su vertiente clásica como contemporánea), buscando posibles puntos de intersección entre tradiciones filosóficas que usualmente se presentan como antagónicas. Ha publicado artículos sobre estos temas, y recientemente realizó la traducción del libro “Violence: Thinking without Banisters” de Richard J. Bernstein para la editorial Gedisa. Actualmente prepara la traducción del último libro de Bernstein “Pragmatic Encounters”, también para editorial Gedisa, y trabaja en el proyecto de edición de las obras completas del filósofo colombiano Carlos B. Gutiérrez. Hace parte del grupo de investigación “Normas y justificación” de la Universidad El Bosque.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
@@ -2534,10 +2534,10 @@ public class Ponentes {
                 break;
             case 257:
                 this.nombre = "Ricardo";
-                this.apellidos = "Duarte";
+                this.apellidos = "Duarte Méndez";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Licenciado en Artes Visuales por la Universidad de Guadalajara; gestor cultural, curador, museógrafo y crítico; con especial dedicación y vocación con las artes populares mexicanas. Nació en la Ciudad de México en 1967 pero mantiene por más de cuarenta años su residencia y su campo de trabajo en Guadalajara. Ha curado más de 50 exposiciones, varias de ellas con proyección internacional. Su labor en la lectura, compilación, reflexión y museografía abarca artistas de todo tipo, currículo y nacionalidades. Hoy no sólo es reconocido en el área de la curaduría y la crítica de las artes visuales en México y en otros países, también es atendido hoy como uno de los grandes expertos en cerámica contemporánea.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("28B", "28C"));
                 break;
@@ -2640,7 +2640,7 @@ public class Ponentes {
                 this.apellidos = "Vogt";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Vive en Guadalajara desde 1976, donde trabaja como Profesor Investigador titular de tiempo completo en la Universidad de Guadalajara. Ha sido formador de varias generaciones de investigadores y escritores tapatíos. Destaca su labor como periodista cultural, crítico literario, narrador y traductor. Es autor de innumerables libros de crítica e investigación literaria, entre los cuales figura su Historia de la Literatura Jalisciense. Como narrador ha escrito varias novelas, donde destaca Posguerra, una novela que describe la vida en la provincia alemana después de 1945.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29G", "29S"));
                 break;
@@ -2780,7 +2780,7 @@ public class Ponentes {
                 this.apellidos = "Velázquez Gumeta";
                 this.universidad = "";
                 this.profesion = "";
-                this.descripcion = "";
+                this.descripcion = "Conocida como Chary Gumeta, reconoce que la cultura es un derecho de la humanidad y que ésta debe llegar a todos y todas. Como promotora cultural promueve a través de exposiciones y Festivales el arte y la literatura. Ha publicado varios libros de poesía y de investigación histórica regional. Sus últimas publicaciones son “MAS ALLÁ DEL SUR” La Jardinera Guarrior Ediciones 2014; “VENENO PARA LA AUSENCIA” Editorial Public Pervert 2013; \"...Y LOS MUERTOS MARCELA?\" editorial Public Pervert 2015, “JOAQUIN MIGUEL GUTIERREZ CANALES: SINTESIS BIOGRAFICA” ITAC-CONACULTA 2015, entre otras publicaciones. Su poesía ha sido seleccionada en antologías de México, Guatemala, Honduras, Costa Rica, Perú, Estados Unidos y España; asimismo ha sido traducido al inglés y al zoque. Ha participado en festivales Internacionales de Poesía en varios estados de México, Guatemala, Honduras, El Salvador, Costa Rica, Perú, Argentina y España.  Así como conversatorios y ponencias este año 2015 en La FLEX (Feria Internacional del libro en Xelaju, Guatemala) y en la FILCHCA (Feria Internacional del libro Chiapas Centroamérica, principalmente sobre tradición e identidad cultural. Actualmente es coordinadora del Festival Internacional de Poesía Contemporánea SCLC y del Festival Internacional Multidisciplinario Proyecto Posh.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("29T"));
                 break;
