@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="56dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@animator/raise"
+    cardview:cardBackgroundColor="#fff"
+    cardview:cardCornerRadius="0dp"
+    cardview:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imagen"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/label_lugar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ponente9"
+            app:civ_border_color="#00000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            android:background="#000"
+            android:maxLines="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="80dp"
+            android:text="@string/label_lugar"
+            android:textColor="#121212"
+            android:textSize="@dimen/diez_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingEnd="8dp"
+            android:paddingStart="80dp"
+            android:text="Salón 3, planta baja, Expo Guadalajara."
+            android:textColor="#121212"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -5,10 +5,6 @@ import android.os.Parcelable;
 
 import java.util.Calendar;
 
-/**
- * Created by FICG on 19/10/2016.
- */
-
 public class Fecha implements Parcelable {
     private Calendar cal_fecha_ini, cal_fecha_fin;
     private Sedes sede;

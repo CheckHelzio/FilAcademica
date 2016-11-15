@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested_scroll_historia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/historia_layout">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_descripcion_corta_evento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Feria Internacional del Libro de Guadalajara\nPrograma Académico"
+            android:textColor="?colorPrimaryDark"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="?colorPrimaryDark" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_a"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Este año se llevará a cabo la edición 30 de la Feria Internacional del Libro de Guadalajara teniendo como invitado de honor a América Latina. FIL Académica es una de las actividades de FIL siendo el Centro Universitario de Ciencias Sociales y Humanidades (CUCSH) de la Universidad de Guadalajara quien tiene a su cargo la organización de dicho programa, coordinado por su Rector, Dr. Héctor Raúl Solís Gadea. Este programa nació con la FIL hace 30 años, iniciando con algunas mesas redondas y el Seminario México-Estados Unidos que muy pronto se convirtió en el Encuentro internacional de ciencias sociales.\n\nActualmente el Programa Académico de FIL cuenta con mas de treinta actividades entre las que se cuentan: coloquios, seminarios, simposios, encuentros, foros, etc., algunos de ellos con amplia trayectoria han permanecido a lo largo del tiempo como el Encuentro internacional de ciencias sociales, el Seminario sobre la enseñanza de lenguas extranjeras, el Encuentro internacional de educación a distancia, el Seminario de comunicación y sociedad y otros. Sin embargo, hay actividades que han estado presentes solo en algunas ediciones de la FIL como el Encuentro chicano, el Foro de demografía o el Coloquio ¿nuevo gobierno nueva política cultural?. Así mismo, algunos programas han surgido por la necesidad de discutir sobre temas coyunturales como el Simposio sobre independencia en 2010 año en que se celebró el bicentenario de la misma, o el Simposio sobre revolución porque en 2010 se conmemoró el centenario de este movimiento social. En 2008 se realizó una celebración sobre los 40 años del movimiento estudiantil del 68 y cada año se desarrolla alguna actividad específicamente relacionada con el invitado de honor a la FIL.\n\nEl Programa Académico de FIL goza de gran prestigio debido a la participación de destacados académicos y pensadores de diversas áreas del conocimiento que se encuentran tanto con sus colegas de la UdeG como de otras universidades nacionales y del extranjero para intercambiar experiencias participando en debates, conferencias, mesas de trabajo, etc., lo que ha propiciado el establecer convenios de colaboración y de intercambio docente y estudiantil con prestigiosas universidades y centros de educación superior nacionales y extranjeros. Así mismo, se elaboran conjuntamente publicaciones dando cuenta de los temas tratados y se tiene la posibilidad de que estudiantes y público en general puedan acceder a los más destacados académicos y expertos que participan como ponentes en las diversas actividades del Programa Académico."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1987"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_b"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Inicia la FIL y paralelamente la primera actividad de corte académico de la misma: Seminario México – Estados Unidos que poco después se convirtió en el actual Encuentro internacional de ciencias sociales"
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1988"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_c"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="II Seminario México – Estados Unidos.\nSe entrega el reconocimiento al mérito académico al historiador austriaco – norteamericano Frederich Katz."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1989"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_d"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="III Seminario México – Estados Unidos.\nEn el que participan, entre otros, Héctor Aguilar Camín, Jorge Castañeda, ponentes del Colegio de la Frontera Norte y del Colegio de México. Se presentan libros de Jean Meyer y Jorge Alonso.\nNace el primer I Coloquio sobre comunicación deporte y sociedad."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1990"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_e"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="IV Encuentro internacional de ciencias sociales, con el tema “Negociación del tratado de libre  comercio relaciones norte sur, visión latinoamericana”.\nII Coloquio sobre comunicación deporte y sociedad."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1991"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_f"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="V Encuentro internacional de ciencias sociales, participan Ruy Pérez Tamayo, René Drucker, Miguel Ángel Granados, entre otros.\nIII Coloquio sobre comunicación deporte y sociedad.\nI Seminario sobre la enseñanza de lenguas extranjeras."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1992"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_g"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="VI Encuentro internacional de ciencias sociales\nIV Coloquio sobre comunicación deporte y sociedad.\nII Seminario sobre la enseñanza de lenguas extranjeras.\nI Encuentro de educación abierta y a distancia.\nI Encuentro de abogados norte – sur."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1993"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_h"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Es la 7º edición de la Feria Internacional del Libro de Guadalajara y se inicia con los invitados de honor, este año es Colombia."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1994"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_i"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor a FIL Nuevo México."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1995"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_j"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Venezuela."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1996"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_l"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="10º Aniversario de FIL, Invitado de honor Canadá."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1997"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_m"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Argentina."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1998"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_n"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Puerto Rico."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="1999"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_o"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Chile."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2000"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_p"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor España."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2001"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_q"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="15 años de FIL. Invitado de honor Brasil."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2002"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_r"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Cuba."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2003"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_s"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Québec."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2004"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_t"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Cultura Catalana."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2005"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_u"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Perú."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2006"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_v"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Andalucía."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2007"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_w"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Colombia."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2008"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_x"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Italia."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2009"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_y"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Los Angeles."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2010"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_z"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Castilla y León."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2011"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_2011"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Alemania."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2012"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_2012"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Chile."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2013"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_2013"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Israel."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2014"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_2014"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Argentina."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2015"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_2015"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor Reino Unido."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="2016"
+            android:textColor="#610915"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#610915" />
+
+        <ccv.checkhelzio.filacademica.TextViewEx
+            android:id="@+id/tv_historia_2016"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Invitado de honor América Latina."
+            android:textColor="#121212"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

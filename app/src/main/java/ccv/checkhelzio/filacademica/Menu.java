@@ -8,43 +8,45 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import butterknife.OnClick;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
-/**
- * Created by check on 19/10/2016.
- */
 
-public class Menu extends AppCompatActivity {
+public class Menu extends AppCompatActivity implements View.OnClickListener {
+
+
+    @BindView(R.id.bt_actividades) RelativeLayout bt_actividades;
+    @BindView(R.id.bt_sedes) RelativeLayout bt_sedes;
+    @BindView(R.id.bt_spot) RelativeLayout bt_spot;
+    @BindView(R.id.bt_historia) RelativeLayout bt_historia;
+    @BindView(R.id.bt_ponentes) RelativeLayout bt_ponentes;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FullScreencall();
         setContentView(R.layout.menu);
-
-        RelativeLayout bt_actividades = (RelativeLayout) findViewById(R.id.bt_actividades);
-        bt_actividades.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Menu.this, Actividades.class);
-                startActivity(i);
-            }
-        });
-
-        RelativeLayout bt_sedes = (RelativeLayout) findViewById(R.id.bt_sedes);
-        bt_sedes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Menu.this, MapsActivity.class);
-                startActivity(i);
-            }
-        });
-
+        ButterKnife.bind(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        FullScreencall();
+        setListenners();
+    }
+
+    private void setListenners() {
+        bt_actividades.setOnClickListener(this);
+        bt_sedes.setOnClickListener(this);
+        //bt_spot.setOnClickListener(this);
+        bt_historia.setOnClickListener(this);
+        bt_ponentes.setOnClickListener(this);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
         FullScreencall();
     }
 
@@ -60,7 +62,30 @@ public class Menu extends AppCompatActivity {
         }
     }
 
-    @OnClick (R.id.bt_actividades)
-    public void irActividades(){
+    @Override
+    public void onClick(View view) {
+        Intent i;
+        switch (view.getId()){
+            case R.id.bt_actividades:
+                i = new Intent(Menu.this, Actividades.class);
+                startActivity(i);
+                break;
+            case R.id.bt_sedes:
+                i = new Intent(Menu.this, MapsActivity.class);
+                startActivity(i);
+                break;
+            case R.id.bt_spot:
+                i = new Intent(Menu.this, VideoActivity.class);
+                startActivity(i);
+                break;
+            case R.id.bt_historia:
+                i = new Intent(Menu.this, Historia.class);
+                startActivity(i);
+                break;
+            case R.id.bt_ponentes:
+                i = new Intent(Menu.this, PonentesLayout.class);
+                startActivity(i);
+                break;
+        }
     }
 }

@@ -1,5 +1,6 @@
 package ccv.checkhelzio.filacademica;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -32,9 +33,15 @@ public class SedesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.sedes, container, false);
+
         ImageView iv = (ImageView) layout.findViewById(R.id.iv_cartel);
+        Typeface face = Typeface.createFromAsset(getActivity().getApplicationContext().getAssets(), "fil.ttf");
         TextView nombre = (TextView) layout.findViewById(R.id.nombre_sede);
         TextView direccion = (TextView) layout.findViewById(R.id.direccion_sede);
+
+        nombre.setTypeface(face);
+        direccion.setTypeface(face);
+
         nombre.setText(MapsActivity.listaSedes.get(fragVal).getNombre());
         direccion.setText(MapsActivity.listaSedes.get(fragVal).getDireccion());
         String st_id = "sede" + (fragVal + 1);

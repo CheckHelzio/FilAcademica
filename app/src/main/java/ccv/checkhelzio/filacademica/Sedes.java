@@ -3,10 +3,6 @@ package ccv.checkhelzio.filacademica;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by check on 19/10/2016.
- */
-
 public class Sedes implements Parcelable {
     private String nombre;
     private String direccion;

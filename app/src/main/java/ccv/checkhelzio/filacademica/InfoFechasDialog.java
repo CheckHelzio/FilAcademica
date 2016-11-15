@@ -30,7 +30,7 @@ public class InfoFechasDialog extends AppCompatActivity {
         }
         ButterKnife.bind(this);
 
-        evento = getIntent().getParcelableExtra("ACTIVIDAD");
+        evento = new ListaEventos().getEventoEspecifico((getIntent().getIntExtra("ACTIVIDAD", 0)));
         setDatos();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

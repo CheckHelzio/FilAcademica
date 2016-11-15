@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="56dp"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
     android:orientation="vertical">
 
     <com.mikhaellopez.circularimageview.CircularImageView
-        android:src="@drawable/ponente9"
         android:id="@+id/imagen"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:contentDescription="@string/label_lugar"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/ponente9"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="2dp" />
 
     <TextView
         android:id="@+id/descripcion"

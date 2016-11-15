@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class ListaPonentes {
     private ArrayList<Ponentes> listaPonentes;
-    private int numero_ponentes = 390;
+    private int numero_ponentes = 404;
 
     //FUNCION PARA REGRESAR TODOS LOS PONENTES
     public ArrayList<Ponentes> getAllPonentes() {

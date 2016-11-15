@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.transition.Slide;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
@@ -30,7 +31,7 @@ public class InfoEventoDialog extends Activity {
         }
         ButterKnife.bind(this);
 
-        evento = getIntent().getParcelableExtra("ACTIVIDAD");
+        evento = new ListaEventos().getEventoEspecifico((getIntent().getIntExtra("ACTIVIDAD", 0)));
         setDatos();
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
@@ -44,14 +45,15 @@ public class InfoEventoDialog extends Activity {
     }
 
     private void setDatos() {
+
         tv_titulo_evento.setText(evento.getTitulo());
         tv_subtitulo_evento.setText(evento.getSubtitulo());
-        tv_descripcion.setText(evento.getDescripcion(), true);
-
-        if (tv_subtitulo_evento.getText().toString().trim().isEmpty()){
+        tv_descripcion.setText(evento.getDescripcion(), true);if (tv_subtitulo_evento.getText().toString().trim().isEmpty()){
             tv_subtitulo_evento.setVisibility(View.GONE);
             separador.setVisibility(View.GONE);
+            tv_descripcion.setPadding(0,0,0,DP(48));
         }
+
     }
 
     @Override
@@ -86,4 +88,7 @@ public class InfoEventoDialog extends Activity {
         }
     }
 
+    private int DP(int i) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, i, getResources().getDisplayMetrics());
+    }
 }

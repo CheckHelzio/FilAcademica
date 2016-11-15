@@ -1,12 +1,14 @@
 package ccv.checkhelzio.filacademica;
 
 import android.os.Build;
+import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -31,6 +33,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public static ArrayList<Marker> listaMarcadores;
     @BindView(R.id.pagerSedes) ViewPager pagerSedes;
     @BindView(R.id.indicador_sedes) InkPageIndicator indicadorSedes;
+    @BindView(R.id.bt_menu) ImageView bt_menu;
     private SupportMapFragment mapFragment;
 
     @Override
@@ -47,6 +50,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
 
         iniciarPager();
+        bt_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                },300);
+            }
+        });
     }
 
     private void iniciarPager() {
@@ -59,7 +73,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.setPadding(DP(10), 0, DP(8f), DP(136));
+        mMap.setPadding(DP(10), DP(48), DP(8f), DP(136));
         mMap.setOnMarkerClickListener(this);
 
         // Add a marker in Sydney and move the camera

@@ -35,23 +35,30 @@ public class ActividadFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        ArrayList<Eventos> listaEventos = new ListaEventos().getEventos();
+        final ArrayList<Eventos> listaEventos = new ListaEventos().getEventos();
         View layout = inflater.inflate(R.layout.carteles, container,
                 false);
         ImageView iv = (ImageView) layout.findViewById(R.id.iv_cartel);
-        TextView ti = (TextView) layout.findViewById(R.id.titulo);
+        final TextView ti = (TextView) layout.findViewById(R.id.titulo);
         String st_id = "cartel" + (listaEventos.get(fragVal).getId_evento());
         try {
             Picasso.with(getActivity().getApplicationContext()).load(getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica")).into(iv);
             ti.setText("");
         }catch (Exception ignored){
-            Picasso.with(getActivity().getApplicationContext()).load(R.drawable.carte_generico6).into(iv);
+            Picasso.with(getActivity().getApplicationContext()).load(R.drawable.carte_generico6).into(iv, new com.squareup.picasso.Callback() {
+                @Override
+                public void onSuccess() {
+                    Typeface face = Typeface.createFromAsset(getActivity().getApplicationContext().getAssets(), "fil.ttf");
+                    ti.setTypeface(face);
+                    ti.setText(listaEventos.get(fragVal).getTitulo());
+                }
 
-            Typeface face = Typeface.createFromAsset(getActivity().getApplicationContext().getAssets(), "fil.ttf");
-            ti.setTypeface(face);
-            ti.setText(listaEventos.get(fragVal).getTitulo());
+                @Override
+                public void onError() {
+
+                }
+            });
         }
         return layout;
     }
-
 }

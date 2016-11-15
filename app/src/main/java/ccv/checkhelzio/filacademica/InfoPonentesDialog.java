@@ -3,15 +3,12 @@ package ccv.checkhelzio.filacademica;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.transition.Slide;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.mikhaellopez.circularimageview.CircularImageView;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,9 +20,9 @@ import butterknife.ButterKnife;
 public class InfoPonentesDialog extends AppCompatActivity {
 
     @BindView(R.id.tv_titulo_evento) TextView tv_titulo_evento;
-    @BindView(R.id.conte_ponentes)
-    LinearLayout conte_ponentes;
+    @BindView(R.id.recycle) RecyclerView rvEventos;
     protected static Eventos evento;
+    private ArrayList<Ponentes> listaPonentes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,47 +35,24 @@ public class InfoPonentesDialog extends AppCompatActivity {
         }
         ButterKnife.bind(this);
 
-        evento = getIntent().getParcelableExtra("ACTIVIDAD");
-        setDatos();
+        rvEventos.setHasFixedSize(true);
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
+        mLayoutManager.setAutoMeasureEnabled(false);
+        rvEventos.setLayoutManager(mLayoutManager);
 
-        ArrayList<Ponentes> listaCoordinadores = new ListaPonentes().getPonenteEspecifico2(evento.getId_evento());
+        evento = new ListaEventos().getEventoEspecifico((getIntent().getIntExtra("ACTIVIDAD", 0)));
+        listaPonentes = new ListaPonentes().getPonenteEspecifico2(evento.getId_evento());
 
-        Collections.sort(listaCoordinadores, new Comparator<Ponentes>() {
-
+        Collections.sort(listaPonentes, new Comparator<Ponentes>() {
             @Override
-            public int compare(Ponentes p1,Ponentes p2) {
+            public int compare(Ponentes p1, Ponentes p2) {
                 String n1 = p1.getNombre() + " " + p1.getApellidos();
                 String n2 = p2.getNombre() + " " + p2.getApellidos();
                 return n1.compareToIgnoreCase(n2);
             }
         });
 
-        for (Ponentes p: listaCoordinadores){
-            View item = LayoutInflater.from(InfoPonentesDialog.this).inflate(R.layout.ponente_item_full, conte_ponentes, false);
-            CircularImageView imagen = (CircularImageView) item.findViewById(R.id.imagen);
-
-            String st_id = "ponente" + (p.getId_ponente());
-            try {
-                Picasso.with(getApplicationContext()).load(getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica")).into(imagen);
-            }catch (Exception ignored){
-                Picasso.with(getApplicationContext()).load(R.drawable.ponentes_generico).into(imagen);
-            }
-
-            TextView nombre = (TextView) item.findViewById(R.id.nombre);
-            TextView descripcion = (TextView) item.findViewById(R.id.descripcion);
-            nombre.setText(p.getNombre() + " " + p.getApellidos());
-            try {
-                if (p.getDato().isEmpty()){
-                    descripcion.setText("Ponente");
-                }else {
-                    descripcion.setText(p.getDato());
-                }
-            }catch (Exception ignored){
-                descripcion.setText("Ponente");
-            }
-            conte_ponentes.addView(item);
-        }
-
+        setDatos();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Slide slide = new Slide(Gravity.BOTTOM);
@@ -92,6 +66,12 @@ public class InfoPonentesDialog extends AppCompatActivity {
 
     private void setDatos() {
         tv_titulo_evento.setText(evento.getTitulo());
+        iniciarAdaptador();
+    }
+
+    private void iniciarAdaptador() {
+        PonentesAdaptador adaptador = new PonentesAdaptador(listaPonentes, InfoPonentesDialog.this);
+        rvEventos.setAdapter(adaptador);
     }
 
     @Override
@@ -107,10 +87,10 @@ public class InfoPonentesDialog extends AppCompatActivity {
     }
 
     public void FullScreencall() {
-        if(Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
+        if (Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
             View v = this.getWindow().getDecorView();
             v.setSystemUiVisibility(View.GONE);
-        } else if(Build.VERSION.SDK_INT >= 19) {
+        } else if (Build.VERSION.SDK_INT >= 19) {
             //for new api versions.
             View decorView = getWindow().getDecorView();
             int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
@@ -121,7 +101,7 @@ public class InfoPonentesDialog extends AppCompatActivity {
     public void cerrar(View view) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             finishAfterTransition();
-        }else {
+        } else {
             finish();
         }
     }

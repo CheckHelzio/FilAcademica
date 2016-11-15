@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme.TranslucentStatusBar">
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
         <item name="android:windowBackground">@color/colorBlanco</item>
         <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
-        <item name="colorControlHighlight">#001e1e</item>
+        <item name="colorControlHighlight">#42001e1e</item>
+    </style>
+
+    <style name="AppTheme.Portada">
+        <item name="android:windowBackground">@drawable/portada</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
     </style>
 
     <style name="AppTheme.Transparent">
@@ -27,14 +27,9 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 
-
-    <style name="AppTheme.Portada">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@drawable/portada</item>
-        <item name="colorControlHighlight">#001e1e</item>
-        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    <style name="AppTheme.TranslucentStatusBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 </resources>

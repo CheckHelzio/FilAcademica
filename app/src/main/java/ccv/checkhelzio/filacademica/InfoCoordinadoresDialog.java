@@ -2,18 +2,13 @@ package ccv.checkhelzio.filacademica;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.transition.Slide;
-import android.util.Log;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.mikhaellopez.circularimageview.CircularImageView;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,9 +20,9 @@ import butterknife.ButterKnife;
 public class InfoCoordinadoresDialog extends AppCompatActivity {
 
     @BindView(R.id.tv_titulo_evento) TextView tv_titulo_evento;
-    @BindView(R.id.conte_coordinadores)
-    LinearLayout conte_coordinadores;
+    @BindView(R.id.recycle) RecyclerView rvEventos;
     protected static Eventos evento;
+    private ArrayList<Ponentes> listaCoordinadores;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +35,12 @@ public class InfoCoordinadoresDialog extends AppCompatActivity {
         }
         ButterKnife.bind(this);
 
-        evento = getIntent().getParcelableExtra("ACTIVIDAD");
-        setDatos();
+        rvEventos.setHasFixedSize(true);
+        LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
+        rvEventos.setLayoutManager(mLayoutManager);
 
-        ArrayList<Ponentes> listaCoordinadores = new ListaOrganizadores().getCoordinadorEspecifico(evento.getId_evento());
+        evento = new ListaEventos().getEventoEspecifico((getIntent().getIntExtra("ACTIVIDAD", 0)));
+        listaCoordinadores = new ListaOrganizadores().getCoordinadorEspecifico(evento.getId_evento());
 
         Collections.sort(listaCoordinadores, new Comparator<Ponentes>() {
 
@@ -55,32 +52,7 @@ public class InfoCoordinadoresDialog extends AppCompatActivity {
             }
         });
 
-        for (Ponentes p: listaCoordinadores){
-            View item = LayoutInflater.from(InfoCoordinadoresDialog.this).inflate(R.layout.ponente_item_full, conte_coordinadores, false);
-            CircularImageView imagen = (CircularImageView) item.findViewById(R.id.imagen);
-
-            String st_id = "ponente" + (p.getId_ponente());
-            try {
-                Picasso.with(getApplicationContext()).load(getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica")).into(imagen);
-            }catch (Exception ignored){
-                Picasso.with(getApplicationContext()).load(R.drawable.ponentes_generico).into(imagen);
-            }
-
-            TextView nombre = (TextView) item.findViewById(R.id.nombre);
-            TextView descripcion = (TextView) item.findViewById(R.id.descripcion);
-            nombre.setText(p.getNombre() + " " + p.getApellidos());
-            try {
-                if (p.getDato().isEmpty()){
-                    descripcion.setText("Coordinador");
-                }else {
-                    descripcion.setText(p.getDato());
-                }
-            }catch (Exception ignored){
-                descripcion.setText("Coordinador");
-            }
-            conte_coordinadores.addView(item);
-        }
-
+        setDatos();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Slide slide = new Slide(Gravity.BOTTOM);
@@ -94,6 +66,12 @@ public class InfoCoordinadoresDialog extends AppCompatActivity {
 
     private void setDatos() {
         tv_titulo_evento.setText(evento.getTitulo());
+        iniciarAdaptador();
+    }
+
+    private void iniciarAdaptador() {
+        PonentesAdaptador adaptador = new PonentesAdaptador(listaCoordinadores, InfoCoordinadoresDialog.this);
+        rvEventos.setAdapter(adaptador);
     }
 
     @Override

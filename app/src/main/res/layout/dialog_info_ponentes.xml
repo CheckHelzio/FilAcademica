@@ -59,14 +59,25 @@
                     android:layout_marginStart="36dp"
                     android:background="#00000000"
                     android:gravity="center"
-                    android:paddingBottom="16dp"
+                    android:paddingBottom="22dp"
                     android:paddingEnd="4dp"
                     android:paddingStart="4dp"
-                    android:paddingTop="16dp"
+                    android:paddingTop="26dp"
                     android:text="Coloquio Gobernanza y Democracia en América Latina"
                     android:textColor="#fff"
                     android:textSize="14dp"
                     android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="4dp"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:onClick="cerrar"
+                    android:tint="#fff"
+                    app:srcCompat="@drawable/ic_cancel" />
 
             </RelativeLayout>
 
@@ -77,9 +88,9 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
                 android:id="@+id/tv_subtitulo"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -90,19 +101,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"/>
 
-            <ScrollView
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle"
+                android:layout_marginBottom="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:id="@+id/conte_ponentes"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </ScrollView>
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
     </android.support.v7.widget.CardView>

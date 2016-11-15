@@ -5,10 +5,6 @@ import android.os.Parcelable;
 
 import java.util.ArrayList;
 
-/**
- * Created by check on 19/10/2016.
- */
-
 public class Eventos implements Parcelable {
     private int id_evento;
     private String titulo;
@@ -30,34 +26,17 @@ public class Eventos implements Parcelable {
         return titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
     public String getSubtitulo() {
         return subtitulo;
-    }
-
-    public void setSubtitulo(String subtitulo) {
-        this.subtitulo = subtitulo;
     }
 
     public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
     public int getId_evento() {
         return id_evento;
     }
-
-    public void setId_evento(int id_evento) {
-        this.id_evento = id_evento;
-    }
-
 
     public void setDatos(int id_evento) {
         switch (id_evento) {
@@ -76,7 +55,7 @@ public class Eventos implements Parcelable {
                         "los gobiernos nacionales y crea nuevos tejidos que tienen alcances transnacionales. \n" +
                         "Este hecho crea la necesidad de implementar políticas públicas que fomenten la relación entre ciudades, con el apoyo político y logístico de los gobiernos nacionales mediante las cuales se fomente la circulación, la interacción, el intercambio de conocimientos y experiencias. \n" +
                         "Analizar el impacto de proyectos como los “Puntos de Cultura” de Brasil, “Los Faros” de México o los “Parques Biblioteca” de Colombia, sus defectos y bondades, la sostenibilidad, la cohesión social que se entreteje en su interior, identificar los riesgos que representan proyectos urbanísticos como el de “Nueva Luz” de São Paulo, Evidenciar que la Cultura desde" +
-                        "las artes, el urbanismo, la industria cultural, el turismo, la planeación, tiene un enorme potencial como herramienta de inclusión en un contexto de desarrollo humano y social";
+                        "las artes, el urbanismo, la industria cultural, el turismo, la planeación, tiene un enorme potencial como herramienta de inclusión en un contexto de desarrollo humano y social.";
                 break;
             case 3:
                 this.titulo = "II Seminario Internacional ASPEN-FIL";
@@ -104,14 +83,6 @@ public class Eventos implements Parcelable {
                 this.descripcion = "La tormenta en América Latina. ¿Hacia dónde se dirigen las economías de la región? Diálogo magistral entre Pierre Salama y Alexis Saludjian\n\n"+
                         "La mayor parte de los países latinoamericanos están en un cambio de su historia. América Latina entro a principios de los años 2000 en nuevas vulnerabilidades. En las tormentas que atraviesa con más o menos intensidad según los países se dibujan sus futuros.";
                 break;
-            //ESTE EVENTO NO SE ENCUENTRA EN EL PROGRAMA DE LA VERSION 25 OCT
-            /*
-            case 8:
-                this.titulo = "Diálogo Buenos gobiernos locales";
-                this.subtitulo = "";
-                this.descripcion = "";
-                break;
-            */
             case 9:
                 this.titulo = "Tv Morfosis: “La nueva medición de las audiencias: audímetro vs tuitómetro";
                 this.subtitulo = "";
@@ -251,13 +222,6 @@ public class Eventos implements Parcelable {
                 this.subtitulo = "";
                 this.descripcion = "";
                 break;
-            /*
-            case 31:
-                this.titulo = "Presencia de aspirantes a la Presidencia y líderes de partidos";
-                this.subtitulo = "";
-                this.descripcion = "";
-                break;
-                */
             case 32:
                 this.titulo = "XXVI Seminario sobre la Enseñanza de Lenguas Extranjeras";
                 this.subtitulo = "";

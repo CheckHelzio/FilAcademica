@@ -10,4 +10,6 @@
     <string name="label_fecha">Fecha:</string>
     <string name="label_lugar">Lugar:</string>
     <string name="label_hora">Hora:</string>
+
+    <string name="title_activity_video">VideoActivity</string>
 </resources>

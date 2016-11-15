@@ -8,9 +8,11 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
         android:layout_width="fill_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical">
 
         <android.support.v7.widget.AppCompatImageView

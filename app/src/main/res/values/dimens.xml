@@ -5,4 +5,5 @@
     <dimen name="fab_size">8dp</dimen>
     <dimen name="padding_normal">16dp</dimen>
     <dimen name="diez_sp">10dp</dimen>
+    <dimen name="card_raise">8dp</dimen>
 </resources>
