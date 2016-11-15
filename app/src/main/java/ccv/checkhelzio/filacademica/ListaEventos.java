@@ -905,7 +905,10 @@ class ListaEventos {
                         36,
                         // LISTA DE FECHAS...
                         crearFechas(
-                                new Fecha("A", 16, "29/11/16", "10:00", "14:00")
+                                new Fecha("A", 16, "29/11/16", "10:30", "11:30"),
+                                new Fecha("B", 16, "29/11/16", "11:30", "14:00"),
+                                new Fecha("C", 16, "29/11/16", "14:00", "16:00"),
+                                new Fecha("D", 16, "29/11/16", "16:00", "17:00")
                         )
                 );
                 break;

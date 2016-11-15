@@ -3792,7 +3792,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36A","36B"));
                 break;
             case 396:
                 this.nombre = "Teresa";
@@ -3801,7 +3801,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36B"));
                 break;
             case 397:
                 this.nombre = "Beatriz Nadia";
@@ -3810,7 +3810,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36B"));
                 break;
             case 398:
                 this.nombre = "Roberto";
@@ -3819,7 +3819,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36B"));
                 break;
             case 399:
                 this.nombre = "Miguel Alejandro";
@@ -3828,7 +3828,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36B"));
                 break;
             case 400:
                 this.nombre = "Trinidad";
@@ -3837,7 +3837,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36C"));
                 break;
             case 401:
                 this.nombre = "Santiaga";
@@ -3846,7 +3846,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36C"));
                 break;
             case 402:
                 this.nombre = "Jorge Alberto";
@@ -3855,7 +3855,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36C"));
                 break;
             case 403:
                 this.nombre = "Enriqueta";
@@ -3864,7 +3864,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36C"));
                 break;
             case 404:
                 this.nombre = "Laura";
@@ -3873,7 +3873,7 @@ public class Ponentes{
 
                 this.descripcion = "";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
-                this.eventos = new ArrayList<String>(Arrays.asList("36A"));
+                this.eventos = new ArrayList<String>(Arrays.asList("36D"));
                 break;
         }
     }
