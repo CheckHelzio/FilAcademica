@@ -24,7 +24,7 @@
         app:cardElevation="8dp">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -86,10 +86,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/a"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
                 android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
                 android:text="Carta Democrática"
                 android:textColor="@color/colorPrimary"
                 android:textSize="13dp"
@@ -100,7 +101,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:layout_below="@+id/tv_subtitulo"
-                android:layout_marginTop="8dp"
                 android:background="@color/colorPrimary" />
 
             <ScrollView
@@ -109,15 +109,21 @@
                 android:layout_below="@+id/separador"
                 android:fillViewport="true">
 
-                <ccv.checkhelzio.filacademica.TextViewEx
-                    android:id="@+id/tv_descripcion"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#121212" />
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp">
+
+                    <ccv.checkhelzio.filacademica2015.TextViewEx
+                        android:id="@+id/tv_descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#121212"/>
+
+                </LinearLayout>
 
             </ScrollView>
 

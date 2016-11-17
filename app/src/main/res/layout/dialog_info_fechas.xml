@@ -94,7 +94,7 @@
                 android:layout_alignBottom="@+id/i"
                 android:layout_alignTop="@+id/i" />
 
-            <ccv.checkhelzio.filacademica.InkPageIndicator
+            <ccv.checkhelzio.filacademica2015.InkPageIndicator
                 android:layout_marginTop="8dp"
                 android:id="@+id/indicador_fechas"
                 android:layout_width="match_parent"

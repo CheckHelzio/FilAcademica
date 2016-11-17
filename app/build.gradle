@@ -5,11 +5,11 @@ android {
     compileSdkVersion "android-25"
     buildToolsVersion "24.0.2"
     defaultConfig {
-        applicationId "ccv.checkhelzio.filacademica"
+        applicationId "ccv.checkhelzio.filacademica2015"
         minSdkVersion 19
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "1.0.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
@@ -49,4 +49,5 @@ dependencies {
     compile 'com.android.support:design:25.0.0'
     testCompile 'junit:junit:4.12'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'me.biubiubiu.justifytext:library:1.1'
 }

@@ -5,7 +5,7 @@
     android:id="@+id/activity_portada"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ccv.checkhelzio.filacademica.Portada">
+    tools:context="ccv.checkhelzio.filacademica2015.Portada">
 
     <android.support.v7.widget.AppCompatImageView
         android:background="#fff"
