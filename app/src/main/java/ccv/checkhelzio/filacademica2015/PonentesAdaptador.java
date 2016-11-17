@@ -1,6 +1,10 @@
 package ccv.checkhelzio.filacademica2015;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -55,6 +59,22 @@ public class PonentesAdaptador extends RecyclerView.Adapter<PonentesAdaptador.Po
             Picasso.with(mContext).load(mContext.getResources().getIdentifier(st_id, "drawable", "ccv.checkhelzio.filacademica")).into(ponentesViewHolder.imagen);
         }catch (Exception ignored){
             Picasso.with(mContext).load(R.drawable.ponentes_generico).into(ponentesViewHolder.imagen);
+        }
+
+        if (!ponente.getDescripcion().isEmpty()){
+            ((View) ponentesViewHolder.nombre.getParent().getParent()).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(mContext, InfoPonentesDescripcionDialog.class);
+                    i.putExtra("ACTIVIDAD", ponente);
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                        Bundle bundle = ActivityOptions.makeSceneTransitionAnimation((Activity) mContext).toBundle();
+                        mContext.startActivity(i, bundle);
+                    } else {
+                        mContext.startActivity(i);
+                    }
+                }
+            });
         }
     }
 

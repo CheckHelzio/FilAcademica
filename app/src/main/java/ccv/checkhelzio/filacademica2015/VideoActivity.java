@@ -31,6 +31,15 @@ public class VideoActivity extends AppCompatActivity {
 
         if (prefs.getInt("Video Presentacion", 0) == -1) {
             toolbar_spot.setVisibility(View.GONE);
+            videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    prefs.edit().putInt("Video Presentacion", 1).apply();
+                    Intent i = new Intent(VideoActivity.this, Menu.class);
+                    startActivity(i);
+                    finish();
+                }
+            });
         }
     }
 
@@ -64,18 +73,6 @@ public class VideoActivity extends AppCompatActivity {
                     }
                 }
         );
-
-        if (prefs.getInt("Video Presentacion", 0) == -1) {
-            videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-                    prefs.edit().putInt("Video Presentacion", 1).apply();
-                    Intent i = new Intent(VideoActivity.this, Menu.class);
-                    startActivity(i);
-                    finish();
-                }
-            });
-        }
 
         toolbar_spot.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

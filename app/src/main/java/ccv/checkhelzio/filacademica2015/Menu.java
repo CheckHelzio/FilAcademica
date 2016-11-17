@@ -40,7 +40,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
     private void setListenners() {
         bt_actividades.setOnClickListener(this);
         bt_sedes.setOnClickListener(this);
-        //bt_spot.setOnClickListener(this);
+        bt_spot.setOnClickListener(this);
         bt_historia.setOnClickListener(this);
         bt_ponentes.setOnClickListener(this);
     }

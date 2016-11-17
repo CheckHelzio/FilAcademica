@@ -99,7 +99,7 @@ public class Eventos implements Parcelable {
                 this.descripcion = "";
                 break;
             case 12:
-                this.titulo = "Diálogo Magistral entre Pierre Salama y Theotonio Dos  Santos Alexis Saludjian";
+                this.titulo = "Diálogo Magistral entre Pierre Salama y Theotonio Dos Santos Alexis Saludjian";
                 this.subtitulo = "Relaciones de América Latina";
                 this.descripcion = "";
                 break;
@@ -202,7 +202,7 @@ public class Eventos implements Parcelable {
                         "Con esta propuesta, los estudiosos e interesados en la filosofía en nuestro continente buscarán ampliar sus horizontes respecto de las direcciones, retos, oportunidades y aportes del trabajo filosófico de Latinoamérica para el mundo. Así, tenemos el honor de invitar a personalidades como Rodolfo Arango (Universidad de los Andes),  Ambrosio Velasco Gómez (Universidad Nacional Autónoma de México), Kim Díaz (Universidad de Texas), Santiago Rey (Universidad de los Andes) y Aureliano Ortega Esquivel (Universidad de Guanajuato); todos ellos con enfoques genuinos y con una gran experiencia en diversas áreas de la filosofía en Latinoamérica.";
                 break;
             case 27:
-                this.titulo = "XX  Encuentro Internacional de Juristas";
+                this.titulo = "XX Encuentro Internacional de Juristas";
                 this.subtitulo = "Latinoamérica y las nuevas tendencias del derecho";
                 this.descripcion = "";
                 break;

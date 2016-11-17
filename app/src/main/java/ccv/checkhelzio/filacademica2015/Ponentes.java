@@ -1,9 +1,12 @@
 package ccv.checkhelzio.filacademica2015;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Ponentes{
+public class Ponentes implements Parcelable {
     private int id_ponente;
     private String nombre;
     private String apellidos;
@@ -420,9 +423,8 @@ public class Ponentes{
             case 38:
                 this.nombre = "Abraham";
                 this.apellidos = "Lowenthal";
-
                 this.dato = "Académico de la Universidad del Sur de California, EUA";
-                this.descripcion = "Abraham Lowenthal es el primer Catedrático Robert F. Erburu de Ética, Globalización y Desarrollo en la Universidad del Sur de California, donde también es profesor de relaciones internacionales. Presidente fundador del Consejo del Pacífico sobre Política Internacional, Lowenthal es actualmente presidente emérito y miembro principal de dicha organización. Se le reconoce mundialmente como una de las principales autoridades en temas relacionados con América Latina.";
+                this.descripcion = "Abraham Lowenthal es el primer Catedrático Robert F. Erburu de Ética, Globalización y Desarrollo en la Universidad del Sur de California, donde también es profesor de relaciones internacionales.\n\nPresidente fundador del Consejo del Pacífico sobre Política Internacional, Lowenthal es actualmente presidente emérito y miembro principal de dicha organización.\n\nSe le reconoce mundialmente como una de las principales autoridades en temas relacionados con América Latina.";
                 this.eventos_organizador = new ArrayList<Integer>(Arrays.asList(0));
                 this.eventos = new ArrayList<String>(Arrays.asList("3B"));
                 break;
@@ -3874,4 +3876,43 @@ public class Ponentes{
                 break;
         }
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(this.id_ponente);
+        dest.writeString(this.nombre);
+        dest.writeString(this.apellidos);
+        dest.writeString(this.dato);
+        dest.writeString(this.descripcion);
+        dest.writeStringList(this.eventos);
+        dest.writeList(this.eventos_organizador);
+    }
+
+    protected Ponentes(Parcel in) {
+        this.id_ponente = in.readInt();
+        this.nombre = in.readString();
+        this.apellidos = in.readString();
+        this.dato = in.readString();
+        this.descripcion = in.readString();
+        this.eventos = in.createStringArrayList();
+        this.eventos_organizador = new ArrayList<Integer>();
+        in.readList(this.eventos_organizador, Integer.class.getClassLoader());
+    }
+
+    public static final Parcelable.Creator<Ponentes> CREATOR = new Parcelable.Creator<Ponentes>() {
+        @Override
+        public Ponentes createFromParcel(Parcel source) {
+            return new Ponentes(source);
+        }
+
+        @Override
+        public Ponentes[] newArray(int size) {
+            return new Ponentes[size];
+        }
+    };
 }

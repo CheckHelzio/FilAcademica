@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.Portada"
+            android:name=".Portada"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.Portada">
             <intent-filter>
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.Menu"
+            android:name=".Menu"
             android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="MENU_FIL" />
@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.Actividades"
+            android:name=".Actividades"
             android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="ACTIVIDADES_FIL" />
@@ -45,7 +45,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.Historia"
+            android:name=".Historia"
             android:label="Historia de la FIL Académica"
             android:screenOrientation="sensorPortrait">
             <intent-filter>
@@ -55,7 +55,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.PonentesLayout"
+            android:name=".PonentesLayout"
             android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="PONENTES_FIL" />
@@ -64,7 +64,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.InfoEventoDialog"
+            android:name=".InfoEventoDialog"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -74,7 +74,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.InfoFechasDialog"
+            android:name=".InfoFechasDialog"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -84,7 +84,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.InfoCoordinadoresDialog"
+            android:name=".InfoCoordinadoresDialog"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -94,7 +94,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.InfoPonentesDialog"
+            android:name=".InfoPonentesDialog"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.Transparent">
             <intent-filter>
@@ -103,6 +103,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InfoPonentesDescripcionDialog"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Transparent" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -116,11 +120,11 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.MapsActivity"
+            android:name=".MapsActivity"
             android:label="@string/title_activity_maps2"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="ccv.checkhelzio.filacademica2015.VideoActivity"
+            android:name=".VideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_video"
             android:screenOrientation="sensorLandscape"

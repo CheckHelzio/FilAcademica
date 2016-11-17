@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:onClick="cerrar"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="90"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:id="@+id/tv_titulo_evento"
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/imagen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="@string/label_lugar"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ponente9"
+                        app:civ_border_color="#00000000"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:id="@+id/descripcion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="16dp"
+                        android:background="#00000000"
+                        android:maxLines="1"
+                        android:paddingEnd="24dp"
+                        android:ellipsize="end"
+                        android:paddingStart="80dp"
+                        android:text="@string/label_lugar"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/diez_sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nombre"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:paddingEnd="24dp"
+                        android:ellipsize="end"
+                        android:paddingStart="80dp"
+                        android:text="Salón 3, planta baja, Expo Guadalajara."
+                        android:textColor="#fff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/a"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:text="Informacion del ponente"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/separador"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tv_subtitulo"
+                android:background="@color/colorPrimary" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separador"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp">
+
+                    <ccv.checkhelzio.filacademica2015.TextViewEx
+                        android:id="@+id/tv_descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="#121212"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

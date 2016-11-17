@@ -8,7 +8,6 @@
     android:layout_marginBottom="8dp"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    android:stateListAnimator="@animator/raise"
     cardview:cardBackgroundColor="#fff"
     cardview:cardCornerRadius="0dp"
     cardview:cardElevation="0dp">
